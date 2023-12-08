@@ -192,6 +192,7 @@ else{
 				<![CDATA[TAGNAME]]>
 			</body>
 		</do-trace>
+		<init target="FontColor" ver="5" value="0xffaa0000"/>
 	</object>
 	<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="75c8bd0e-33c7-4582-bc3a-2d74a9df2c64" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
 		<designed target="X" value="8" ver="5"/>
@@ -206,7 +207,7 @@ else{
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="185" ver="5"/>
 		<designed target="Height" value="36" ver="5"/>
-		<designed target="Text" value="COMMENT" ver="5"/>
+		<designed target="Text" value="TEST TEXT" ver="5"/>
 		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
 		<designed target="FontColor" value="4278190080" ver="5"/>
 		<designed target="TextAlignment" value="36" ver="5"/>
@@ -750,8 +751,9 @@ else{
 		<designed target="Height" value="13" ver="5"/>
 		<designed target="Text" value="Байпас блокировок" ver="5"/>
 		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
-		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="FontColor" value="0xffaa0000" ver="5"/>
 		<designed target="TextAlignment" value="36" ver="5"/>
+		<init target="FontColor" ver="5" value="0xffaa0000"/>
 	</object>
 	<object access-modifier="private" name="BYPASS_SIG_INT" display-name="BYPASS_SIG_INT" uuid="9cc8f484-9ee2-4e13-bee7-28d2a741a38e" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
 		<init target="Source" ver="5" ref="here.init_Source"/>
