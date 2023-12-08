@@ -425,7 +425,6 @@
     <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_1.P_002_1" Description="PUMP" />
     <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_2.P_PID_002_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
     <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_2.P_002_2" Description="PUMP" />
-    <Object Tag="REGUL_PPG_1.05_PID.TV_0001" Description="PID" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
     <Object Tag="REGUL_PPG_1.03_EUV.EUV_001" Description="EUV" />
     <Object Tag="REGUL_PPG_1.03_EUV.EUV_002" Description="EUV" />
     <Object Tag="REGUL_PPG_1.03_EUV.EUV_003" Description="EUV" />
