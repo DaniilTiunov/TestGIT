@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution Id="b17e7b86-f12b-4892-bedf-9eb17c464566">
+  <Projects>
+    <Project FilePath="LIBRARIES\PsDiagn\PsDiagn.omx-project" />
+    <Project FilePath="LIBRARIES\PsTechOG\PsTechOG.omx-project" />
+    <Project FilePath="LIBRARIES\PsBase\PsBase.omx-project" />
+    <Project FilePath="AR_IZP_4200_01\AR_IZP_4200_01.omx-project" />
+  </Projects>
+</Solution>

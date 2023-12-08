@@ -1,0 +1,2918 @@
+<root format-version="0">
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.ST_02_012_1.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012_1.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.ST_02_012_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.ST_02_022_1.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022_1.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.ST_02_022_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.PP_00_0111_1.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111_1.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.PP_00_0111_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.PP_00_0112_1.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112_1.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.PP_00_0112_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_3.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_3.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_4.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_4.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_081_5.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_081_5.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE01.AI_16_011.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_16_011.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.CPU_CNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.CPU_CNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.CPU1_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.CPU1_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.CPU2_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.CPU2_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.CPU3_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.CPU3_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.CPU4_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.CPU4_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.NET_CNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.NET_CNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.PORT1_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.PORT1_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.PORT2_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.PORT2_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.PORT3_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.PORT3_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.PORT4_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.PORT4_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.PORT5_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.PORT5_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.PORT6_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.PORT6_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.IS_CPU_A</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.IS_CPU_A</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.IS_CPU_B</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.IS_CPU_B</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.RED_MODE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.RED_MODE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.IS_ACTIVE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.IS_ACTIVE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.ERRORS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.ERRORS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.TEMP_MAX</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.TEMP_MAX</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.TEMP_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.TEMP_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.TEMP_CUR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.TEMP_CUR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.YEAR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.YEAR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.MONTH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.MONTH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.DAY</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.DAY</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.HOUR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.HOUR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.MINUTE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.MINUTE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.SECOND</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.SECOND</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_051.MILLISECOND</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00.MILLISECOND</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.CPU_CNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.CPU_CNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.CPU1_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.CPU1_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.CPU2_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.CPU2_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.CPU3_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.CPU3_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.CPU4_LOAD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.CPU4_LOAD</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.NET_CNT</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.NET_CNT</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.PORT1_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.PORT1_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.PORT2_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.PORT2_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.PORT3_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.PORT3_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.PORT4_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.PORT4_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.PORT5_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.PORT5_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.PORT6_LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.PORT6_LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.IS_CPU_A</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.IS_CPU_A</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.IS_CPU_B</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.IS_CPU_B</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.RED_MODE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.RED_MODE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.IS_ACTIVE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.IS_ACTIVE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.ERRORS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.ERRORS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.TEMP_MAX</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.TEMP_MAX</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.TEMP_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.TEMP_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.TEMP_CUR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.TEMP_CUR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.YEAR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.YEAR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.MONTH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.MONTH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.DAY</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.DAY</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.HOUR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.HOUR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.MINUTE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.MINUTE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.SECOND</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.SECOND</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CU_00_0511.MILLISECOND</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CU_00_1.MILLISECOND</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.PP_00_0111.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.PP_00_0111.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.PP_00_0112.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.PP_00_0112.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CP_04_011.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CP_04_011.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CP_04_011.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CP_04_011.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.CP_04_011.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_CP_04_011.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.ST_02_022.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.ST_02_022.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.ST_02_012.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE00.ST_02_012.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.ST_02_012_2.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012_2.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.ST_02_012_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.ST_02_022_2.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022_2.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.ST_02_022_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.PP_00_0111_2.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111_2.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.PP_00_0111_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.PP_00_0112_2.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112_2.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.PP_00_0112_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.T_SENSOR.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.T_SENSOR.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.T_SENSOR.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.T_SENSOR.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.T_JUNCTION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.T_JUNCTION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.T_SENSOR.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.T_SENSOR.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.T_SENSOR.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.T_SENSOR.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.T_JUNCTION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.T_JUNCTION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_08_031_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AI_08_031_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH01.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH01.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH01.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH01.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH02.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH02.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH02.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH02.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH03.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH03.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH03.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH03.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH04.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH04.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH04.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH04.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH05.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH05.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH05.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH05.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH06.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH06.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH06.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH06.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH07.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH07.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH07.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH07.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH08.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH08.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH08.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH08.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH09.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH09.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH09.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH09.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH10.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH10.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH10.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH11.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH11.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH11.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH12.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH12.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH12.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH13.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH13.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH13.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH14.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH14.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH14.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH15.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH15.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH15.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH16.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH16.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.CH16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.CH16.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AI_16_011_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_A_16_011_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH01</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH01</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH02</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH02</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH03</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH03</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH04</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH04</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH05</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH05</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH06</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH06</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH07</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH07</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.CH08</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.CH08</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH01</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH01</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH02</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH02</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH03</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH03</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH04</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH04</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH05</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH05</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH06</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH06</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH07</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH07</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.CH08</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.CH08</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_1.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_1.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH01</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH01</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH02</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH02</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH03</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH03</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH04</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH04</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH05</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH05</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH06</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH06</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH07</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH07</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.CH08</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.CH08</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.AO_08_021_2.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_AO_08_021_2.STATUS</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.DI_32_011.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.DI_32_011.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.DI_32_011.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE02.DI_32_011.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.ST_02_012_3.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012_3.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.ST_02_012_3.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_012_3.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.ST_02_022_3.LINK</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022_3.LINK</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.ST_02_022_3.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_ST_02_022_3.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.PP_00_0111_3.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111_3.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.PP_00_0111_3.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0111_3.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.PP_00_0112_3.EXT_PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112_3.EXT_PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.PP_00_0112_3.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_PP_00_0112_3.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_1.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_1.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_1.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_1.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_1.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_1.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_2.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_2.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_2.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_2.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_2.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_2.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_3.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_3.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_3.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_3.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_3.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_3.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_3.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_3.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_4.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_4.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_4.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_4.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_4.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_4.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DI_32_011_4.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DI_32_011_4.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012.PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012.PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_1.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_1.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_1.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_1.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_1.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_1.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_1.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_1.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_1.PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_1.PWR</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_2.VALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_2.VALUE</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_2.FW_VERSION</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_2.FW_VERSION</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_2.FW_VERSION_MIN</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_2.FW_VERSION_MIN</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_2.HwError</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_2.HwError</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>REGUL_SMC306_03.CRATE03.DO_32_012_2.PWR</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL_DIAGN.MODULE_DO_32_012_2.PWR</nodeId>
+  </item>
+</root>

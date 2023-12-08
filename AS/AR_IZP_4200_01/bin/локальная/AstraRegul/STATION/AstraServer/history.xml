@@ -1,0 +1,1334 @@
+<?xml version="1.0"?>
+<History>
+  <Types>
+    <Type Name="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" Base="PsDiagn:BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="CPU1_LOAD" />
+        <Parameter RelativeTag="CPU2_LOAD" />
+        <Parameter RelativeTag="CPU3_LOAD" />
+        <Parameter RelativeTag="CPU4_LOAD" />
+        <Parameter RelativeTag="TEMP_CUR" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="PV.DATA_VALUE" />
+        <Parameter RelativeTag="SUM.DATA_VALUE" />
+        <Parameter RelativeTag="FV.DATA_VALUE" />
+        <Parameter RelativeTag="MV.DATA_VALUE" />
+        <Parameter RelativeTag="SV.DATA_VALUE" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.BASE.PVI.IOS_View" Base="PsTechOG:Types.BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="SH" />
+        <Parameter RelativeTag="HH" />
+        <Parameter RelativeTag="PH" />
+        <Parameter RelativeTag="PL" />
+        <Parameter RelativeTag="LL" />
+        <Parameter RelativeTag="SL" />
+        <Parameter RelativeTag="VL" />
+        <Parameter RelativeTag="RAW" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.BASE.MC_3E.IOS_View" Base="PsTechOG:Types.BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="ANSP" />
+        <Parameter RelativeTag="SH" />
+        <Parameter RelativeTag="PH" />
+        <Parameter RelativeTag="PL" />
+        <Parameter RelativeTag="SL" />
+        <Parameter RelativeTag="MTM" />
+        <Parameter RelativeTag="SVH" />
+        <Parameter RelativeTag="SVL" />
+        <Parameter RelativeTag="RAW" />
+        <Parameter RelativeTag="SV" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.BASE.M_PID.IOS_View" Base="PsTechOG:Types.BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="SH" />
+        <Parameter RelativeTag="HH" />
+        <Parameter RelativeTag="PH" />
+        <Parameter RelativeTag="PL" />
+        <Parameter RelativeTag="LL" />
+        <Parameter RelativeTag="SL" />
+        <Parameter RelativeTag="VL" />
+        <Parameter RelativeTag="DL" />
+        <Parameter RelativeTag="MSH" />
+        <Parameter RelativeTag="MH" />
+        <Parameter RelativeTag="ML" />
+        <Parameter RelativeTag="MSL" />
+        <Parameter RelativeTag="SVH" />
+        <Parameter RelativeTag="SVL" />
+        <Parameter RelativeTag="PB" />
+        <Parameter RelativeTag="TI" />
+        <Parameter RelativeTag="TD" />
+        <Parameter RelativeTag="GW" />
+        <Parameter RelativeTag="DB" />
+        <Parameter RelativeTag="CK" />
+        <Parameter RelativeTag="CB" />
+        <Parameter RelativeTag="DV" />
+        <Parameter RelativeTag="OPLO" />
+        <Parameter RelativeTag="OPHI" />
+        <Parameter RelativeTag="RAW" />
+        <Parameter RelativeTag="PMV" />
+        <Parameter RelativeTag="TIN_VALUE" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.TECH.PID_IL.IOS_View" Base="PsTechOG:Types.BASE.M_PID.IOS_View">
+      <Parameters>
+        <Parameter RelativeTag="P01_REF" />
+        <Parameter RelativeTag="P02_REF" />
+      </Parameters>
+    </Type>
+    <Type Name="PsDiagn:COMPUTER.IOS_View" Base="PsDiagn:BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="CPU1_LOAD" />
+        <Parameter RelativeTag="CPU2_LOAD" />
+        <Parameter RelativeTag="CPU3_LOAD" />
+        <Parameter RelativeTag="CPU4_LOAD" />
+        <Parameter RelativeTag="CPU1_TEMP" />
+        <Parameter RelativeTag="CPU2_TEMP" />
+        <Parameter RelativeTag="CPU3_TEMP" />
+        <Parameter RelativeTag="CPU4_TEMP" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.BASE.SI_1.IOS_View" Base="PsTechOG:Types.BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="RAW" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.BASE.MC_2E.IOS_View" Base="PsTechOG:Types.BASETYPE.IOS_BaseView">
+      <Parameters>
+        <Parameter RelativeTag="ANSP" />
+        <Parameter RelativeTag="SH" />
+        <Parameter RelativeTag="PH" />
+        <Parameter RelativeTag="PL" />
+        <Parameter RelativeTag="SL" />
+        <Parameter RelativeTag="MTM" />
+        <Parameter RelativeTag="SVH" />
+        <Parameter RelativeTag="SVL" />
+        <Parameter RelativeTag="RAW" />
+        <Parameter RelativeTag="SV" />
+      </Parameters>
+    </Type>
+    <Type Name="PsTechOG:Types.TECH.PID.IOS_View" Base="PsTechOG:Types.BASE.M_PID.IOS_View">
+      <Parameters>
+        <Parameter RelativeTag="P01_REF" />
+        <Parameter RelativeTag="P02_REF" />
+      </Parameters>
+    </Type>
+  </Types>
+  <Objects>
+    <Object Tag="REGUL_SMC306_02.DIAGN.CRATE00.CU_00_051" Description="CU_00_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_02.DIAGN.CRATE00.CU_00_0511" Description="CU_00_0511" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_03.DIAGN.CRATE00.CU_00_051" Description="CU_00_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_03.DIAGN.CRATE00.CU_00_0511" Description="CU_00_0511" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_04.DIAGN.CRATE00.A2_CU_500_051" Description="A2_CU_500_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_04.DIAGN.CRATE01.A1_CU_500_051" Description="A1_CU_500_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4002_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4001_4200" Description="NULL" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4003_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4005_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4004_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4001_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4005_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4004_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4002_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.FT4001_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.GD4001_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.GD4011_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.GD4012_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4021_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4022_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4006_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.TT4020_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4006_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4013_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PDI4001_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.FT4021_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4012_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.01_AI.PT4011_4200" Description="Описание" />
+    <Object Tag="REGUL_SMC306_04.03_EUV.EUV_4001" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_04.03_EUV.EUV_4002" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_04.03_EUV.EUV_4021" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_04.03_EUV.EUV_4022" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_04.03_EUV.EUV_4020" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_04.04_PID.FV_4001" Description="Клапан регулирующий на конденсате из ПСВД поз. 4200-E-007A" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_04.04_PID.TV_4011" Description="Клапан регулирующий на конденсате из ПСВД поз. 4200-E-007A" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_05.DIAGN.CRATE00.A2_CU_500_051" Description="A2_CU_500_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_05.DIAGN.CRATE01.A1_CU_500_051" Description="A1_CU_500_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_06.DIAGN.CRATE00.A2_CU_500_051" Description="A2_CU_500_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="REGUL_SMC306_06.DIAGN.CRATE01.A1_CU_500_051" Description="A1_CU_500_051" Type="PsDiagn:REGUL.R500.MODULES.CU.CU_XX_XXX.IOS_View" />
+    <Object Tag="OWS1" Description="COMPUTER - АРМ" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="OWS2" Description="COMPUTER - АРМ" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="OWS3" Description="COMPUTER - АРМ" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="OWS4" Description="COMPUTER - АРМ" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="OWS5" Description="COMPUTER - АРМ" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="OWS6" Description="COMPUTER - АРМ" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="OWS7" Description="COMPUTER - АРМ" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="SRVH" Description="SVRH - Сервер истории" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="SRVNTP" Description="SRVNTP - NTP сервер" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="SRVP" Description="SRVP - Сервер" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="SRVR" Description="SRVR - Сервер резервный" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="STATION" Description="Инженерная станция" Type="PsDiagn:COMPUTER.IOS_View" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI03.D10_2455_1_4200" Description="Частотный преобразователь подачи воздуха на горение - авария" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI03.D10_2455_2_4200" Description="Частотный преобразователь подачи воздуха на горение - в работе" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI03.GDH1001_4200" Description="Достигнут 1 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI03.GDHH1001_4200" Description="Достигнут 2 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI03.GAHH1001_4200" Description="Достигнут 2 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI03.GAH1001_4200" Description="Достигнут 1 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.AT0111_4200" Description="УПП солевого отсека котла №1 4200-AT-0111 - нарушение работы" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS11001_1_4200" Description="Горелка 1 - в работе, есть пламя" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.AT0112_4200" Description="УПП конденсата на линии впрыска котла №1 4200-AT-0112 - нарушение работы" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.AT0113_4200" Description="УПП перегретого пара перед ГПЗ котла №1 4200-AT-0113 - нарушение работы" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS11001_2_4200" Description="Горелка 1 - оба клапана газа открыты" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS11001_3_4200" Description="Горелка 1 - воздушные заслонки открыты (FSC - продувка)" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS11001_7_4200" Description="Горелка 1 - запрос запкуска дутьевого вентилятора" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS11001_9_4200" Description="Горелка 1 - горелка выбрана" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS11001_8_4200" Description="Горелка 1 - авария" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS21001_1_4200" Description="Горелка 2 - в работе, есть пламя" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS21001_2_4200" Description="Горелка 2 - оба клапана газа открыты" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS21001_3_4200" Description="Горелка 2 - воздушные заслонки открыты (FSC - продувка)" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS21001_7_4200" Description="Горелка 2 - запрос запкуска дутьевого вентилятора" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS21001_9_4200" Description="Горелка 2 - горелка выбрана" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.BS21001_8_4200" Description="Горелка 2 - авария" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D10_40261_4200" Description="Состояние Щит управления. Вытяжная вентиляция В10" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_45107_2_4200" Description="Запорный клапан подачи газа - открыт" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_45107_3_4200" Description="Запорный клапан подачи газа - закрыт" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_50601_2_4200" Description="Содержание O2 min/max - поз. преобразователя 55N1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_50601_3_4200" Description="Содержание CO max - поз. преобразователя 55N1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_50604_2_4200" Description="Содержание O2 min/max - поз. преобразователя 56N1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_50604_3_4200" Description="Содержание O2 min/max - поз. преобразователя 56N1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_50605_2_4200" Description="Содержание O2 min/max - поз. преобразователя 57N1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.D01_50605_3_4200" Description="Содержание O2 min/max - поз. преобразователя 57N1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.LP01_2_4200" Description="ПМУ парового котла №1 - наличие напряжения на вводе №1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.LP01_3_4200" Description="ПМУ парового котла №1 - наличие напряжения на вводе №2" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.LP01_4_4200" Description="ПМУ парового котла №1 - наличие напряжения 24 В" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE04_DI04.LP01_6_4200" Description="ПМУ парового котла №1 - дверь шкафа открыта" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_1_4200" Description="Шкаф SMC 306-01. Открыты двери шкафа (фронт, тыл)" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_2_4200" Description="Шкаф SMC 306-01. Превышение температуры в шкафу" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_3_4200" Description="Шкаф SMC 306-01. Оба источника питания 24 В ПЛК в норме" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_4_4200" Description="Шкаф SMC 306-01. Оба источника питания 24 В полевых устройств в норме" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_11_4200" Description="Шкаф SMC 306-01. Наличие напряжения 24 В питания полевых устройств" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_12_4200" Description="Шкаф SMC 306-01. Наличие напряжения 230 В на вводе 1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_13_4200" Description="Шкаф SMC 306-01. Наличие напряжения 230 В на вводе 2" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_14_4200" Description="Шкаф SMC 306-01. Неисправность коммутатора SW1" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_15_4200" Description="Шкаф SMC 306-01. Неисправность коммутатора SW2" />
+    <Object Tag="REGUL_SMC306_01.02_DI.CRATE02_DI04.SMC_306_01_17_4200" Description="Шкаф SMC 306-01. Оба канала блока резервирования питания VD1 в норме" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.PT1008A_4200" Description="Давление пара в барабане котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.PT1032A_4200" Description="Плотность газа от анализатора" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1001_4200" Description="Температура питательной воды до узла питания" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1003_4200" Description="Температура питательной воды после узла питания" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1005_4200" Description="Температура питательной воды после конденсатора слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1004_4200" Description="Температура питательной воды перед конденсатором" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1006_4200" Description="Температура питательной воды после конденсатора справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1007_4200" Description="Температура питательной воды после экономайзера слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1008_4200" Description="Температура питательной воды после экономайзера справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1009_4200" Description="Температура металла стенки барабана справа сверху" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1010_4200" Description="Температура металла стенки барабана справа снизу" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1011_4200" Description="Температура металла стенки барабана слева сверху" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1012_4200" Description="Температура металла стенки барабана слева снизу" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1013_4200" Description="Температура котловой воды в линии непрерывной продувки" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI01.TT1018A_4200" Description="Температура пара в коллекторе перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1014_4200" Description="Температура пара после пароперегревателя 1 ступени до коллектора впрыска справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1015_4200" Description="Температура пара после пароперегревателя 1 ступени до коллектора впрыска слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1016_4200" Description="Температура пара после коллектора впрыска до пароперегревателя 2 ступени справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1017_4200" Description="Температура пара после коллектора впрыска до пароперегревателя 2 ступени слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1018B_4200" Description="Температура пара в коллекторе перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1020_4200" Description="Температура пара перед ГПЗ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1021_4200" Description="Температура конденсата на впрыск" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1022_4200" Description="Температура дымовых газов до пароперегревателя справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1023_4200" Description="Температура дымовых газов до пароперегревателя слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1024_4200" Description="Температура дымовых газов после пароперегревателя справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1025_4200" Description="Температура дымовых газов после пароперегревателя слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1026_4200" Description="Температура дымовых газов между ступенями экономайзера справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1027_4200" Description="Температура дымовых газов между ступенями экономайзера слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.TT1028_4200" Description="Температура дымовых газов на выходе из котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI02.LT1003A_4200" Description="Уровень воды в барабане" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.PT1001_4200" Description="Давление питательной воды перед узлом питания" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.PT1003_4200" Description="Давление питательной воды в основной линии узла питания после РО" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.PT1005_4200" Description="Давление питательной воды в резервной линии узла питания после РО" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.PT1006_4200" Description="Давление питательной воды после узла питания" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.PT1032B_4200" Description="Давление газа в общем газопроводе после регулирующего клапана" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.PT1008B_4200" Description="Давление пара в барабане котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1018C_4200" Description="Температура пара в коллекторе перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1041_4200" Description="Температура газа к горелкам котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1042_4200" Description="Температура воздуха на входе перед калориферами" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1043A_4200" Description="Температура воздуха после калорифера к горелке №1" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1043B_4200" Description="Температура воздуха после калорифера к горелке №2" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1047_4200" Description="Температура подшипников двигателя вентилятора передний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1048_4200" Description="Температура подшипников двигателя вентилятора задний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1049_4200" Description="Температура подшипников вентилятора передний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI03.TT1050_4200" Description="Температура подшипников вентилятора задний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1 (P003_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa003_2_4200" Description="Сетевой насос №2 c ЧРЭП поз. 4200-P-003/2 (P003_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa003_3_4200" Description="Сетевой насос №3 c ЧРЭП поз. 4200-P-003/3 (P003_3). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa004_1_4200" Description="Насос №1 теплофикационной воды c ЧРЭП (P004_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa004_2_4200" Description="Насос №2 теплофикационной воды c ЧРЭП (P004_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa004_3_4200" Description="Насос №3 теплофикационной воды c ЧРЭП (P004_3). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa005_1_4200" Description="Насос №1 промтеплофикационной воды c ЧРЭП (P005_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMa005_2_4200" Description="Насос №2 промтеплофикационной воды c ЧРЭП (P005_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1 (P003_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb003_2_4200" Description="Сетевой насос №2 c ЧРЭП поз. 4200-P-003/2 (P003_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb003_3_4200" Description="Сетевой насос №3 c ЧРЭП поз. 4200-P-003/3 (P003_3). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb004_1_4200" Description="Насос №1 теплофикационной воды c ЧРЭП (P004_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb004_2_4200" Description="Насос №2 теплофикационной воды c ЧРЭП (P004_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb004_3_4200" Description="Насос №3 теплофикационной воды c ЧРЭП (P004_3). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb005_1_4200" Description="Насос №1 промтеплофикационной воды c ЧРЭП (P005_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE06_AI25.PLMb005_2_4200" Description="Насос №2 промтеплофикационной воды c ЧРЭП (P005_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.LT1003B_4200" Description="Уровень воды в барабане" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1008C_4200" Description="Давление пара в барабане котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1009_4200" Description="Давление котловой воды в линии непрерывной продувки" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1010_4200" Description="Давление пара в коллекторе перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1012_4200" Description="Давление пара после котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1013_4200" Description="Давление конденсата на впрыск" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1015_4200" Description="Разрежение дымовых газов после пароперегревателя справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1016_4200" Description="Разрежение дымовых газов после пароперегревателя слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1017_4200" Description="Разрежение дымовых газов между ступенями экономайзера справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1018_4200" Description="Разрежение дымовых газов между ступенями экономайзера слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1035A_4200" Description="Разрежение в топке котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1020_4200" Description="Разрежение дымовых газов на выходе из котла слева" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI04.PT1019_4200" Description="Разрежение дымовых газов на выходе из котла справа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.FT1001_4200" Description="Расход питательной воды" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.FT1002_4200" Description="Расход конденсата на впрыск" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.FT1003_4200" Description="Расход воды на непрерывную продувку" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.FT1004_4200" Description="Расход перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.FT1005_4200" Description="Расход газа к котлу" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.LT1003C_4200" Description="Уровень воды в барабане" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.PT1031_4200" Description="Давление газа в общем газопроводе до регулирующего клапана" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.PT1032C_4200" Description="Давление газа в общем газопроводе после регулирующего клапана" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.PT1033_4200" Description="Давление воздуха к горелкам после вентилятора перед калориферами" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.PT1034A_4200" Description="Давление воздуха после калорифера 1" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.PT1035B_4200" Description="Разрежение в топке котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI05.PT1034B_4200" Description="Давление воздуха после калорифера 2" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI06.AT1001_4200" Description="Электропроводность котловой воды" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI06.LT1003D_4200" Description="Уровень воды в барабане" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI06.PT1035C_4200" Description="Разрежение в топке котла" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI06.TT1033_4200" Description="Температура подшипников двигателя дымососа передний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI06.TT1034_4200" Description="Температура подшипников двигателя дымососа задний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI06.TT1035_4200" Description="Температура подшипников дымососа передний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI06.TT1036_4200" Description="Температура подшипников дымососа задний" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI07.AT1003_1_4200" Description="Концентрация СО в дымовых газах" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI07.AT1003_2_4200" Description="Концентрация NO в дымовых газах" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE02_AI07.AT1003_3_4200" Description="Концентрация NO2 в дымовых газах" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A01_02314_1_4200" Description="Расход газа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A01_50601_1_1_4200" Description="Содержание CO/O2 - поз. преобразователя 55N1" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A01_50604_1_1_4200" Description="Содержание O2, к.1 - поз. преобразователя 56N1" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A01_50605_1_1_4200" Description="Содержание O2, к.2 - поз. преобразователя 57N1" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A10_40260_1_4200" Description="Горелка 1 - перепад давления воздуха на горение" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A10_40301_1_4200" Description="Горелка 1 - температура завихрителя" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A20_40260_1_4200" Description="Горелка 2 - перепад давления воздуха на горение" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.A20_40301_1_4200" Description="Горелка 2 - температура завихрителя" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.AT1002_4200" Description="Показатель солености котловой воды солевого отсека котла №1" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.AT1003_4200" Description="Показатель pH котловой воды соленого отсека котла №1" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.AT1004_4200" Description="Показатель солености перегретого пара перед ГПЗ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI08.AT1005_4200" Description="Содержание Na в перегретом паре перед ГПЗ" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI09.TT1030_4200" Description="Температура обмотки А двигателя дымососа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI09.TT1031_4200" Description="Температура обмотки В двигателя дымососа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI09.TT1032_4200" Description="Температура обмотки С двигателя дымососа" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI09.TT1044_4200" Description="Температура обмотки А двигателя вентилятора" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI09.TT1045_4200" Description="Температура обмотки В двигателя вентилятора" />
+    <Object Tag="REGUL_SMC306_01.01_AI.CRATE03_AI09.TT1046_4200" Description="Температура обмотки С двигателя вентилятора" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1001" Description="Клапан запорный питательной воды перед УП" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1002" Description="Клапан запорный питательной воды на основной линии УП" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1003" Description="Клапан запорный питательной воды на резервной линии УП" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1004" Description="Клапан запорный 1 на линии аварийного слива из барабана" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1005" Description="Клапан запорный на линии непрерывной продувки" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1006" Description="Клапан запорный на линии непрерывной продувки" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1007" Description="Клапан запорный 1 продувки пароперегревателя" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1008" Description="Клапан запорный 2 продувки пароперегревателя" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1011" Description="ГПЗ после коллектора перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1012" Description="Байпас ГПЗ после коллектора перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1013" Description="Клапан запорный на линии дренажа коллектора перегретого пара" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1009" Description="Соленоид предохранительного клапана КПП" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1010" Description="Соленоид предохранительного клапана барабана" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1014" Description="Направляющий аппарат дымососа" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1021" Description="Клапан запорный природного газа к горелкам" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1022" Description="Шибер забора воздуха" />
+    <Object Tag="REGUL_SMC306_01.03_EUV.EUV_1023" Description="Направляющий аппарат вентилятора" />
+    <Object Tag="REGUL_SMC306_01.04_PID.AV_1001" Description="Клапан регулирующий на линии непрерывной продувки" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_01.04_PID.LV_1003E" Description="Клапан регулирующий питательной воды на основной линии УП" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_01.04_PID.LV_1003F" Description="Клапан регулирующий питательной воды на резервной линии УП" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_01.04_PID.PV_1012" Description="Клапан регулирующий пара после котла" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_01.04_PID.TV_1018" Description="Клапан регулирующий на линии впрыска в пароохладитель" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_01.04_PID.TV_1043" Description="Клапан регулирующий подачи этиленгликоля к калориферам" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_01.05_VENT.K_1001" Description="Дымосос" />
+    <Object Tag="REGUL_SMC306_01.05_VENT.K_1002" Description="Вентилятор" />
+    <Object Tag="REGUL_PPG_1.01_AI.AT101_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.AT102_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.AT201_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.AT202_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.AT301_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.AT302_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT101_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT102_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT103_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT104_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT105_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT106_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT107_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT108_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT109_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT109A_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT201_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT202_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT203_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT205_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT205A_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT301_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT303_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT303A_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PT501_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT101_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT102_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT201_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT202_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT301_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT501_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT502_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT503_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT504_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT001_1_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT001_2_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT101_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT102_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT103_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT104_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT105_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT106_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT107_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT108_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT109_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.PDT302_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT201_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT111_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT202_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT203_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT204_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT206_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT301_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT502_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT503_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.TT504_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.P001_01_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.01_AI.P001_02_4150" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.02_DI.LSA501" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.02_DI.LSA501A" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.02_DI.LSA501B" Description="Описание" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_001_1.P_001_1" Description="PUMP" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_001_1.P_PID_001_1" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_001_2.P_001_2" Description="PUMP" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_001_2.P_PID_001_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_1.P_PID_002_1" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_1.P_002_1" Description="PUMP" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_2.P_PID_002_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_2.P_002_2" Description="PUMP" />
+    <Object Tag="REGUL_PPG_1.05_PID.TV_0001" Description="PID" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_001" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_002" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_003" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_004" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_005" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_006" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_007" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_008" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_009" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_010" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_011" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_012" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_013" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_014" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_015" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_016" Description="EUV" />
+    <Object Tag="REGUL_PPG_1.03_EUV.EUV_021" Description="EUV" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA02_4200" Description="Состояние Приточная установка П2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA03_4200" Description="Состояние Приточная установка П3" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA04_4200" Description="Состояние Приточная установка П4" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA05_4200" Description="Состояние Приточная установка П5" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA06_4200" Description="Состояние Приточная установка П6" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA07_4200" Description="Состояние Приточная установка П7" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA08_4200" Description="Состояние Приточная установка П8" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA09_4200" Description="Состояние Приточная установка П9" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA10_4200" Description="Состояние Приточная установка П10" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA11_1_4200" Description="Состояние Приточная установка П11.1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA11_2_4200" Description="Состояние Приточная установка П11.2." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA12_1_4200" Description="Состояние Приточная установка П12.1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA12_2_4200" Description="Состояние Приточная установка П12.2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA13_4200" Description="Состояние Приточная установка П13" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA14_4200" Description="Состояние Приточная установка П14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR01_4200" Description="Состояние Приточная установка П1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR02_4200" Description="Состояние Приточная установка П2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR03_4200" Description="Состояние Приточная установка П3" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR04_4200" Description="Состояние Приточная установка П4" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR05_4200" Description="Состояние Приточная установка П5" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR06_4200" Description="Состояние Приточная установка П6" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR07_4200" Description="Состояние Приточная установка П7" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR08_4200" Description="Состояние Приточная установка П8" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR09_4200" Description="Состояние Приточная установка П9" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR10_4200" Description="Состояние Приточная установка П10" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR11_1_4200" Description="Состояние Приточная установка П11.1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR11_2_4200" Description="Состояние Приточная установка П11.2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR12_1_4200" Description="Состояние Приточная установка П12.1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR12_2_4200" Description="Состояние Приточная установка П12.2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR13_4200" Description="Состояние Приточная установка П13" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLR14_4200" Description="Состояние Приточная установка П14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI00.PCLA01_4200" Description="Состояние Приточная установка П1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.PCLA15_4200" Description="остояние Приточная установка П15" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.PCLA16_4200" Description="Состояние Приточная установка П2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA01_4200" Description="Состояние Щит управления. Вытяжная вентиляция В1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA02_4200" Description="Состояние Щит управления. Вытяжная вентиляция В2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA03_4200" Description="Состояние Щит управления. Вытяжная вентиляция В3" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA04_4200" Description="Состояние Щит управления. Вытяжная вентиляция В4" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA05_4200" Description="Состояние Щит управления. Вытяжная вентиляция В5" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA06_4200" Description="Состояние Щит управления. Вытяжная вентиляция В6" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA07_4200" Description="Состояние Щит управления. Вытяжная вентиляция В7" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA08_4200" Description="Состояние Щит управления. Вытяжная вентиляция В8" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA09_1_4200" Description="Состояние Щит управления. Вытяжная вентиляция В9.1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA09_2_4200" Description="Состояние Щит управления. Вытяжная вентиляция В9.2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA10_4200" Description="Состояние Щит управления. Вытяжная вентиляция В10" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA11_4200" Description="Состояние Щит управления. Вытяжная вентиляция В11" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA12_4200" Description="Состояние Щит управления. Вытяжная вентиляция В12" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLA13_4200" Description="Состояние Щит управления. Вытяжная вентиляция В13" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.PCLR15_4200" Description="Состояние Приточная установка П15" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.PCLR16_4200" Description="Состояние Приточная установка П16." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR03_4200" Description="Состояние Щит управления. Вытяжная вентиляция В3" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR04_4200" Description="Состояние Щит управления. Вытяжная вентиляция В4" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR01_4200" Description="Состояние Щит управления. Вытяжная вентиляция В1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR02_4200" Description="Состояние Щит управления. Вытяжная вентиляция В2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR07_4200" Description="Состояние Щит управления. Вытяжная вентиляция В7" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR08_4200" Description="Состояние Щит управления. Вытяжная вентиляция В8" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR05_4200" Description="Состояние Щит управления. Вытяжная вентиляция В5" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR06_4200" Description="Состояние Щит управления. Вытяжная вентиляция В6" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR09_2_4200" Description="Состояние Щит управления. Вытяжная вентиляция В9.2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR09_1_4200" Description="Состояние Щит управления. Вытяжная вентиляция В9.1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR11_4200" Description="Состояние Щит управления. Вытяжная вентиляция В11" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR12_4200" Description="Состояние Щит управления. Вытяжная вентиляция В12" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR10_4200" Description="Состояние Щит управления. Вытяжная вентиляция В10" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI01.VCLR13_4200" Description="Состояние Щит управления. Вытяжная вентиляция В13" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA14_4200" Description="Состояние Щит управления. Вытяжная вентиляция В14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA15_4200" Description="Состояние Щит управления. Вытяжная вентиляция В15" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA16_4200" Description="Состояние Щит управления. Вытяжная вентиляция В16" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA17_4200" Description="Состояние Щит управления. Вытяжная вентиляция В17" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA18_4200" Description="Состояние Щит управления. Вытяжная вентиляция В18" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA19_4200" Description="Состояние Щит управления. Вытяжная вентиляция В19" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA20_4200" Description="Состояние Щит управления. Вытяжная вентиляция В20" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA21_4200" Description="Состояние Щит управления. Вытяжная вентиляция В21" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLA22_4200" Description="Состояние Щит управления. Вытяжная вентиляция В22" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLA01_4200" Description="Состояние Воздушно-отопительный агрегат А1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLA02_4200" Description="Состояние Воздушно-отопительный агрегат А2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLA03_4200" Description="Состояние Воздушно-отопительный агрегат А3" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLA04_4200" Description="Состояние Воздушно-отопительный агрегат А4" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLA05_4200" Description="Состояние Воздушно-отопительный агрегат А5" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLA06_4200" Description="Состояние Воздушно-отопительный агрегат А6" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR14_4200" Description="Состояние Щит управления. Вытяжная вентиляция В14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR17_4200" Description="Состояние Щит управления. Вытяжная вентиляция В17" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR18_4200" Description="Состояние Щит управления. Вытяжная вентиляция В18" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR15_4200" Description="Состояние Щит управления. Вытяжная вентиляция В15" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR16_4200" Description="Состояние Щит управления. Вытяжная вентиляция В16" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR21_4200" Description="Состояние Щит управления. Вытяжная вентиляция В21" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR22_4200" Description="Состояние Щит управления. Вытяжная вентиляция В22" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR19_4200" Description="Состояние Щит управления. Вытяжная вентиляция В19" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VCLR20_4200" Description="Состояние Щит управления. Вытяжная вентиляция В20" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLR02_4200" Description="Состояние Воздушно-отопительный агрегат А2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLR01_4200" Description="Состояние Воздушно-отопительный агрегат А1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLR04_4200" Description="Состояние Воздушно-отопительный агрегат А4" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLR05_4200" Description="Состояние Воздушно-отопительный агрегат А5" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLR03_4200" Description="Состояние Воздушно-отопительный агрегат А3." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLR06_4200" Description="Состояние Воздушно-отопительный агрегат А6" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLA07_4200" Description="Состояние Приточная установка П14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI02.VPLR07_4200" Description="Состояние Воздушно-отопительный агрегат А7" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA08_4200" Description="Состояние Воздушно-отопительный агрегат А8" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA09_4200" Description="Состояние Воздушно-отопительный агрегат А9" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA10_4200" Description="Состояние Воздушно-отопительный агрегат А10" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA11_4200" Description="Состояние Воздушно-отопительный агрегат А11" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA12_4200" Description="Состояние Воздушно-отопительный агрегат А12" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA13_4200" Description="Состояние Воздушно-отопительный агрегат А13" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA14_4200" Description="Состояние Воздушно-отопительный агрегат А14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA15_4200" Description="Состояние Воздушно-отопительный агрегат А15" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA16_4200" Description="Состояние Воздушно-отопительный агрегат А16" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA17_4200" Description="Состояние Воздушно-отопительный агрегат А17" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA18_4200" Description="Состояние Воздушно-отопительный агрегат А18" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA19_4200" Description="Состояние Воздушно-отопительный агрегат А19" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA20_4200" Description="Состояние Воздушно-отопительный агрегат А20" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA21_4200" Description="Состояние Воздушно-отопительный агрегат А21" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA22_4200" Description="Состояние Воздушно-отопительный агрегат А22" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR23_4200" Description="Состояние Воздушно-отопительный агрегат А23" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR13_4200" Description="Состояние Воздушно-отопительный агрегат А13" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR10_4200" Description="Состояние Воздушно-отопительный агрегат А10" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR11_4200" Description="Состояние Воздушно-отопительный агрегат А11" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR12_4200" Description="Состояние Воздушно-отопительный агрегат А12" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR17_4200" Description="Состояние Воздушно-отопительный агрегат А17" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR14_4200" Description="Состояние Воздушно-отопительный агрегат А14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR15_4200" Description="Состояние Щит управления. Вытяжная вентиляция В19" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR16_4200" Description="Состояние Воздушно-отопительный агрегат А16" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR21_4200" Description="Состояние Воздушно-отопительный агрегат А21" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR18_4200" Description="Состояние Воздушно-отопительный агрегат А18" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR19_4200" Description="Состояние Воздушно-отопительный агрегат А19" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR20_4200" Description="Состояние Воздушно-отопительный агрегат А20" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR09_4200" Description="Состояние Воздушно-отопительный агрегат А9" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR22_4200" Description="Состояние Воздушно-отопительный агрегат А22" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLA23_4200" Description="Состояние Воздушно-отопительный агрегат А23" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI03.VPLR08_4200" Description="Состояние Воздушно-отопительный агрегат А8" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA24_4200" Description="Состояние Воздушно-отопительный агрегат А8" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA25_4200" Description="Состояние Воздушно-отопительный агрегат А9" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA26_4200" Description="Состояние Воздушно-отопительный агрегат А10" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA27_4200" Description="Состояние Воздушно-отопительный агрегат А11" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA28_4200" Description="Состояние Воздушно-отопительный агрегат А12" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA29_4200" Description="Состояние Воздушно-отопительный агрегат А13" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA30_4200" Description="Состояние Воздушно-отопительный агрегат А14" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA31_4200" Description="Состояние Воздушно-отопительный агрегат А15" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA32_4200" Description="Состояние Воздушно-отопительный агрегат А16" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA33_4200" Description="Состояние Воздушно-отопительный агрегат А17" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLA34_4200" Description="Состояние Воздушно-отопительный агрегат А18" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR24_4200" Description="Состояние Воздушно-отопительный агрегат А24" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR28_4200" Description="Состояние Воздушно-отопительный агрегат А28" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR25_4200" Description="Состояние Воздушно-отопительный агрегат А25" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR26_4200" Description="Состояние Воздушно-отопительный агрегат А26" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR27_4200" Description="Состояние Воздушно-отопительный агрегат А27" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR32_4200" Description="Состояние Воздушно-отопительный агрегат А32" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR29_4200" Description="Состояние Воздушно-отопительный агрегат А29" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR30_4200" Description="Состояние Воздушно-отопительный агрегат А30" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR31_4200" Description="Состояние Воздушно-отопительный агрегат А31" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR33_4200" Description="Состояние Воздушно-отопительный агрегат А33" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.VPLR34_4200" Description="Состояние Воздушно-отопительный агрегат А34" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_1_4200" Description="Шкаф SMC 306-07. Открыты двери шкафа (фронт, тыл)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_2_4200" Description="Шкаф SMC 306-07. Превышение температуры в шкафу" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_3_4200" Description="Шкаф SMC 306-07. Оба источника питания 24 В ПЛК в норме" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_4_4200" Description="Шкаф SMC 306-07. Оба источника питания 24 В полевых устройств в норме" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_5_4200" Description="Шкаф SMC 306-07. Наличие напряжения 24 В питания полевых устройств" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_6_4200" Description="Шкаф SMC 306-07. Наличие напряжения 230 В на вводе 1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_7_4200" Description="Шкаф SMC 306-07. Наличие напряжения 230 В на вводе 2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_8_4200" Description="Шкаф SMC 306-07. Неисправность коммутатора SW1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_10_4200" Description="Шкаф SMC 306-07. Оба канала блока резервирования питания VD1 в норме" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE02_DI04.SMC_306_07_9_4200" Description="Шкаф SMC 306-07. Неисправность коммутатора SW2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0101_4200" Description="Состояние УПП 4200-АT-0101 (Химобессоленная вода)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0102_4200" Description="Состояние УПП 4200-АT-0102 (Пит.вода за деаэратором)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0103_4200" Description="Состояние УПП 4200-АT-0103 (Пит.вода перед котлами)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0104_4200" Description="Состояние УПП 4200-АT-0104 (Пит.вода к потребителю)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0105_4200" Description="Состояние УПП 4200-АT-0105 (Пит.вода к потребителю)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0106_4200" Description="Состояние УПП 4200-АT-0106 (ПСВД)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0107_4200" Description="Состояние УПП 4200-АT-0107 (прямая СВ водогр.котлов)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0108_4200" Description="Состояние УПП 4200-АT-0108 (обратная СВ водогр.котлов)." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0109_4200" Description="Состояние УПП 4200-АT-0109 (прямая СВ теплофикации)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.ASA0110_4200" Description="Состояние УПП 4200-АT-0110 (обратная СВ теплофикации)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.GSA0001_4200" Description="Сигнализация. &quot;Пожар&quot; в котельной" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLAa001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLAb001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLPa001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLPb001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLR001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLUa001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLUb001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLUc001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLW001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLAa001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLAb001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLPa001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLPb001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLR001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLUa001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLUb001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLUc001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI05.PLW001_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_1_4200" Description="Шкаф SMC 306-08. Открыты двери шкафа (фронт, тыл)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_2_4200" Description="Шкаф SMC 306-08. Превышение температуры в шкафу" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_3_4200" Description="Шкаф SMC 306-08. Наличие напряжения 230 В на вводе 1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_4_4200" Description="Шкаф SMC 306-08. Наличие напряжения 230 В на вводе 2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_5_4200" Description="Шкаф SMC 306-08. Наличие напряжения 24 В питания полевых устройств" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLR001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUa001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUb001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUc001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLW001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLAa001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLPb001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLPa001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLAb001_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLAa002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLAb002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLPa002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLPb002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUa002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUb002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUc002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLR002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLW002_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLAa002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLAb002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLPa002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLPb002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUa002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUb002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLUc002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLW002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI06.PLR002_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.NC_306_01_1_4200" Description="Шкаф NC-306-01. Открыты двери шкафа (фронт, тыл)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.NC_306_01_2_4200" Description="Шкаф NC-306-01. Превышение температуры в шкафу" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PDC_306_01_1_4200" Description="Шкаф ШРП PDC-306-01. Наличие напряжения на вводе №1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PDC_306_01_2_4200" Description="Шкаф ШРП PDC-306-01. Наличие напряжения на вводе №2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PDC_306_01_3_4200" Description="Шкаф ШРП PDC-306-01. Наличие напряжения на вводе №3" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.SC_306_01_1_4200" Description="Шкаф SC-306-01. Открыты двери шкафа (фронт, тыл)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.SC_306_01_2_4200" Description="Шкаф SC-306-01. Превышение температуры в шкафу" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.SC_306_01_3_4200" Description="Шкаф SC-306-01. Авария сервера точного времени" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.SC_306_01_4_4200" Description="Шкаф SC-306-01. Сервер точного времени - импульс в секунду 1PPS" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.SC_306_01_5_4200" Description="Шкаф SC-306-01. Сервер точного времени - импульс в минуту 1PPM" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.WIM_0001_4200" Description="Анализтор Воббе - калибровка" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.WIM_0002_4200" Description="Анализтор Воббе - авария" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLAa002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLAb002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLPa002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLPb002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLUa002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLUb002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLUc002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLW002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE05_DI07.PLR002_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.SMC_306_09_1_4200" Description="Шкаф SMC 306-09. Открыты двери шкафа (фронт, тыл)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.SMC_306_09_2_4200" Description="Шкаф SMC 306-09. Превышение температуры в шкафу" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.SMC_306_09_3_4200" Description="Шкаф SMC 306-09. Наличие напряжения 230 В на вводе 1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.SMC_306_09_4_4200" Description="Шкаф SMC 306-09. Наличие напряжения 230 В на вводе 2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.SMC_306_09_5_4200" Description="Шкаф SMC 306-09. Наличие напряжения 24 В питания полевых устройств" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLW003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. МЕСТНОЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLA003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. АВАРИЯ ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLRc003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ДИСТАНЦИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLRb003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ПО МЕСТУ " />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLUc003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ВХ. ВЫКЛЮЧАТЕЛЬ ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLUb003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ОТКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLRa003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLP003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ГОТОВ. ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLUa003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLA003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. АВАРИЯ ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLP003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ГОТОВ. ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLRa003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLRb003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ПО МЕСТУ " />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLRc003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ДИСТАНЦИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLUa003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLUb003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ОТКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLUc003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ВХ. ВЫКЛЮЧАТЕЛЬ ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI10.PLW003_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. МЕСТНОЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE09_DI21.SMC_306_10_3_4200" Description="Шкаф SMC 306-10. Наличие напряжения 230 В на вводе 1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE09_DI21.SMC_306_10_4_4200" Description="Шкаф SMC 306-10. Наличие напряжения 230 В на вводе 2" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE09_DI22.SMC_306_10_5_4200" Description="Шкаф SMC 306-10. Наличие напряжения 24 В питания полевых устройств" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE09_DI23.SMC_306_10_1_4200" Description="Шкаф SMC 306-10. Открыты двери шкафа (фронт, тыл)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE09_DI23.SMC_306_10_2_4200" Description="Шкаф SMC 306-10. Превышение температуры в шкафу" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLA003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. АВАРИЯ ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLP003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ГОТОВ. ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLRa003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLRb003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ПО МЕСТУ " />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLRc003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ДИСТАНЦИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUa003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUb003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ОТКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUc003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ВХ. ВЫКЛЮЧАТЕЛЬ ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLW003_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. МЕСТНОЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLA004_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. АВАРИЯ ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLP004_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ГОТОВ. ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLRa004_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLRb004_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ПО МЕСТУ " />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUa004_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUb004_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ОТКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUc004_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ВХ. ВЫКЛЮЧАТЕЛЬ ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLA004_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. АВАРИЯ ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLP004_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ГОТОВ. ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLRa004_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLRb004_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ПО МЕСТУ " />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUa004_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUb004_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ОТКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI11.PLUc004_2_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ВХ. ВЫКЛЮЧАТЕЛЬ ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLA004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. АВАРИЯ ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLP004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ГОТОВ. ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLRa004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLRb004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ПО МЕСТУ " />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLRc004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ПУСК ПЧ ДИСТАНЦИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUa004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUb004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. БАЙПАС ОТКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUc004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. ВХ. ВЫКЛЮЧАТЕЛЬ ВКЛЮЧЕН" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLW004_3_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1. МЕСТНОЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLAa005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLAb005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLPa005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLPb005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUa005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUb005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUc005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLW005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLR005_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLAa005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLAb005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLPa005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLPb005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUa005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUb005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLUc005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLW005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE07_DI12.PLR005_2_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLAa005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. АВАРИЯ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLAb005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. НЕИСПРАВНОСТЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLPa005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В РЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLPb005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ГОТОВ ПЧ В НЕРЕГ. РЕЖИМЕ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUa005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUb005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ОТКЛЮЧЕН ВЫКЛЮЧАТЕЛЬ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUc005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. ПЕРЕГРЕВ ТРАНСФОРМАТОРА" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLW005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. МЕСТНОЕ(0) ДИСТАНЦИЯ(1)" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLR005_3_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1. РАБОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUa006_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUb006_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUa006_2_4201" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUb006_2_4201" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUa007_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUb007_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUa007_2_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI13.PLUb007_2_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUa008_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUb008_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUa008_2_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUb008_2_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUa009_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUb009_1_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUa009_2_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.02_DI.CRATE08_DI14.PLUb009_2_4200" Description="Состояние Насос дренажного бака. U.УПР." />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200" Description="СО в районе газохода уходящих газов котла 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI1001_4200" Description="СО в районе газохода уходящих газов котла 4200-В-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI3001_4200" Description="СО в районе газохода уходящих газов котла 4200-В-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI4001_4200" Description="СО в районе газохода уходящих газов котла 4200-В-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI5001_4200" Description="СО в районе газохода уходящих газов котла 4200-В-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI6001_4200" Description="СО в районе газохода уходящих газов котла 4200-В-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI1001_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №1 котла 4200-В-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI1002_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №2 котла 4200-В-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI1003_4200" Description="CH4 и Н2 в районе отключающей арматуры на подводе газа к котлу 4200-В-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI1004_4200" Description="C2H6 в районе отключающей арматуры на подводе газа к котлу 4200-В-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI1005_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №1 котла 4200-В-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI1006_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №2 котла 4200-В-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI1007_4200" Description="C3H8 в районе установки газовой рампы запальников" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI2001_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №1 котла 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI2002_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №2 котла 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI2003_4200" Description="CH4 и Н2 в районе отключающей арматуры на подводе газа к котлу 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI2004_4200" Description="C2H6 в районе отключающей арматуры на подводе газа к котлу 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI2005_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №1 котла 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI2006_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №2 котла 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI3001_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №1 котла 4300-В-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI3002_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №2 котла 4300-В-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI3003_4200" Description="CH4 и Н2 в районе отключающей арматуры на подводе газа к котлу 4300-В-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI3004_4200" Description="C2H6 в районе отключающей арматуры на подводе газа к котлу 4300-В-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI3005_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №1 котла 4300-В-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI3006_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №2 котла 4300-В-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI4001_4200" Description="CH4 и Н2 в районе отключающей арматуры на подводе газа к котлу 4200-В-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI4002_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке котла 4200-В-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI4003_4200" Description="C2H6 в районе отключающей арматуры на подводе газа к котлу 4200-В-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI4004_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке котла 4200-В-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI4005_4200" Description="C3H8 в районе установки газовой рампы запальников" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI5001_4200" Description="CH4 и Н2 в районе отключающей арматуры на подводе газа к котлу 4200-В-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI5002_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке котла 4200-В-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.GDI5003_4200" Description="C2H6 в районе отключающей арматуры на подводе газа к котлу 4200-В-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.GDI5004_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке котла 4200-В-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.GDI6001_4200" Description="CH4 и Н2 в районе отключающей арматуры на подводе газа к котлу 4200-В-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.GDI6002_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке котла 4200-В-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.GDI6003_4200" Description="C2H6 в районе отключающей арматуры на подводе газа к котлу 4200-В-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.GDI6004_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке котла 4200-В-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.PI0004_4200" Description="Давление. Пар высокого давления к/от потребителя пара" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.PI0006_4200" Description="Давление. Пар высокого давления к РОУ 4200-ROU-001А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.PI0041_4200" Description="Давление. Питательная вода перед насосом питательным ПЭН СВД 4200-Р-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.PI0042_4200" Description="Давление. Питательная вода после насоса питательного ПЭН СВД 4200-Р-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.PI0046_4200" Description="Давление. Питательная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.PI0070_4200" Description="Давление. Питательная вода на подпитку контура" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI02.PI0087_4200" Description="Давление. Конденсат в деаэраторы" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0001_4200" Description="Химобессоленная вода. Кондуктометр/солемер" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0002_4200" Description="Химобессоленная вода. Анализатор натрия" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0003_4200" Description="Питательная вода за деаэраторами. Анализатор растворенного кислорода" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0004_4200" Description="Питательная вода перед котлами. Кондуктометр/солемер" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0005_4200" Description="Питательная вода перед котлами. Кондуктометр/солемер" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0006_4200" Description="Питательная вода перед котлами. Анализатор натрия" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0007_4200" Description="Питательная вода перед котлами. pH-метр" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0008_4200" Description="Питательная вода к потребителю. Кондуктометр/солемер" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0009_4200" Description="Питательная вода к потребителю. Кондуктометр/солемер" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0010_4200" Description="Питательная вода к потребителю. Анализатор натрия" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0011_4200" Description="Питательная вода к потребителю. pH-метр" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.AI0013_4200" Description="Конденсат ПСВ. Кондуктометр/солемер" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.FQI0002_4200" Description="Расход. Пар после РОУ 4200-ROU-001А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.PI02101_4200" Description="Давление газа" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI03.TI02100_4200" Description="Температура газа" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0014_4200" Description="Конденсат ПСВД. Кондуктометр/солемер" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0015_4200" Description="Прямая сетевая вода водогрейных котлов. pH-метр" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0016_4200" Description="Прямая сетевая вода водогрейных котлов. Анализатор растворенного кислорода" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0017_4200" Description="Обратная сетевая вода водогрейных котлов. pH-метр" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0018_4200" Description="Обратная сетевая вода водогрейных котлов. Анализатор растворенного кислорода" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0019_4200" Description="Прямая сетевая вода контура теплофикации. pH-метр" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0020_4200" Description="Прямая сетевая вода контура теплофикации. Анализатор растворенного кислорода" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0021_4200" Description="Обратная сетевая вода контура теплофикации. pH-метр " />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.AI0022_4200" Description="Обратная сетевая вода контура теплофикации. Анализатор растворенного кислорода" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.TI0001_4200" Description="Температура. Коллектор пара высокого давления после котлов" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.TI0005_4200" Description="Температура. Пар высокого давления к РОУ 4200-ROU-001A/B" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.TI0009_4200" Description="Температура. Паропровод после РОУ 4200-ROU-001A" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.TI0011_4200" Description="Температура. Паропровод после РОУ 4200-ROU-001B" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI04.TI0018_4200" Description="Температура. Питательная вода после деаэратора 4200-Т-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0052_4200" Description="Температура. Конденсат после ПСВД 4200-E-007А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.FI0011_4200" Description="Расход. Рециркуляция подпитки контура сетевой воды" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.FI0015_4200" Description="Расход. Конденсат после охладителей конденсата ПСВ 4200-Е-006А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.FQI0001_4200" Description="Расход. Пар высокого давления к/от потребителя пара" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.FQI0009_4200" Description="Расход. Питательная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.LI0006_4200" Description="Уровень. ПСВД 4200-Е-007A" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.LI0007_4200" Description="Уровень. ПСВД 4200-Е-007В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.PI0082_4200" Description="Давление. Конденсат после охладителей конденсата ПСВ 4200-Е-006А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0003_4200" Description="Температура. Пар высокого давления к/от потребителя пара" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0019_4200" Description="Температура. Питательная вода после деаэратора 4200-Т-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0026_4200" Description="Температура. Питательная вода после ПСВД 4200-E-007А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0027_4200" Description="Температура. Питательная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0044_4200" Description="Температура. Конденсат после ПСВ 4200-E-003А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0047_4200" Description="Температура. Конденсат после охладителей ПСВ 4200-E-006А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI05.TI0055_4200" Description="Температура. Конденсат после охладителей конденсата ПСВД 4200-E-005А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.FI0005_4200" Description="Расход. Напор питательного насоса ПЭН СВД 4200-Р-001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.FI0016_4200" Description="Расход. Конденсат после охладителей конденсата ПСВД 4200-Е-005А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.FQI0014_4200" Description="Расход. ХОВ после ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.LI0203A_4200" Description="Уровень в подогревателе сетевой воды 4200-Е-003А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.LI0203B_4200" Description="Уровень в подогревателе сетевой воды 4200-Е-003B" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.PI0001_4200" Description="Давление. Выхлопной пар котлов 4200-В-001/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.PI0013_4200" Description="Давление. Пар низкого давления к подогревателю 4200-Е-003А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.PI0015_4200" Description="Давление. Пар низкого давления к подогревателю 4200-Е-003В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.PI0101_4200" Description="Давление. ХОВ после ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.PI0103_4200" Description="Давление. ХОВ в деаэратор" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.PI0147_4200" Description="Давление. Сетевая вода после подогревателей 4200-Е-003А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.TI0065_4200" Description="Температура. ХОВ после ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.TI0071_4200" Description="Температура. ХОВ после подогревателей 4200-E-001А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.TI0080_4200" Description="Температура. ХОВ в деаэраторы" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI06.TI0109_4200" Description="Температура. Сетевая вода после ПСВ 4200-E-003А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE02_AI07.AIWB0001_4200" Description="Индекс Воббе от анализатора" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE02_AI07.AIWB0002_4200" Description="Плотность газа от анализатора" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE02_AI07.AIWB0003_4200" Description="Теплотворная способность газа от анализатора" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE02_AI07.PI0002_4200" Description="Давление. Пар высокого давления от котлов 4200-В-001/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE02_AI07.PI0009_4200" Description="Давление. Пар после РОУ 4200-ROU-001А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE02_AI07.PI0011_4200" Description="Давление. Пар после РОУ 4200-ROU-001В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE02_AI07.PI0065_4200" Description="Давление. Питательная вода после ПЭН ВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.FQI0029_4200" Description="Расход. ОЖ-65 от/на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.LI0010_4200" Description="Уровень. Сборный бак ОЖ-65. 4200-D-003" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.LI0011_4200" Description="Уровень. Емкость дренажная ОЖ-65" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.LZLM0001_4200" Description="Клапан регулирующий на трубопроводе ХОВ из здания ВПУ (LV0001)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.LZLM0006_4200" Description="Клапан регулирующий на конденсате из ПСВД поз. 4200-E-007A (LV0006)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.LZLM0007_4200" Description="Клапан регулирующий на конденсате из ПСВД поз. 4200-E-007B (LV0007)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.LZLM0203_4200" Description="Клапан регулирующий на конденсатопроводе после охладителей конденсата ПСВ поз. 4200-Е-006А/B (LV0203)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PI0191_4200" Description="Давление. Сборный бак ОЖ-65 4200-D-003" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PI0202_4200" Description="Давление. ОЖ-65 после дренажной емкости с насосами" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PZLM0004A_4200" Description="Клапан регулирующий № 1 в коллекторе пара от котлов поз. 4200-В-001/1,2,3 (PV0004A). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PZLM0004B_4200" Description="Клапан регулирующий № 2 в коллекторе пара от котлов поз. 4200-В-001/1,2,3 (PV0004B). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PZLM0009_4200" Description="Клапан регулирующий пара РОУ поз. 4200-ROU-001A (PV0009). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PZLM0011_4200" Description="Клапан регулирующий пара РОУ поз. 4200-ROU-001B (PV0011). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PZLM0070_4200" Description="Клапан регулирующий на подпитке контура сетевой воды (PV0070). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.PZLM0071A_4200" Description="Клапан регулирующий № 2 на питательной воде после ПЭН ВД поз. 4200-P-002/1...3 на ОЗХ (PV0071A). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI08.TI0089_4200" Description="Температура. Сетевая вода на подогреватели ХОВ 4200-E-001А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.PZLM0001_4200" Description="Клапан регулирующий на выхлопном паропроводе котлов (PV0001). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.PZLM0023_4200" Description="Клапан регулирующий на подводе пара к деаэратору поз. 4200-Т-001/1 (PV0023). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.PZLM0024_4200" Description="Клапан регулирующий на подводе пара к деаэратору поз. 4200-Т-001/2 (PV0024). ПОЛОЖЕНИЕ РКПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.PZLM0071B_4200" Description="Клапан регулирующий № 1 на питательной воде после ПЭН ВД поз. 4200-P-002/1...3 на ОЗХ (PV0071B). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0009_4200" Description="Клапан регулирующий на питательной воде на впрыск в РОУ поз. 4200-ROU-001A (TV0009). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0011_4200" Description="Клапан регулирующий на питательной воде на впрыск в РОУ поз. 4200-ROU-001B (TV0011). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0018_4200" Description="Клапан регулирующий на паре на барботаж к деаэратору поз. 4200-Т-001/1 (TV0018). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0019_4200" Description="Клапан регулирующий на паре на барботаж к деаэратору поз. 4200-Т-001/2 (TV0019). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0026A_4200" Description="Клапан регулирующий пара на подводе к ПСВД поз. 4200-E-007A (TV0026A). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0026B_4200" Description="Клапан регулирующий пара на подводе к ПСВД поз. 4200-E-007B (TV0026B). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0047_4200" Description="Клапан регулирующий на трубопроводе ХОВ после охладителей конденсата ПСВД поз. 4200-Е-006А/B (TV0047). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0055_4200" Description="Клапан регулирующий на трубопроводе ХОВ после охладителей конденсата ПСВД поз. 4200-Е-005А/B (TV0055). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0109A_4200" Description="Клапан регулирующий на паропроводе к подогревателю сетевой воды поз. 4200-Е-003А (TV0109A). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI09.TZLM0109B_4200" Description="Клапан регулирующий на паропроводе к подогревателю сетевой воды поз. 4200-Е-003B (TV0109B). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMa001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1 (P001_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMa001_2_4200" Description="ПЭН №2 сверхвысокого давления c ЧРЭП поз. 4200-P-001/2 (P001_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMa001_3_4200" Description="ПЭН №3 сверхвысокого давления c ЧРЭП поз. 4200-P-001/3 (P001_3). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMa002_1_4200" Description="ПЭН №1 высокого давления c ЧРЭП поз. 4200-P-002/1 (P002_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMa002_2_4200" Description="ПЭН №2 высокого давления c ЧРЭП поз. 4200-P-002/2 (P002_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMa002_3_4200" Description="ПЭН №3 высокого давления c ЧРЭП поз. 4200-P-002/3 (P002_3). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMb001_1_4200" Description="ПЭН №1 сверхвысокого давления c ЧРЭП поз. 4200-P-001/1 (P001_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMb001_2_4200" Description="ПЭН №2 сверхвысокого давления c ЧРЭП поз. 4200-P-001/2 (P001_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMb001_3_4200" Description="ПЭН №3 сверхвысокого давления c ЧРЭП поз. 4200-P-001/3 (P001_3). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMb002_1_4200" Description="ПЭН №1 высокого давления c ЧРЭП поз. 4200-P-002/1 (P002_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMb002_2_4200" Description="ПЭН №2 высокого давления c ЧРЭП поз. 4200-P-002/2 (P002_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI10.PLMb002_3_4200" Description="ПЭН №3 высокого давления c ЧРЭП поз. 4200-P-002/3 (P002_3). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.PI0176_4200" Description="Давление. Коллектор всаса насосов Р-005/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.PI0189_4200" Description="Давление. Напорный коллектор насосов Р-005/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0087_4200" Description="Температура. Сетевая вода перед водогрейными котлами 4200-В-002/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0094_4200" Description="Температура. Сетевая вода на подогреватели 4200-E-002/1,2,3, 4200-E-004А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0114_4200" Description="Температура. Теплофикационная вода ОТ ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0115_4200" Description="Температура. Теплофикационная вода ИЗ ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0116_4200" Description="Температура. Теплофикационная вода в подогреватель 4200-E-004А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0117_4200" Description="Температура. Теплофикационная вода в подогреватель 4200-E-004В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0120_4200" Description="Температура. Теплофикационная вода после подогревателей 4200-E-004А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0121_4200" Description="Температура. Теплофикационная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0122_4200" Description="Температура. Теплофикационная вода на ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0128_4200" Description="Температура. Напорный коллектор насосов Р-005/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0135_4200" Description="Температура. Прямая промтеплофикационная вода(ОЖ-65)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0136_4200" Description="Температура. Этиленгликоль (ОЖ-65) на ППГ №1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0137_4200" Description="Температура. Этиленгликоль (ОЖ-65) после ППГ №1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI11.TI0144_4200" Description="Температура. Дренажи в продувочной приямок после водогрейных котлов" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.LI0001A_4200" Description="Уровень. Деаэратор 4200-Т-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.LI0001B_4200" Description="Уровень. Деаэратор 4200-Т-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.LI0002A_4200" Description="Уровень. Деаэратор 4200-Т-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.LI0002B_4200" Description="Уровень. Деаэратор 4200-Т-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.LI0003A_4200" Description="Уровень. Деаэратор 4200-Т-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.LI0003B_4200" Description="Уровень. Деаэратор 4200-Т-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.LI0012_4200" Description="Уровень. Бак дренажный 4200-D-005" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.PI0023_4200" Description="Давление. Деаэратор 4200-Т-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.PI0024_4200" Description="Давление. Деаэратор 4200-Т-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.PI0111_4200" Description="Давление. Напор насоса сетевой воды 4200-Р-003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.PI0115_4200" Description="Давление. Напор насоса сетевой воды 4200-Р-003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.PT0093_4200" Description="Давление. Напор насоса 4200-Р-006А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.PT0095_4200" Description="Давление. Напор насоса 4200-Р-006В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.TI0142_4200" Description="Температура. Дренажи после расширителя дренажа 4200-D-004" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI12.TI0143_4200" Description="Температура. Дренажи после расширителя периодической продувки 4200-D-002" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.FQI0010_4200" Description="Расход. Питательная вода на подпитку контуров сетевой воды" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0130_4200" Description="Давление. Напор насоса контура ОиВ 4200-Р-009А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0134_4200" Description="Давление. Напор насоса контура ОиВ 4200-Р-009В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0135_4200" Description="Давление. Сетевая вода после регулятора4200-PV-0135" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0152_4200" Description="Давление. Теплофикационная вода от ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0153_4200" Description="Давление. Теплофикационная вода из ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0154_4200" Description="Давление. Коллектор всаса насосов теплофикационной воды 4200-Р-004/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0158_4200" Description="Давление. Напор насоса теплофикационной воды 4200-Р-004/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0162_4200" Description="Давление. Напор насоса теплофикационной воды 4200-Р-004/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0166_4200" Description="Давление. Напор насоса теплофикационной воды 4200-Р-004/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0167_4200" Description="Давление. Теплофикационная вода перед подогревателем 4200-Е-004А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0168_4200" Description="Давление. Теплофикационная вода перед подогревателем 4200-Е-004В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0169_4200" Description="Давление. Теплофикационная вода от подогревателей теплофикационной воды 4200-Е-004А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0170_4200" Description="Давление. Теплофикационная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI13.PI0171_4200" Description="Давление. Теплофикационная вода на ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FI0003_4200" Description="Расход. Напор питательного насоса ПЭН СВД 4200-Р-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FI0004_4200" Description="Расход. Напор питательного насоса ПЭН СВД 4200-Р-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FI0030_4200" Description="Расход. Промтеплофикационная вода в сборный бак (ОЖ-65) 4200-D-003" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FI0031_4200" Description="Расход. Промтеплофикационная вода из сборного бака (ОЖ-65) 4200-D-004" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FQI0022_4200" Description="Расход. Промтеплофикационная вода (ОЖ-65) на ППГ №1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FQI0023_4200" Description="Расход. Промтеплофикационная вода (ОЖ-65) после ППГ №1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FQI0027_4200" Description="Расход. Обратная промтеплофикационная вода (ОЖ-65)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.FQI0028_4200" Description="Расход. Прямая промтеплофикационная вода (ОЖ-65)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.PI0175_4200" Description="Давление. Обратная промтеплофикационная вода (ОЖ-65)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.PI0180_4200" Description="Давление. Напор насоса промтеплофикационной воды 4200-Р-005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.PI0184_4200" Description="Давление. Напор насоса промтеплофикационной воды 4200-Р-005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.PI0188_4200" Description="Давление. Напор насоса промтеплофикационной воды 4200-Р-005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.PI0190_4200" Description="Давление. ОЖ-65 прямая" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.PI0195_4200" Description="Давление. Напор насоса подпитки контура ОЖ-65 4200-Р-008/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.PI0199_4200" Description="Давление. Напор насоса подпитки контура ОЖ-65 4200-Р-008/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE03_AI14.TI0127_4200" Description="Температура. Обратная промтеплофикационная вода(ОЖ-65)" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FI0006_4200" Description="Расход. Напор питательного насоса ПЭН ВД 4200-Р-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FI0007_4200" Description="Расход. Напор питательного насоса ПЭН ВД 4200-Р-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FI0008_4200" Description="Расход. Напор питательного насоса ПЭН ВД 4200-Р-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FQI0012_4200" Description="Расход. Питательная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FQI0013_4200" Description="Расход. Питательная вода на подпитку контуров сетевой воды" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FQI0020_4200" Description="Расход. Теплофикационная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FQI0021_4200" Description="Расход. Теплофикационная вода от ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FQI0024_4200" Description="Расход. Теплофикационная вода на ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.FQI0026_4200" Description="Расход. Теплофикационная вода из ВПУ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.PI0119_4200" Description="Давление. Напор насоса сетевой воды 4200-Р-003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.TI0033_4200" Description="Температура. Питательная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.TI0198_4200" Description="Температура. Статор насоса ПЭН ВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.TI0199_4200" Description="Температура. Статор насоса ПЭН ВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.TI0272_4200" Description="Температура. Статор насоса ПЭН ВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.TI0273_4200" Description="Температура. Неприводной подшипник двигателя насоса ПЭН ВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI15.TI0274_4200" Description="Температура. Приводной подшипник двигателя насоса ПЭН ВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0160_4200" Description="Температура. Подшипник насоса ПЭН СВД  поз. 4200-P001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0161_4200" Description="Температура. Подшипник двигателя насоса ПЭН СВД  поз. 4200-P001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0162_4200" Description="Температура. Подшипник двигателя насоса ПЭН СВД  поз. 4200-P001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0163_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0164_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0165_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0166_4200" Description="Температура. Подшипник насоса ПЭН СВД  поз. 4200-P001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0167_4200" Description="Температура. Подшипник двигателя насоса ПЭН СВД  поз. 4200-P001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0168_4200" Description="Температура. Подшипник двигателя насоса ПЭН СВД  поз. 4200-P001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0169_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0170_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.TI0171_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.VI0001_4200" Description="Вибрация. Насос ПЭН СВД  поз. 4200-P001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.VI0002_4200" Description="Вибрация. Насос ПЭН СВД  поз. 4200-P001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI16.VI0006_4200" Description="Вибрация. Насос ПЭН СВД  поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0172_4200" Description="Температура. Подшипник насоса ПЭН СВД  поз. 4200-P001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0173_4200" Description="Температура. Подшипник двигателя насоса ПЭН СВД  поз. 4200-P001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0174_4200" Description="Температура. Подшипник двигателя насоса ПЭН СВД  поз. 4200-P001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0175_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0176_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0177_4200" Description="Температура. Статор насоса ПЭН СВД  поз. 4200-P001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0180_4200" Description="Температура. Подшипник насоса ПЭН ВД  поз. 4200-P002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0181_4200" Description="Температура. Подшипник двигателя насоса ПЭН ВД  поз. 4200-P002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0182_4200" Description="Температура. Подшипник двигателя насоса ПЭН ВД  поз. 4200-P002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0183_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0184_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0185_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.VI0003_4200" Description="Вибрация. Насос ПЭН СВД  поз. 4200-P001/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI17.TI0178_4200" Description="Температура. Обмотки электродвигателя насоса ПЭН СВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0186_4200" Description="Температура. Подшипник насоса ПЭН ВД  поз. 4200-P002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0187_4200" Description="Температура. Подшипник двигателя насоса ПЭН ВД  поз. 4200-P002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0188_4200" Description="Температура. Подшипник двигателя насоса ПЭН ВД  поз. 4200-P002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0189_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0190_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0191_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0192_4200" Description="Температура. Подшипник насоса ПЭН ВД  поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0193_4200" Description="Температура. Подшипник двигателя насоса ПЭН ВД  поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0194_4200" Description="Температура. Подшипник двигателя насоса ПЭН ВД  поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0195_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0196_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.TI0197_4200" Description="Температура. Статор насоса ПЭН ВД поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.VI0004_4200" Description="Вибрация. Насос ПЭН СВД  поз. 4200-P002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE04_AI18.VI0005_4201" Description="Вибрация. Насос ПЭН СВД  поз. 4200-P002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0017_4200" Description="Давление. Пар низкого давления к ПСВД 4200-Е-007А" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0019_4200" Description="Давление. Пар низкого давления к ПСВД 4200-Е-007В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0031_4200" Description="Давление. Питательная вода перед насосом питательным ПЭН СВД 4200-Р-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0032_4200" Description="Давление. Питательная вода после насоса питательного ПЭН СВД 4200-Р-001/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0036_4200" Description="Давление. Питательная вода перед насосом питательным ПЭН СВД 4200-Р-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0037_4200" Description="Давление. Питательная вода после насоса питательного ПЭН СВД 4200-Р-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0044_4200" Description="Давление. Питательная вода к деаэраторам" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0045_4200" Description="Давление. Коллектор питательной воды после насосов ПЭН СВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0050_4200" Description="Давление. Питательная вода перед насосом питательным ПЭН ВД 4200-Р-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0051_4200" Description="Давление. Питательная вода после насоса питательного ПЭН ВД 4200-Р-002/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0060_4200" Description="Давление. Питательная вода перед насосом питательным ПЭН ВД 4200-Р-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0061_4200" Description="Давление. Питательная вода после насоса питательного ПЭН ВД 4200-Р-002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0063_4200" Description="Давление. Питательная вода к деаэраторам" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0064_4200" Description="Давление. Коллектор питательной воды после насосов ПЭН ВД" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0071_4200" Description="Давление. Питательная вода на ОЗХ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.PI0122_4200" Description="Давление. Сетевая вода на подогреватели ХОВ 4200-Е-001А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.TI0275_4200" Description="Температура. Приводной подшипник насоса ПЭН ВД поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI20.TI0276_4200" Description="Температура. Приводной подшипник насоса ПЭН ВД поз. 4200-P002/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.PI0055_4200" Description="Давление. Питательная вода перед насосом питательным ПЭН ВД 4200-Р-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.PI0056_4200" Description="Давление. Питательная вода после насоса питательного ПЭН ВД 4200-Р-002/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.PI0107_4200" Description="Давление. Всас насосов 4200-Р-003/1,2,3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.PI0120_4200" Description="Давление. Напорный коллектор насосов сетевой воды 4200-Р-003/1,2,3, " />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.PI0136_4200" Description="Давление. Сетевая вода на подогреватели 4200-Е-002/1,2,3 4200-Е-004А/В" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.PI0200_4200" Description="Давление. ОЖ-65 на ППГ №1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.PI0201_4200" Description="Давление. ОЖ-65 из ППГ №1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.TI0215_4200" Description="Температура. Подшипник. Сетевой насос  поз. 4200-P003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.TI0216_4200" Description="Температура. Подшипник. Сетевой насос  поз. 4200-P003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.TI0217_4200" Description="Температура. Подшипник двигателя. Сетевой насос  поз. 4200-P003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.TI0218_4200" Description="Температура. Подшипник двигателя. Сетевой насос  поз. 4200-P003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.TI0219_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.TI0220_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI21.TI0221_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0200_4200" Description="Температура. Подшипник двигателя. Насос теплофикационной воды поз. 4200-P004/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0201_4200" Description="Температура. Подшипник двигателя. Насос теплофикационной воды поз. 4200-P004/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0225_4200" Description="Температура. Подшипник. Сетевой насос  поз. 4200-P003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0226_4200" Description="Температура. Подшипник. Сетевой насос  поз. 4200-P003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0227_4200" Description="Температура. Подшипник двигателя. Сетевой насос  поз. 4200-P003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0228_4200" Description="Температура. Подшипник двигателя. Сетевой насос  поз. 4200-P003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0229_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0230_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0231_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0235_4200" Description="Температура. Подшипник. Сетевой насос  поз. 4200-P003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0236_4200" Description="Температура. Подшипник. Сетевой насос  поз. 4200-P003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0237_4200" Description="Температура. Подшипник двигателя. Сетевой насос  поз. 4200-P003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0238_4200" Description="Температура. Подшипник двигателя. Сетевой насос  поз. 4200-P003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0239_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0240_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI22.TI0241_4200" Description="Температура. Статор. Сетевой насос поз. 4200-P003/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0202_4200" Description="Температура. Подшипник двигателя. Насос теплофикационной воды поз. 4200-P004/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0203_4200" Description="Температура. Подшипник двигателя. Насос теплофикационной воды поз. 4200-P004/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0204_4200" Description="Температура. Подшипник двигателя. Насос теплофикационной воды поз. 4200-P004/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0205_4200" Description="Температура. Подшипник двигателя. Насос теплофикационной воды поз. 4200-P004/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0212_4200" Description="Температура. Подшипник двигателя. Насос (поз. 4200-P006/2) дренажного бака 4200-D-005" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0213_4200" Description="Температура. Подшипник двигателя. Насос (поз. 4200-P006/2) дренажного бака 4200-D-005" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0245_4200" Description="Температура. Подшипник. Насос промтеплофикационной воды поз. 4200-P005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0246_4200" Description="Температура. Подшипник. Насос промтеплофикационной воды поз. 4200-P005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0247_4200" Description="Температура. Подшипник двигателя. Насос промтеплофикационной воды поз. 4200-P005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0248_4200" Description="Температура. Подшипник двигателя. Насос промтеплофикационной воды поз. 4200-P005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0249_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0250_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI23.TI0251_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/1" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0210_4200" Description="Температура. Подшипник двигателя. Насос (поз. 4200-P006/1) дренажного бака 4200-D-005" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0211_4200" Description="Температура. Подшипник двигателя. Насос (поз. 4200-P006/1) дренажного бака 4200-D-005" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0255_4200" Description="Температура. Подшипник. Насос промтеплофикационной воды поз. 4200-P005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0256_4200" Description="Температура. Подшипник. Насос промтеплофикационной воды поз. 4200-P005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0257_4200" Description="Температура. Подшипник двигателя. Насос промтеплофикационной воды поз. 4200-P005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0258_4200" Description="Температура. Подшипник двигателя. Насос промтеплофикационной воды поз. 4200-P005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0259_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0260_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0261_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0265_4200" Description="Температура. Подшипник. Насос промтеплофикационной воды поз. 4200-P005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0266_4200" Description="Температура. Подшипник. Насос промтеплофикационной воды поз. 4200-P005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0267_4200" Description="Температура. Подшипник двигателя. Насос промтеплофикационной воды поз. 4200-P005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0268_4200" Description="Температура. Подшипник двигателя. Насос промтеплофикационной воды поз. 4200-P005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0269_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0270_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI24.TI0271_4200" Description="Температура. Статор. Насос промтеплофикационной воды поз. 4200-P005/3" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1 (P003_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa003_2_4200" Description="Сетевой насос №2 c ЧРЭП поз. 4200-P-003/2 (P003_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa003_3_4200" Description="Сетевой насос №3 c ЧРЭП поз. 4200-P-003/3 (P003_3). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa004_1_4200" Description="Насос №1 теплофикационной воды c ЧРЭП (P004_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa004_2_4200" Description="Насос №2 теплофикационной воды c ЧРЭП (P004_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa004_3_4200" Description="Насос №3 теплофикационной воды c ЧРЭП (P004_3). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa005_1_4200" Description="Насос №1 промтеплофикационной воды c ЧРЭП (P005_1). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMa005_2_4200" Description="Насос №2 промтеплофикационной воды c ЧРЭП (P005_2). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb003_1_4200" Description="Сетевой насос №1 c ЧРЭП поз. 4200-P-003/1 (P003_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb003_2_4200" Description="Сетевой насос №2 c ЧРЭП поз. 4200-P-003/2 (P003_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb003_3_4200" Description="Сетевой насос №3 c ЧРЭП поз. 4200-P-003/3 (P003_3). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb004_1_4200" Description="Насос №1 теплофикационной воды c ЧРЭП (P004_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb004_2_4200" Description="Насос №2 теплофикационной воды c ЧРЭП (P004_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb004_3_4200" Description="Насос №3 теплофикационной воды c ЧРЭП (P004_3). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb005_1_4200" Description="Насос №1 промтеплофикационной воды c ЧРЭП (P005_1). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI25.PLMb005_2_4200" Description="Насос №2 промтеплофикационной воды c ЧРЭП (P005_2). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.PLMa005_3_4200" Description="Насос №3 промтеплофикационной воды c ЧРЭП (P005_3). ЧАСТОТА ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.PLMb005_3_4200" Description="Насос №3 промтеплофикационной воды c ЧРЭП (P005_3). ВЫХ. ТОК ПЧ" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.PZLM0107_4200" Description="Клапан регулирующий на подпитке контура сетевой воды (PV0107). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.PZLM0135_4200" Description="Клапан регулирующий в напорном коллекторе насосов контура О и В поз. 4200-Р-009A/В (PV0135). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.PZLM0154_4200" Description="Клапан регулирующий на питательной воде на подпитке контура (PV0154). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.PZLM0176_4200" Description="Клапан регулирующий на трубопроводе промтеплофикационной воды из бака ОЖ-65 поз. 4200-D-003 (PV0176). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.PZLM0191_4200" Description="Клапан регулирующий на трубопроводе подвода азота на азотную подушку сборного бака ОЖ-65 поз. 4200-D-003 (PV0191). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.TZLM0071_4200" Description="Клапан регулирующий на сетевой воде после подогревателей ХОВ поз. 4200-Е-001А/В (TV0071). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.TZLM0120_4200" Description="Клапан регулирующий на сетевой воде после подогревателей теплофикационной воды поз. 4200-Е-004А/B (TV0120). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.TZLM0135_4200" Description="Клапан регулирующий в коллекторе всаса насосов сетевого контура (TV0135). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.TZLM0142_4200" Description="Клапан регулирующий на подводе обессоленой воды на расхолаживание (TV0142). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE06_AI26.TZLM0143_4200" Description="Клапан регулирующий на подводе технической воды к продувочному приямку (паровой части) (TV0143). ПОЛОЖЕНИЕ РК" />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_001" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_002" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001B." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_003" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_004" Description="Задвижка на подводе питательной воды к ПСВД поз. 4200-ROU-001B" />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_005" Description="Задвижка на паропроводе к подогревателю сетевой воды поз. 4200-Е-003А." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_006" Description="Задвижка на паропроводе к подогревателю сетевой воды поз. 4200-Е-003B" />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_007" Description="Задвижка на подводе пара к ПСВД поз. 4200-E-007A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_008" Description="Задвижка на подводе пара к ПСВД поз. 4200-E-007B." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_009" Description="Задвижка на подводе пара к деаэратору поз. 4200-Т-001/1" />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_010" Description="Задвижка на подводе пара к деаэратору поз. 4200-Т-001/2." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_011" Description="Задвижка на напоре ПЭН СВД поз. 4200-P-001/1 в коллектор питательной воды на ОЗХ." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_012" Description="Задвижка на напоре ПЭН СВД поз. 4200-P-001/2 в коллектор питательной воды на ОЗХ." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_013" Description="Задвижка на напоре ПЭН СВД поз. 4200-P-001/3 в коллектор питательной воды на ОЗХ." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_014" Description="Задвижка на напоре ПЭН СВД поз. 4200-P-001/1 в коллектор питательной воды к деаэраторам." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_015" Description="Задвижка на напоре ПЭН СВД поз. 4200-P-001/2 в коллектор питательной воды к деаэраторам." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_016" Description="Задвижка на напоре ПЭН СВД поз. 4200-P-001/3 в коллектор питательной воды к деаэраторам." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_017" Description="Задвижка на питательной воде перед ПСВД поз. 4200-E-007A/В." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_018" Description="Задвижка на подводе питательной воды к ПСВД поз. 4200-E-007В." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_019" Description="Задвижка на подводе питательной воды к ПСВД поз. 4200-E-007A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_020" Description="Задвижка на подводе питательной воды к ПСВД поз. 4200-E-007B." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_021" Description="Задвижка на питательной воде после ПСВД поз. 4200-E-007A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_022" Description="Задвижка на питательной воде на обводе ПСВД поз. 4200-E-007A/В." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_023" Description="Задвижка на питательной воде после ПСВД поз. 4200-E-007A/В." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_024" Description="Задвижка на напоре ПЭН ВД поз. 4200-P-002/1 в коллекторе питательной воды на ОЗХ." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_025" Description="Задвижка на напоре ПЭН ВД поз. 4200-P-002/2 в коллекторе питательной воды на ОЗХ." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_026" Description="Задвижка на напоре ПЭН ВД поз. 4200-P-002/3 в коллекторе питательной воды на ОЗХ." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_027" Description="Задвижка на напоре ПЭН ВД поз. 4200-P-002/1 в коллектор питательной воды к деаэраторам." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_028" Description="Задвижка на напоре ПЭН ВД поз. 4200-P-002/2 в коллектор питательной воды к деаэраторам." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_029" Description="Задвижка на напоре ПЭН ВД поз. 4200-P-002/3 в коллектор питательной воды к деаэраторам." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_030" Description="Задвижка на трубопроводе ХОВ из здания ВПУ перед клапаном регулирующим поз. 4200-LV-0001." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_031" Description="Задвижка байпасе клапана регулирующего поз. 4200-LV-0001." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_032" Description="Задвижка на конденсатопроводе после охладителей конденсата ПСВ поз. 4200-Е-006А/B." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_033" Description="Задвижка на байпасе клапана регулирующего поз. 4200-LT-0203." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_034" Description="Задвижка на конденсате из ПСВД поз. 4200-E-007A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_035" Description="Задвижка на  конденсате из ПСВД поз. 4200-E-007B." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_036" Description="Задвижка на конденсатопроводе на обводе охладителя кондесата ПСВД поз. 4200-Е-005А." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_037" Description="Задвижка на подводе технической воды к продувочному приямку (водогрейной части)." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_038" Description="Задвижка на питательной воде на впрыск в РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_039" Description="Задвижка питательной воде на впрыск в РОУ поз. 4200-ROU-001B." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_040" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_041" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_042" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_043" Description="Задвижка на напоре насоса сетевого контура водогрейных котлов поз. 4200-Р-003/3." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_044" Description="Задвижка на напоре насоса сетевого контура водогрейных котлов поз. 4200-Р-003/3" />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_045" Description="Задвижка на напоре насоса сетевого контура водогрейных котлов поз. 4200-Р-003/1." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_046" Description="Задвижка на обводе насосов сетевого контура водогрейных котлов поз. 4200-Р-003/1,2." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_047" Description="Задвижка на обводе насосов сетевого контура водогрейных котлов поз. 4200-Р-003/1,2." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_048" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_049" Description="Задвижка на паропроводе к РОУ поз. 4200-ROU-001A." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_050" Description="Задвижка на напоре насоса теплофикационной воды поз. Р-004/1." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_051" Description="Задвижка на напоре насоса теплофикационной воды поз. Р-004/2." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_052" Description="Задвижка на напоре насоса теплофикационной воды поз. Р-004/3." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_053" Description="Задвижка на напоре насоса теплофикационной воды поз. Р-004/1..3." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_054" Description="Задвижка на трубопроводе обратной промтеплофикационной воды." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_055" Description="Задвижка на напоре насоса промтеплофикационной воды поз. Р-005/1." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_056" Description="Задвижка на напоре насоса промтеплофикационной воды поз. Р-005/2." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_057" Description="Задвижка на напоре насоса промтеплофикационной воды поз. Р-005/3." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_058" Description="Задвижка на трубопроводе прямой промтеплофикационной воде до расходомера." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_059" Description="Задвижка на трубопроводе прямой промтеплофикационной воде после расходомера." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_060" Description="Задвижка № 1 на трубопр. промтеплофикац. воды к сборному баку ОЖ-65 поз. 4200-D-003." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_061" Description="Задвижка № 2 на трубопр. промтеплофикац. воды к сборному баку ОЖ-65 поз. 4200-D-003." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_062" Description="Задвижка на обводе насосов поз. Р-005/1...3 прямой промтеплофикационной воды." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_063" Description="Задвижка на напоре насоса подпитки контура ОЖ-65 поз. Р-008/1." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_064" Description="Задвижка на  напоре насоса подпитки контура ОЖ-65 поз. Р-008/2." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_065" Description="Задвижка на сливе из деаэратора поз. 4200-Т-001/1." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_066" Description="Задвижка на сливе из деаэратора поз. 4200-Т-001/2." />
+    <Object Tag="REGUL_SMC306_07.03_EUV.EUV_067" Description="Задвижка рециркуляции насосов ОиВ поз. Р-009/1, /2." />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_006_1" Description="Насос дренажного бака A" />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_006_2" Description="Насос дренажного бака B" />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_007_1" Description="Насос емкости дренажной А" />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_007_2" Description="Насос емкости дренажной В" />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_008_1" Description="Насос подпитки контура ОЖ-65 А" />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_008_2" Description="Насос подпитки контура ОЖ-65 В" />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_009_1" Description="Состояние Насос контура отопления А" />
+    <Object Tag="REGUL_SMC306_07.PUMP_DI.P_009_2" Description="Состояние Насос контура отопления В" />
+    <Object Tag="REGUL_SMC306_07.TV.LV_0001" Description="Клапан регулирующий на трубопроводе ХОВ из здания ВПУ" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.LV_0006" Description="Клапан регулирующий на конденсате из ПСВД поз. 4200-E-007A" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.LV_0007" Description="Клапан регулирующий на конденсате из ПСВД" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.LV_0203" Description="Клапан регулирующий на конденсатопроводе после охладителей конденсата ПСВ" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0004A" Description="Клапан регулирующий № 1 в коллекторе пара от котлов" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0004B" Description="Клапан регулирующий № 2 в коллекторе пара от котлов" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0009" Description="Клапан регулирующий пара РОУ" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0023" Description="Клапан регулирующий на подводе пара к деаэратору" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0011" Description="Клапан регулирующий пара РОУ" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0024" Description="Клапан регулирующий на подводе пара к деаэратору" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0070" Description="Клапан регулирующий на подпитке контура сетевой воды" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0071A" Description="Клапан регулирующий № 2 на питательной воде после ПЭН ВД" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0071B" Description="Клапан регулирующий № 1 на питательной воде после ПЭН ВД" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0107" Description="Клапан регулирующий на подпитке контура сетевой воды" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0135" Description="Клапан регулирующий в напорном коллекторе насосов контура О и В" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0154" Description="Клапан регулирующий на питательной воде на подпитке контура" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0176" Description="Клапан регулирующий на трубопроводе подвода азота на азотную подушку сборного бака ОЖ-65" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0191" Description="Клапан регулирующий на трубопроводе подвода азота на азотную подушку сборного бака ОЖ-65" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0009" Description="Клапан регулирующий на питательной воде на впрыск в РОУ" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0018" Description="Клапан регулирующий на паре на барботаж к деаэратору" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0011" Description="Клапан регулирующий на питательной воде на впрыск в РОУ" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0019" Description="Клапан регулирующий на паре на барботаж к деаэратору" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0026A" Description="Клапан регулирующий пара на подводе к ПСВД" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0026B" Description="Клапан регулирующий пара на подводе к ПСВД" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0047" Description="Клапан регулирующий на трубопроводе ХОВ после охладителей конденсата ПСВД" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0055" Description="Клапан регулирующий на трубопроводе ХОВ после охладителей конденсата ПСВД" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0071" Description="Клапан регулирующий на сетевой воде после подогревателей ХОВ" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0109A" Description="Клапан регулирующий на паропроводе к подогревателю сетевой воды" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0109B" Description="Клапан регулирующий на паропроводе к подогревателю сетевой воды" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0120" Description="Клапан регулирующий на сетевой воде после подогревателей теплофикационной воды" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0135" Description="Клапан регулирующий в коллекторе всаса насосов сетевого контура" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0142" Description="Клапан регулирующий на подводе обессоленой воды на расхолаживание" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.TV_0143" Description="Клапан регулирующий на подводе технической воды к продувочному приямку" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.TV.PV_0001" Description="Клапан регулирующий на выхлопном паропроводе котлов" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_001_1.P_001_1" Description="Насос дренажного бака A" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_001_1.P_PID_001_1" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_001_2.P_001_2" Description="Насос дренажного бака B" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_001_2.P_PID_001_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_001_3.P_PID_001_3" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_001_3.P_001_3" Description="Насос емкости дренажной А" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_002_1.P_PID_002_1" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_002_1.P_002_1" Description="Насос емкости дренажной В" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_002_2.P_PID_002_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_002_2.P_002_2" Description="Насос подпитки контура ОЖ-65 А" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_002_3.P_PID_002_3" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_002_3.P_002_3" Description="Насос подпитки контура ОЖ-65 В" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_003_1.P_PID_003_1" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_003_1.P_003_1" Description="Сетевой насос №1 c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_003_2.P_PID_003_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_003_2.P_003_2" Description="Сетевой насос №2 c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_003_3.P_PID_003_3" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_003_3.P_003_3" Description="Сетевой насос №3 c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_004_1.P_PID_004_1" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_004_1.P_004_1" Description="Насос №1 теплофикационной воды c ВХ ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_004_2.P_PID_004_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_004_2.P_004_2" Description="Насос №2 теплофикационной воды c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_004_3.P_PID_004_3" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_004_3.P_004_3" Description="Насос №3 теплофикационной воды c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_005_1.P_PID_005_1" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_005_1.P_005_1" Description="Насос №1 промтеплофикационной воды c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_005_2.P_PID_005_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_005_2.P_005_2" Description="Насос №2 промтеплофикационной воды c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_005_3.P_PID_005_3" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
+    <Object Tag="REGUL_SMC306_07.PUMP_AI.PUMP_005_3.P_005_3" Description="Насос №3 промтеплофикационной воды c ЧРЭП" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1001_1_4200" Description="САУ парового котла №1. Достигнут 1 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1001_2_4200" Description="САУ парового котла №1. Достигнут 2 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1002_1_4200" Description="САУ парового котла №2. Достигнут 1 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1002_2_4200" Description="САУ парового котла №2. Достигнут 2 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1003_1_4200" Description="САУ парового котла №3. Достигнут 1 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1003_2_4200" Description="САУ парового котла №3. Достигнут 2 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1004_1_4200" Description="САУ водогрейного котла №1. Достигнут 1 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1004_2_4200" Description="САУ водогрейного котла №1. Достигнут 2 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1005_1_4200" Description="САУ водогрейного котла №2. Достигнут 1 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1005_2_4200" Description="САУ водогрейного котла №2. Достигнут 2 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1006_1_4200" Description="САУ водогрейного котла №3. Достигнут 1 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GA_1006_2_4200" Description="САУ водогрейного котла №3. Достигнут 2 порог по одному из датчиков GA (CO) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1001_1_4200" Description="САУ парового котла №1. Достигнут 1 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1001_2_4200" Description="САУ парового котла №1. Достигнут 2 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1002_1_4200" Description="САУ парового котла №2. Достигнут 1 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1002_2_4200" Description="САУ парового котла №2. Достигнут 2 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1003_1_4200" Description="САУ парового котла №3. Достигнут 1 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1003_2_4200" Description="САУ парового котла №3. Достигнут 2 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1004_1_4200" Description="САУ водогрейного котла №1. Достигнут 1 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1004_2_4200" Description="САУ водогрейного котла №1. Достигнут 2 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1005_1_4200" Description="САУ водогрейного котла №2. Достигнут 1 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1005_2_4200" Description="САУ водогрейного котла №2. Достигнут 2 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1006_1_4200" Description="САУ водогрейного котла №3. Достигнут 1 порог по одному из датчиков GD (НКПВ) в районе котла" />
+    <Object Tag="REGUL_SMC306_07.DO.GD_1006_2_4200" Description="САУ водогрейного котла №3. Достигнут 2 порог по одному из датчиков GD (НКПВ) в районе котла" />
+  </Objects>
+</History>

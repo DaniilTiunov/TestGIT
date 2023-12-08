@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="PsTechOG" IsSystem="false">
+  <Tokens>
+    <Token Type="Boolean" Name="sAckEn" Description="Квитирование">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sChangeModeEn" Description="Изменение режима">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sChangeParamEn" Description="Изменение параметров и уставок блоков">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sCtlEn" Description="Управление">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sMaintanceInhibitEn" Description="Запрет технического обслуживания">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sPstControlEn" Description="Разрешение управления PST">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sResetTotalizerEn" Description="Сброс суммирующего устройства">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sTestModeEn" Description="Режим испытаний">
+      <Rights />
+    </Token>
+  </Tokens>
+  <Roles />
+</Application>

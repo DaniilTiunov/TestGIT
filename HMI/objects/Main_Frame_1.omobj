@@ -1,0 +1,75 @@
+<type access-modifier="private" name="Main_Frame_1" display-name="Main_Frame_1" uuid="a0dd925b-bd77-466f-bf71-9d73d1ee6506" base-type="MainForm" base-type-id="663d20ff-0041-4627-b0b9-e86b3cdc2dad" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1920" ver="5"/>
+	<designed target="Height" value="1080" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Водогрейные котлы" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="1" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="2" ver="5"/>
+	<designed target="MonitorNumber" value="1" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Default_form" display-name="Default_form" uuid="b310a88c-97ba-4d50-8100-c3b712668d79" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="736dc556-aa57-4ebd-b747-4e3bf84ef2e7" base-type="Vent" base-type-id="b7a84b78-cc54-44cd-997e-63aa77097d16" ver="5">
+				<init target="refMainForm" ver="5" ref="here"/>
+			</object>
+		</do-on>
+	</object>
+	<init target="RefOpenDefaultForm" ver="5" ref="Default_form"/>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="93818db0-f962-4805-911c-c44e4537ce73" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[Default_form.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Main_form" display-name="Main_form" uuid="77de89d7-f7a6-4af6-b182-45c113ee1181" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="ce44cfa0-8567-44f2-ac43-72d34d522e34" base-type="Main_menu_kotel" base-type-id="41f4f9ab-a334-44f4-bc9b-b204518fba8b" ver="5">
+				<init target="refMainForm" ver="5" ref="here"/>
+			</object>
+		</do-on>
+	</object>
+	<init target="RefOpenMenuForm" ver="5" ref="Main_form"/>
+	<object access-modifier="private" name="Diag_form" display-name="Diag_form" uuid="c1e5cf2e-ca2c-41a0-9f28-db2e172e6ab6" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="8a938ee9-4d89-4487-a5ea-331b64a028f3" base-type="SMC_306_7_Diagn" base-type-id="335c5177-2bae-4ed5-82b0-1c893b40d7c7" ver="5">
+				<init target="refMainForm" ver="5" ref="here"/>
+			</object>
+		</do-on>
+	</object>
+	<init target="RefOpenDiagnForm" ver="5" ref="Diag_form"/>
+</type>
+
