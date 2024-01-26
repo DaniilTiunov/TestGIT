@@ -804,6 +804,9 @@
     <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI2001_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №1 котла 4200-В-001/2" />
     <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI2002_4200" Description="CH4 и Н2 над арматурой на подводе газа к горелке №2 котла 4200-В-001/2" />
     <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI2003_4200" Description="CH4 и Н2 в районе отключающей арматуры на подводе газа к котлу 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4201" Description="СО в районе газохода уходящих газов котла 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4202" Description="СО в районе газохода уходящих газов котла 4200-В-001/2" />
+    <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4203" Description="СО в районе газохода уходящих газов котла 4200-В-001/2" />
     <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI2004_4200" Description="C2H6 в районе отключающей арматуры на подводе газа к котлу 4200-В-001/2" />
     <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI2005_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №1 котла 4200-В-001/2" />
     <Object Tag="REGUL_SMC306_07.01_AI.CRATE01_AI01.GDI2006_4200" Description="C2H6 в районе отключающей арматуры на подводе топлива  к горелке №2 котла 4200-В-001/2" />
