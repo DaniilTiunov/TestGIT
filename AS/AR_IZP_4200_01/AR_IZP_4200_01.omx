@@ -8581,6 +8581,33 @@
                 <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GDI2003_4200</property>
               </r:init-ref>
             </ct:object>
+            <ct:object name="GAI2001_4201" base-type="unit.PsTechOG.Types.TECH.AI.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect" uuid="76498c98-38e8-433d-b499-c9817980610f">
+              <property name="original">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              <r:init-ref ref="_PLC_View">
+                <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              </r:init-ref>
+              <r:init-ref ref="_PLC_BaseView">
+                <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              </r:init-ref>
+            </ct:object>
+            <ct:object name="GAI2001_4202" base-type="unit.PsTechOG.Types.TECH.AI.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect" uuid="4e550f0d-ffbd-49ab-ab50-b73903128aa0">
+              <property name="original">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              <r:init-ref ref="_PLC_View">
+                <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              </r:init-ref>
+              <r:init-ref ref="_PLC_BaseView">
+                <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              </r:init-ref>
+            </ct:object>
+            <ct:object name="GAI2001_4203" base-type="unit.PsTechOG.Types.TECH.AI.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect" uuid="e50f80f8-295d-445c-a7fc-9f3927de2aba">
+              <property name="original">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              <r:init-ref ref="_PLC_View">
+                <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              </r:init-ref>
+              <r:init-ref ref="_PLC_BaseView">
+                <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI00.GAI2001_4200</property>
+              </r:init-ref>
+            </ct:object>
           </ct:object>
           <ct:object name="CRATE01_AI01" uuid="dbe53e98-43ad-4e25-af94-284141383993" aspect="unit.PsBase.Aspects.IOS_Aspect">
             <property name="original">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_SMC306_07.01_AI.CRATE01_AI01</property>
