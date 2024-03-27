@@ -27921,6 +27921,7 @@
                 <attribute type="unit.PsTechOG.Attributes.TAGCOMMENT" value="Положение регулирующего клапана PV4021" />
               </ct:object>
               <ct:object name="PV4021_4201" base-type="unit.PsTechOG.Types.TECH.AI.PLC_View" aspect="unit.PsBase.Aspects.PLC_Aspect" uuid="70aa4b1f-b9f0-4dfc-a8ea-a32210dd5e33">
+              <ct:object name="PV4021_4201" base-type="unit.PsTechOG.Types.TECH.AI.PLC_View" aspect="unit.PsBase.Aspects.PLC_Aspect" uuid="b7b5594e-a0cc-4de3-b0eb-dbd1b34af360">
                 <attribute type="unit.PsTechOG.Attributes.TAGNAME" value="PV4021_4200" />
                 <attribute type="unit.PsTechOG.Attributes.ALIAS" value="                " />
                 <attribute type="unit.System.Attributes.Description" value="PV4021_4200. Положение регулирующего клапана PV4021" />
