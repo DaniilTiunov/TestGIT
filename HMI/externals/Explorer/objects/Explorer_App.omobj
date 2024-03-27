@@ -1,0 +1,408 @@
+<type access-modifier="public" name="Explorer_App" display-name="Explorer_App" uuid="1679d51f-7de3-4fd8-9631-3247d9caa875" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="1000" ver="5"/>
+	<designed target="Height" value="600" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1000" ver="5"/>
+	<designed target="WindowHeight" value="600" ver="5"/>
+	<designed target="WindowCaption" value="Explorer" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="1" ver="5"/>
+	<do access-modifier="private" name="SaveSession" display-name="SaveSession" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[try
+{
+	var session = 
+	{
+		"Window": {
+			"X": WindowX,
+			"Y": WindowY, 
+			"Width": WindowWidth,
+			"Height": WindowHeight,
+			"State": WindowState
+		},
+		"Theme": JSON.parse(Theme.GetViewSettings()),
+		"Layout":	{
+			"LogView": {
+				"Visible": LogView.IsVisible.Value,
+				"Height": Splitter.Distance
+			}
+		},
+		"Connection": {
+			"Active": Explorer.ApSource.Active,
+			"Location": Explorer.ApSource.Location,
+			"Port": Explorer.ApSource.Port
+		},
+		"FilePaths": {
+			"DefaultFolder": Toolbar.private.DefaultFolder
+		},
+		"SignalTable": JSON.parse(Explorer.ItemTable.GetViewSettings()),
+		"LogView": JSON.parse(LogView.GetViewSettings())
+	};
+	
+	var recentlyServers = Toolbar.private.RecentlyServers.Value;
+	if (recentlyServers != "")
+		session.Connection.RecentlyServers = JSON.parse(recentlyServers);
+	
+	var recentlyFiles = Toolbar.private.RecentlyFiles.Value;
+	if (recentlyFiles != "")
+		session.FilePaths.RecentlyFiles = JSON.parse(recentlyFiles);
+	
+	var folderPath = Files.ParentPath(filePath);
+	if (!Files.Exists(folderPath))
+		Files.CreateRecursiveFolder(folderPath);
+
+	Files.WriteTextFile(filePath, JSON.stringify(session, null, 2));
+}
+catch(error)
+{
+	log("Не удалось сохранить настройки сессии в "  + filePath + ":\n" + error);
+}]]>
+		</body>
+		<param access-modifier="private" name="filePath" display-name="" uuid="f8e98e30-f793-463a-b66c-04dec2fa4f08" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<do access-modifier="private" name="LoadSession" display-name="LoadSession" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[if (Files.Exists(filePath))
+{
+	//log("Загрузка настроек из файла "  + filePath);
+	try
+	{
+		var session = JSON.parse(Files.ReadTextFile(filePath));
+		
+		var window = session.Window;
+		if (window != undefined)
+		{
+			WindowX = window.X;
+			WindowY = window.Y;
+			WindowWidth = window.Width;
+			WindowHeight = window.Height;
+			WindowState = window.State;
+		}
+		
+		var theme = session.Theme;
+		if (theme != undefined)
+			Theme.UpdateView(JSON.stringify(theme));
+		
+		var layout = session.Layout;
+		if (layout != undefined)
+		{
+			LogView.IsVisible.Value = layout.LogView.Visible == true;
+			Splitter.Distance = layout.LogView.Height;
+		}
+		
+		var connection = session.Connection;
+		if (connection != undefined)
+		{
+			Explorer.ApSource.Update(connection.Active, connection.Location, connection.Port);
+	
+			var recentlyServers = connection.RecentlyServers;
+			if (recentlyServers != undefined)
+				Toolbar.private.RecentlyServers = JSON.stringify(recentlyServers);
+		}
+		
+		var filePaths = session.FilePaths;
+		if (filePaths != undefined)
+		{
+			Toolbar.private.DefaultFolder = filePaths.DefaultFolder;
+
+			if (filePaths.RecentlyFiles != undefined)
+				Toolbar.private.RecentlyFiles = JSON.stringify(filePaths.RecentlyFiles)
+		}
+		
+		var signalTable = session.SignalTable;
+		if (signalTable != undefined)
+			Explorer.ItemTable.UpdateView(JSON.stringify(signalTable));
+		
+		var logView = session.LogView;
+		if (logView != undefined)
+			LogView.UpdateView(JSON.stringify(logView));
+	}
+	catch(error)
+	{
+		log("Не удалось загрузить настройки сессии из "  + filePath + ":\n" + error);
+	}
+}
+else
+{
+	Explorer.ApSource.Active = true;
+}]]>
+		</body>
+		<param access-modifier="private" name="filePath" display-name="" uuid="fd16bcfa-9a63-45b0-b4e1-3faee6241b39" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<object access-modifier="private" name="Debug" display-name="Debug" uuid="cb5074fc-8b4f-4353-b955-3441f27e8d75" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5"/>
+	<object access-modifier="private" name="Files" display-name="Files" uuid="3bbb2341-a5b3-4050-877d-fac6ed35c01d" base-type="FileSystem" base-type-id="34d744f9-7303-4077-a3f7-9c06c0945512" ver="5">
+		<designed target="RootPath" value="/" ver="5"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="WindowSizeChanged">
+		<body kind="om">
+			<![CDATA[Width = WindowWidth;
+Height = WindowHeight;
+UpdateLayout();]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="KeyPress">
+		<body kind="om">
+			<![CDATA[/*Нажатие клавиши Del - удаление выбранных строк*/
+if (event.KeyCode == 109)
+	Explorer.ItemTable.DeleteSelected.Invoke();
+
+/*Нажатие клавиши Enter - открытие окна изменения значения для выбранных строк*/
+if (event.KeyCode == 82)
+	Explorer.ItemTable.EditValue.Invoke();
+
+/*Нажатие клавиши Insert - добавление сигнала */
+if (event.KeyCode == 110)
+	Explorer.ItemTable.AddItem.Invoke();]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[WindowUtils.CorrectPosition();]]>
+		</body>
+	</do-on>
+	<designed target="WindowIconPath" value="Explorer_Icons/Explorer.ico" ver="5"/>
+	<object access-modifier="private" name="WindowUtils" display-name="WindowUtils" uuid="195ca37a-3216-41ee-baa4-d97973718e5b" base-type="WindowUtils" base-type-id="4a818ada-44b1-4070-9b9d-c28dc3447ece" ver="5" description="" cardinal="1">
+		<init target="pForm" ver="5" ref="here"/>
+	</object>
+	<object access-modifier="private" name="Toolbar" display-name="Toolbar" uuid="0174d1b8-7939-4854-8783-83172a89f703" base-type="Explorer_Toolbar" base-type-id="74dee441-5cf6-417f-a39e-ba83d9220167" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1000" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="pTheme" ver="5" ref="Theme"/>
+		<init target="pExplorer" ver="5" ref="Explorer"/>
+		<init target="pLogView" ver="5" ref="LogView"/>
+	</object>
+	<object access-modifier="private" name="Explorer" display-name="Explorer" uuid="c0c6ff2e-f8d1-4a4c-ab5e-9feb39e5c9f0" base-type="Explorer" base-type-id="9013d06f-00da-4a39-a352-02b02f4a6679" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1000" ver="5"/>
+		<designed target="Height" value="410" ver="5"/>
+		<init target="pTheme" ver="5" ref="Theme"/>
+		<init target="initLogView" ver="5" ref="LogView"/>
+		<do access-modifier="private" name="StoreSignals" display-name="StoreSignals" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+			<body kind="om">
+				<![CDATA[if (ItemTable.IsModified)
+	SaveSignals(GetStoreFilePath());]]>
+			</body>
+		</do>
+		<do access-modifier="private" name="RestoreSignals" display-name="RestoreSignals" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+			<body kind="om">
+				<![CDATA[filePath: string = GetStoreFilePath();
+if (Files.Exists(filePath))
+	LoadSignals(filePath);]]>
+			</body>
+		</do>
+		<do access-modifier="private" name="GetStoreFilePath" display-name="GetStoreFilePath" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+			<body kind="om">
+				<![CDATA[folderPath: string = unit.ProductInfo.GetUserDataFolder();
+return Files.CombinePath(folderPath, "SignalTableContent.esl");]]>
+			</body>
+		</do>
+	</object>
+	<object access-modifier="private" name="Theme" display-name="Theme" uuid="1a3f5495-2155-4a10-9da9-8028d1a5d892" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Splitter" display-name="Splitter" uuid="3a1dfd8c-1616-4bbb-adc4-57123028f692" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="440" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="1000" ver="5"/>
+		<designed target="Height" value="4" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff808080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[MouseIsOver = true;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[MouseIsOver = false;
+bPressed = false;]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="bPressed" display-name="bPressed" uuid="c50d122b-ca1c-480b-b750-942cc09055f2" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MousePress">
+			<body kind="om">
+				<![CDATA[bPressed = true;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[bPressed = false;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseMove">
+			<body kind="om">
+				<![CDATA[if (bPressed)
+{
+	Distance -= event.Y;
+	
+	min: double = Statusbar.Height + 30;
+	if (Distance < min)
+		Distance = min;
+		
+	max: double = parent.Height - Toolbar.Height - 30;
+	if (Distance > max)
+		Distance = max;
+	
+	// изменяем высоту и смещение соседних элементов
+	LogView.Height = Distance;
+	LogView.Y = Statusbar.Y - LogView.Height;
+	Explorer.Height = LogView.Y - Explorer.Y;
+	
+	// смещаем разделитель
+	Y = LogView.Y - Height;
+}]]>
+			</body>
+		</do-on>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<object access-modifier="private" name="MouseIsOver" display-name="MouseIsOver" uuid="cef1571d-00e4-435f-aba2-6aa7d15e6208" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[Theme.BorderColor]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[MouseIsOver ? Theme.SelectionColor : Theme.BackgroundColor]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[LogView.IsVisible]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Distance" display-name="Distance" uuid="37806be4-221b-437c-a01b-ed817f20796d" base-type="float8" base-type-id="7ad62ecf-96dd-4751-9b96-e77954b44409" ver="5" description="" cardinal="1"/>
+		<init target="Distance" ver="5" value="130"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LogView" display-name="LogView" uuid="71c4f79d-0f10-4f0a-bce7-ca278f3671a7" base-type="LogView" base-type-id="493c7166-bdbb-4717-8f49-2906ed88e930" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="445" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1000" ver="5"/>
+		<designed target="Height" value="130" ver="5"/>
+		<init target="pTheme" ver="5" ref="Theme"/>
+		<object access-modifier="private" name="isVisible" display-name="isVisible" uuid="d3a97e69-4306-4979-8066-f73352992fde" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+				<body kind="om">
+					<![CDATA[here.UpdateLayout();]]>
+				</body>
+			</do-on>
+		</object>
+		<do-trace access-modifier="private" target="isVisible" ver="5">
+			<body>
+				<![CDATA[this.IsVisible]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Statusbar" display-name="Statusbar" uuid="23fb164c-71b0-405d-8b42-442bcaa158ca" base-type="Explorer_Status" base-type-id="6ceba724-f999-4d1e-97ba-44d1c0788a88" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="575" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1000" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<object access-modifier="private" name="ConnectionState" display-name="ConnectionState" uuid="2a85e13c-07ec-4e80-a664-4156cc0da179" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+				<body kind="javascript">
+					<![CDATA[if (value != "")
+{
+	var info = JSON.parse(value);
+	
+	var importance = 0;
+	if (info.importance == "info")
+		importance = 1;
+	else if (info.importance == "warning") 
+		importance = 2;
+	else if (info.importance == "error") 
+		importance = 3;
+	
+	LogView.AddMessage(importance, info.description);
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<do-trace access-modifier="private" target="ConnectionState" ver="5">
+			<body>
+				<![CDATA[ConnectionIndicator.StateInfo]]>
+			</body>
+		</do-trace>
+		<init target="pTheme" ver="5" ref="Theme"/>
+		<init target="init_LogView" ver="5" ref="LogView"/>
+		<init target="init_ApSource" ver="5" ref="Explorer.ApSource"/>
+	</object>
+	<do access-modifier="private" name="UpdateLayout" display-name="UpdateLayout" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[Toolbar.Width = Width;
+Explorer.Width = Width;
+Splitter.Width = Width;
+LogView.Width = Width;
+Statusbar.Width = Width;
+
+Statusbar.Y = Height - Statusbar.Height;
+LogView.Height = LogView.IsVisible ? Splitter.Distance : 0;
+LogView.Y = Statusbar.Y - LogView.Height;
+Splitter.Y = LogView.Y - Splitter.Height;
+Explorer.Height = (LogView.IsVisible ? Splitter.Y : Statusbar.Y) - Explorer.Y;]]>
+		</body>
+	</do>
+	<designed target="Flip" value="0" ver="5"/>
+	<do-on access-modifier="private" name="Handler_7" display-name="Handler_7" ver="5" event="CloseRequested">
+		<body kind="om">
+			<![CDATA[folderPath: string = unit.ProductInfo.GetUserDataFolder();
+SaveSession(Files.CombinePath(folderPath, "session.json"));
+
+Explorer.private.SaveLayout();
+Explorer.StoreSignals();
+Explorer.Disconnect();
+Close();]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_8" display-name="Handler_8" ver="5" event="AboutToOpen">
+		<body kind="om">
+			<![CDATA[folderPath: string = unit.ProductInfo.GetUserDataFolder();
+LoadSession(Files.CombinePath(folderPath, "session.json"));
+
+Explorer.private.LoadLayout();
+Explorer.RestoreSignals();]]>
+		</body>
+	</do-on>
+</type>
+

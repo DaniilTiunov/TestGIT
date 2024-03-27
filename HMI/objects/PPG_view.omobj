@@ -1,0 +1,2059 @@
+<type access-modifier="private" name="PPG_view" display-name="PPG_view" uuid="82a52c69-7adc-47f1-b907-ef3c243bec92" base-type="Mnemoschem" base-type-id="64806c44-c3c8-49e6-8d51-bb5ea5b1f1dc" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1900" ver="5"/>
+	<designed target="Height" value="960" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1900" ver="5"/>
+	<designed target="WindowHeight" value="960" ver="5"/>
+	<designed target="WindowCaption" value="Обзорная схема ППГ №1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<init target="IsEnablePrev" ver="5" value="true"/>
+	<init target="IsEnableNext" ver="5" value="true"/>
+	<object access-modifier="private" name="GoLeft" display-name="GoLeft" uuid="f32aeb17-5e1a-4c99-8d28-2e9c6b417eaf" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="ccf07460-0b0c-4326-84a9-9aa18292fee8" base-type="Water_Boilers" base-type-id="beedc563-8a17-4817-8d94-9ebcffd93f44" ver="5">
+				<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="GoRight" display-name="GoRight" uuid="4764772c-e7a4-46e5-9346-8b9cc168db4d" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="9750c141-a755-43f3-9dec-b09fe8c3fdbd" base-type="Pres_Boilers" base-type-id="653a0caf-a281-4b09-a469-03dc1db15f19" ver="5">
+				<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="GoToBack" display-name="GoToBack" uuid="b78b4aec-8665-4745-b40a-a1a8fea5ba1b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="5ffd3ff5-8588-4048-88a0-d0230ad42aca" base-type="Main_menu_kotel" base-type-id="41f4f9ab-a334-44f4-bc9b-b204518fba8b" ver="5">
+				<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+			</object>
+		</do-on>
+	</object>
+	<init target="CommandBack" ver="5" ref="here.GoToBack"/>
+	<init target="CommandNext" ver="5" ref="here.GoRight"/>
+	<init target="CommandPrev" ver="5" ref="here.GoLeft"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="fa723834-dbf4-4206-8a25-2daccda56423" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1496" ver="5"/>
+		<designed target="Y" value="73" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="263" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="MOV_3" display-name="MOV_3" uuid="9e92cb9e-94b5-43d8-a210-ec57be6eb919" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="111" ver="5"/>
+			<designed target="Y" value="61" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_140" display-name="Text_140" uuid="70c8ae69-c5e1-470a-b268-8eadc65db836" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="156" ver="5"/>
+			<designed target="Y" value="126" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-004" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="bc836979-64c0-4728-bba4-a322f81c7fd6" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="27" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="0251b94a-993c-4699-ba25-bac2f3b74273" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="78" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-109" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="MOV_5" display-name="MOV_5" uuid="8e76b954-7fe2-4579-81df-e43f70bf6d6d" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="111" ver="5"/>
+			<designed target="Y" value="148" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_157" display-name="Text_157" uuid="f2244875-acff-490f-a30a-8b479ed6900d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="156" ver="5"/>
+			<designed target="Y" value="213" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-005" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="MOV_6" display-name="MOV_6" uuid="c81249a2-16dd-440d-bec2-4d3a14678c4f" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="213" ver="5"/>
+			<designed target="Y" value="106" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_158" display-name="Text_158" uuid="e0ab0ed9-fdd6-47ca-953f-8c18b63aeca0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="258" ver="5"/>
+			<designed target="Y" value="171" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-008" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="2c00b719-3c0d-44d8-91c3-3ae126f17858" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="6626e3cc-e2f6-48f6-8b2f-a7bb1e0f5061" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="158" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-109A" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_22" display-name="AI_22" uuid="1d90cbf9-07e1-4dfe-9b38-d6faf7eb701c" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="184" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_160" display-name="Text_160" uuid="bfea5eea-7ca2-4a8e-a528-edbbd699b166" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="235" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-111" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="decaad8b-661c-4e05-b346-9b728e3f8237" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="Узел редуцирования топливного газа" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="d7c56060-af33-42bd-a153-3ae6ec310d04" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1498" ver="5"/>
+		<designed target="Y" value="344" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="263" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="MOV_3" display-name="MOV_3" uuid="5fba5ce1-a10f-46ef-8c84-0d206086d7a4" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="111" ver="5"/>
+			<designed target="Y" value="61" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_140" display-name="Text_140" uuid="f51de0f2-9660-41ac-8dfa-39f8c8f2cec3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="156" ver="5"/>
+			<designed target="Y" value="126" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-011" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="878d4a6c-9304-46b7-8d30-37b96d1f66b7" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="27" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="25338c71-ccb5-431e-8568-5ca62c37075c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="78" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-205" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="MOV_5" display-name="MOV_5" uuid="56c2ab2c-0cc3-499d-88ec-d5426bb982e9" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="111" ver="5"/>
+			<designed target="Y" value="148" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_157" display-name="Text_157" uuid="bc32f581-e0f9-4672-9af3-1334e1fefa1a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="156" ver="5"/>
+			<designed target="Y" value="213" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-012" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="MOV_6" display-name="MOV_6" uuid="ee26bef2-98ee-4e85-a9b4-6258fad79bda" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="213" ver="5"/>
+			<designed target="Y" value="106" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_158" display-name="Text_158" uuid="cadc7d29-290b-4a58-8608-fb2b37c6d0e4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="258" ver="5"/>
+			<designed target="Y" value="171" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-015" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="9880a1af-76bd-4a88-9fe4-1fe498fc31c5" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="573cc191-2ad3-48af-a889-00fafeb77c7e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="158" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-205A" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_22" display-name="AI_22" uuid="fe441c44-a2c7-4630-9da6-6114cce9826f" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="184" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_160" display-name="Text_160" uuid="b77e0347-4e43-4f50-8be2-8b46f0e2f159" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="235" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-206" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="9017c32c-054a-41d0-b3da-52262dfb32c1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="Узел редуцирования этановой фракции" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="d4e459ce-6a11-406b-8b6d-2b138363d034" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1267" ver="5"/>
+		<designed target="Y" value="74" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="162" ver="5"/>
+		<designed target="Height" value="108" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="a5939b94-0382-4b57-94a1-fc2545321d73" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="26" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="bd381955-6292-4a9c-a8a2-673e50a3fbf8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="64" ver="5"/>
+			<designed target="Y" value="77" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value=" FT-101" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="d912ad4a-8b56-4945-97f4-fd76bd327527" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="-69" ver="5"/>
+			<designed target="Y" value="-1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="СИКГ-1" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="9453d429-44d5-4c21-b2eb-d264c1bfa7c4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1267" ver="5"/>
+		<designed target="Y" value="190" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="162" ver="5"/>
+		<designed target="Height" value="108" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="ec86ff70-49af-4585-b81b-32a96b4a4294" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="26" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="84039cbe-642f-460e-9490-13fef92bca2a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="64" ver="5"/>
+			<designed target="Y" value="77" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value=" FT-201" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="86b7825f-e4d7-47f6-b54e-941475f94469" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="-68" ver="5"/>
+			<designed target="Y" value="-1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="СИКГ-2" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="2e1f9c93-1eaf-40ac-afd3-046de71d55dc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1267" ver="5"/>
+		<designed target="Y" value="305" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="162" ver="5"/>
+		<designed target="Height" value="108" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="a57effe4-9259-4e84-b416-f9519b32ed52" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="26" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="aeea4e70-e4ed-4deb-99d0-77aa7edef347" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="64" ver="5"/>
+			<designed target="Y" value="77" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value=" FT-302" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="3a34bd6c-4add-4d7d-84ec-c79ef84cc14e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="-68" ver="5"/>
+			<designed target="Y" value="-1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="СИКГ-3" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="9f53429d-6838-481a-8735-883718e4eb3a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="860" ver="5"/>
+		<designed target="Y" value="74" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="344" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="7f72736e-10dd-4f62-92ce-a59e6dd30ecb" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="bd0c5ceb-2d41-4450-99e2-8bd4bb747954" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="63" ver="5"/>
+			<designed target="Y" value="80" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-102" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="e3fd41e5-8257-4c6b-8065-bcd3f4455e4b" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="d4855565-7a7d-4f9a-a1dc-69268932ce47" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="158" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-102" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_22" display-name="AI_22" uuid="9a388059-f3b5-42cf-8689-cd371d9b2d08" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="184" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_160" display-name="Text_160" uuid="75d1cb70-f671-4a16-b9cd-a95fc3dec6bc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="235" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-105" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="f0609c6c-5efb-4150-a4a8-797a29660b4a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="Зона теплообменников топливного газа" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_23" display-name="AI_23" uuid="526514d6-2700-4be8-a1d1-f6ecc9b250cb" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="259" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_162" display-name="Text_162" uuid="c78faf9c-b4d0-43bb-92ca-bd090cd534d1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="310" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-105" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_24" display-name="AI_24" uuid="bf1dcbda-77a1-4167-8ec0-ebc7c9f59a8d" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="208" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_163" display-name="Text_163" uuid="5a55672a-9da8-4690-af49-8dfe4130fe5f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="267" ver="5"/>
+			<designed target="Y" value="80" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-106" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_25" display-name="AI_25" uuid="ee89321d-f6e0-4971-b3be-820532eed666" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="208" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_164" display-name="Text_164" uuid="6f61a20f-d6f4-4d3b-80a6-e4e7e8b88b1c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="266" ver="5"/>
+			<designed target="Y" value="158" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-109" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_26" display-name="AI_26" uuid="2f745664-6085-4bae-bbfe-2bc7d080e041" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="208" ver="5"/>
+			<designed target="Y" value="184" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_165" display-name="Text_165" uuid="64f1045e-922f-456b-9a10-c7bc421b36ed" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="266" ver="5"/>
+			<designed target="Y" value="235" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-106" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_27" display-name="AI_27" uuid="b5169600-2272-422a-b312-42faddc37035" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="208" ver="5"/>
+			<designed target="Y" value="259" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_166" display-name="Text_166" uuid="91167afe-81ed-4f31-a7ff-7ca80a0be075" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="266" ver="5"/>
+			<designed target="Y" value="310" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-103" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="58a4ff7d-ea05-4368-91d4-29fb1eea6d2e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="860" ver="5"/>
+		<designed target="Y" value="426" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="186" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="ccb86e6a-78a7-402c-ad6f-776175bed0d7" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="1dc744ce-21f3-4fe7-a066-20d56e294243" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="63" ver="5"/>
+			<designed target="Y" value="80" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-202" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="f5b8fdd4-fcef-4083-97f4-48918e2c19e1" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="31dd1796-088f-4c92-9ed2-462d89b6819e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="158" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-202" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="348bda82-6484-4777-acab-c2f562ebc401" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="Зона теплообменников этановой фракции" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_24" display-name="AI_24" uuid="cbbecdec-033f-497d-8bad-6d8dba385504" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="208" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_163" display-name="Text_163" uuid="1f0d8502-44fb-4271-8ae7-3d2cfe21b2e1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="267" ver="5"/>
+			<designed target="Y" value="80" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-203" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_25" display-name="AI_25" uuid="140248a1-0ec4-4d80-88bc-deee37ea367c" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="208" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_164" display-name="Text_164" uuid="d8da9271-6d9a-4cd0-8672-9cada4675dcf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="266" ver="5"/>
+			<designed target="Y" value="158" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-203" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="a776b580-4857-4de0-b805-197daf4d6776" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="46" ver="5"/>
+		<designed target="Y" value="79" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="331" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="MOV_3" display-name="MOV_3" uuid="d6c36444-fd50-4133-8f30-cfff95da0e7b" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="145" ver="5"/>
+			<designed target="Y" value="57" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_140" display-name="Text_140" uuid="3b602538-34e0-4874-a75a-2469513f5432" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="190" ver="5"/>
+			<designed target="Y" value="122" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-001" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="4ca4c546-c355-4e4b-8b84-e336c1d7cee1" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="184ab841-1406-453d-a2cd-d65008144b10" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="AG-101" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="ad526c98-ebc1-42ad-8e52-0b6ba37d985a" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="166" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="b4818e6b-a4b1-4aa6-bdb7-b294d5bfeaac" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="217" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-101" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_22" display-name="AI_22" uuid="0091818a-85a2-4443-bd57-0f065339dafd" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="243" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_160" display-name="Text_160" uuid="93f9ac20-a512-47ec-ad49-c6ffe08f137e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="294" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-101" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="c12d85e4-7b24-4c70-92e0-060a075cd826" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="29" ver="5"/>
+			<designed target="Text" value="Вход топливного газа" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_23" display-name="AI_23" uuid="37eacd4b-8efc-4e68-b285-cbd3b02b73d6" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="168" ver="5"/>
+			<designed target="Y" value="166" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_162" display-name="Text_162" uuid="74b4e4b6-1676-4862-a38c-d4651783fd3f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="226" ver="5"/>
+			<designed target="Y" value="217" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PDT-101" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_24" display-name="AI_24" uuid="9f303bc5-a068-469f-ae2c-4ffb99d9a19f" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="168" ver="5"/>
+			<designed target="Y" value="243" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_163" display-name="Text_163" uuid="6aee979a-6fe6-42b6-a016-049ea346416d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="226" ver="5"/>
+			<designed target="Y" value="294" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PDT-102" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_25" display-name="AI_25" uuid="0985a79b-bd46-46dc-9f30-67236de663bb" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="91" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_164" display-name="Text_164" uuid="a76804ee-0f77-46ce-91da-2b66345dc7dd" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="142" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="AG-102" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="e33b3d71-3c22-47c8-a261-fe6692c74a00" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="47" ver="5"/>
+		<designed target="Y" value="418" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="331" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="MOV_3" display-name="MOV_3" uuid="1dce340d-8831-428d-9252-1a1a4eb1b577" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="145" ver="5"/>
+			<designed target="Y" value="57" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_140" display-name="Text_140" uuid="d1162af4-a5dd-4d60-a64b-69a783f4a66f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="190" ver="5"/>
+			<designed target="Y" value="122" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-009" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="3051ef36-e3ba-4fa8-920d-e10b8632119b" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="6586a03e-5ae0-4c18-a5f6-319255891449" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="AG-201" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="1390e1aa-2afc-478b-a83f-0452a3c34ae8" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="166" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="cfeda519-82e2-421e-ba20-7a7c64b34849" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="217" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-201" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_22" display-name="AI_22" uuid="0566f3da-ee8b-4bfd-83a8-8ee9fffc4162" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="243" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_160" display-name="Text_160" uuid="f0c04db5-8c7b-4867-83ab-1704a606a915" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="294" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-201" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="47eaed5c-77d9-4d89-b68f-23aeaee81c6e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="29" ver="5"/>
+			<designed target="Text" value="Вход этановой фракции" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_23" display-name="AI_23" uuid="d00bccb7-2ae4-47e8-9eba-cb3fdd3057db" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="168" ver="5"/>
+			<designed target="Y" value="166" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_162" display-name="Text_162" uuid="f82f8ec1-f796-4df5-afd9-bc0d42a900cb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="226" ver="5"/>
+			<designed target="Y" value="217" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PDT-201" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_24" display-name="AI_24" uuid="1d82ba1e-f181-476b-ad67-f6a096f51f0d" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="168" ver="5"/>
+			<designed target="Y" value="243" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_163" display-name="Text_163" uuid="8673502d-3c3c-4bf9-b68b-90113ed1d91e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="226" ver="5"/>
+			<designed target="Y" value="294" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PDT-202" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_25" display-name="AI_25" uuid="0e860731-7b77-4b3d-a7bd-6a57420c987f" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="91" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_164" display-name="Text_164" uuid="f5c1f99e-10c1-4677-a7d1-f8bb4c150c6f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="142" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="AG-202" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_10" display-name="Rectangle_10" uuid="4f5957bc-7c60-439d-a7c4-38e3156383a8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="453" ver="5"/>
+		<designed target="Y" value="79" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="331" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="MOV_3" display-name="MOV_3" uuid="025e3b77-655c-4e0f-8c03-4aa14753fabc" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="145" ver="5"/>
+			<designed target="Y" value="57" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_140" display-name="Text_140" uuid="b6b395c5-e813-443c-bd16-cbb4a60dc83a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="190" ver="5"/>
+			<designed target="Y" value="122" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-016" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="6c8eb80c-7400-4e8d-bb8c-83f4ff04c3a2" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="2fb91482-6551-4306-a60c-175a87dc977c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="AG-301" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="074adafc-2e37-41a7-a741-c2894212d8b4" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="166" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="f1689de4-1709-4f28-bbc7-0918abad6314" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="217" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-301" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_22" display-name="AI_22" uuid="489864e7-a5b5-4636-8457-a04e76ee6796" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="243" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_160" display-name="Text_160" uuid="f6228b0f-ab72-4e19-8f5b-f53bd0c7c707" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="294" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-301" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="07020408-fb72-4190-9c5c-c68979a62dc0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="29" ver="5"/>
+			<designed target="Text" value="Вход пиролиза" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_23" display-name="AI_23" uuid="8b7c7c2d-d14f-415c-b773-b8d1acd18ba3" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="168" ver="5"/>
+			<designed target="Y" value="166" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_162" display-name="Text_162" uuid="ccb25bbf-015a-47ec-bb19-eb5e8eca5487" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="226" ver="5"/>
+			<designed target="Y" value="217" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PDT-301" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_24" display-name="AI_24" uuid="42c01d61-8983-4ed6-bba2-2d3ad7a8fcca" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="168" ver="5"/>
+			<designed target="Y" value="243" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_163" display-name="Text_163" uuid="9cddf753-32bf-4f59-a830-83a0cc69d211" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="226" ver="5"/>
+			<designed target="Y" value="294" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PDT-302" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_25" display-name="AI_25" uuid="3b6f3610-6952-47f2-8da6-c1f74e326178" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="3" ver="5"/>
+			<designed target="Y" value="91" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_164" display-name="Text_164" uuid="6fb83bd0-df9d-471b-95ea-511c556dcaaa" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61" ver="5"/>
+			<designed target="Y" value="142" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="AG-302" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_11" display-name="Rectangle_11" uuid="ad3ba458-c5fc-47a8-b4ba-6cbee943f127" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1499" ver="5"/>
+		<designed target="Y" value="614" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="263" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="MOV_3" display-name="MOV_3" uuid="2d0660bb-f3df-4314-bd1b-a1eb7cfaff33" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="111" ver="5"/>
+			<designed target="Y" value="61" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_140" display-name="Text_140" uuid="e5e26adc-eaa7-4955-b8ec-ad5c1cf433a2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="156" ver="5"/>
+			<designed target="Y" value="126" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-011" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="3ef1a0ef-7085-497c-93ce-1d67286a1d6a" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="27" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="14342c4a-54b3-443e-a3e9-909f7e322532" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="78" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-205" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="MOV_5" display-name="MOV_5" uuid="b84ed2c1-ace8-44fe-b983-0203ef889069" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="111" ver="5"/>
+			<designed target="Y" value="148" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_157" display-name="Text_157" uuid="3eed8adc-269f-4e73-8320-ada994961b68" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="156" ver="5"/>
+			<designed target="Y" value="213" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-012" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="MOV_6" display-name="MOV_6" uuid="8d4ed723-e96c-4c96-88d2-790740e9ccd5" base-type="MOV" base-type-id="0327944c-28c1-42a7-8b00-769aef62d29a" ver="5" description="" cardinal="1">
+			<designed target="X" value="213" ver="5"/>
+			<designed target="Y" value="106" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_158" display-name="Text_158" uuid="f47ee8fe-e64f-4b1b-b0ba-db65084723e6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="258" ver="5"/>
+			<designed target="Y" value="171" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="EUV-015" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="a7383007-cabb-4b6a-ae39-d41e4083f70c" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="66449dee-0bce-4170-ad60-fa1be8e1b1e9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="158" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-205A" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_22" display-name="AI_22" uuid="4acaed4b-89d9-48ec-b684-c1be57fc0ec2" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="4" ver="5"/>
+			<designed target="Y" value="184" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_160" display-name="Text_160" uuid="faeca322-f574-4f09-ba89-0996df11f328" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="62" ver="5"/>
+			<designed target="Y" value="235" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-206" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="19ad597e-6b5a-46b6-951f-30ab542b7a5d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="Узел редуцирования этановой фракции" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_12" display-name="Rectangle_12" uuid="c413fee0-2c63-44d0-a0d6-d0d9e2e5a991" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="453" ver="5"/>
+		<designed target="Y" value="426" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="264" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="AI_20" display-name="AI_20" uuid="5419dfce-67a4-4b46-bf63-c9ee8f233f6f" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="95" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_155" display-name="Text_155" uuid="e017c83b-c768-4aa1-b741-dbf59f291f46" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="154" ver="5"/>
+			<designed target="Y" value="84" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-502" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_21" display-name="AI_21" uuid="5154aa5e-ffda-4fc6-b9a1-45ec7b2686ad" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="94" ver="5"/>
+			<designed target="Y" value="110" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_159" display-name="Text_159" uuid="b888a318-d1bc-4071-834a-61bd295ce091" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="152" ver="5"/>
+			<designed target="Y" value="161" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-501" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="5e9bd17c-ac1e-4742-8272-997b5a8658ed" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="16" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="310" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="Узел подогрева теплоносителя" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_24" display-name="AI_24" uuid="10dd1a4d-7773-4c7d-854b-82fe038f4db6" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="209" ver="5"/>
+			<designed target="Y" value="33" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_163" display-name="Text_163" uuid="2c9cbb4e-d0d0-4779-bde5-6f30b38c7fd7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="268" ver="5"/>
+			<designed target="Y" value="83" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="PT-501" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_25" display-name="AI_25" uuid="add06ac0-77c2-452a-9931-19e02fea26f1" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="209" ver="5"/>
+			<designed target="Y" value="110" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_164" display-name="Text_164" uuid="b2f6c70d-ca5d-4246-b0ab-151c13b211ed" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="267" ver="5"/>
+			<designed target="Y" value="161" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="TT-504" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PMP_SE_AUT_1" display-name="PMP_SE_AUT_1" uuid="1b45deb1-5b42-4364-8ee1-4c9beb0f9c74" base-type="PMP_SE_AUT" base-type-id="1424bdb2-a794-4183-add1-18fa92cf323e" ver="5" description="" cardinal="1">
+			<designed target="X" value="-37" ver="5"/>
+			<designed target="Y" value="54" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_165" display-name="Text_165" uuid="21849b95-dad3-4c16-aad7-bb7f5ce07831" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="19" ver="5"/>
+			<designed target="Y" value="115" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="72" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="P-001/1" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PMP_SE_AUT_2" display-name="PMP_SE_AUT_2" uuid="d45d22f0-c486-478a-8fce-a471a69dff28" base-type="PMP_SE_AUT" base-type-id="1424bdb2-a794-4183-add1-18fa92cf323e" ver="5" description="" cardinal="1">
+			<designed target="X" value="-37" ver="5"/>
+			<designed target="Y" value="135" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_166" display-name="Text_166" uuid="7d6c6483-ebb8-4e24-99d0-8c231e11a08b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="19" ver="5"/>
+			<designed target="Y" value="196" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="72" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="P-001/2" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AI_26" display-name="AI_26" uuid="4a579fcb-2295-4511-8c54-191b1bfad319" base-type="AI" base-type-id="940450ab-85ea-4c1f-82ec-0e81e68da966" ver="5" description="" cardinal="1">
+			<designed target="X" value="143" ver="5"/>
+			<designed target="Y" value="182" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_167" display-name="Text_167" uuid="faac468a-d4c2-49b7-a651-06fc2c7ed63c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="201" ver="5"/>
+			<designed target="Y" value="233" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="65" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="FT-501" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_13" display-name="Rectangle_13" uuid="a20d846b-1582-4d06-b648-ed034eabc9a0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1244" ver="5"/>
+		<designed target="Y" value="428" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="219" ver="5"/>
+		<designed target="Height" value="264" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_161" display-name="Text_161" uuid="e569b384-d189-44e5-afe3-02211845d0ef" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="37" ver="5"/>
+			<designed target="Y" value="3" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="137" ver="5"/>
+			<designed target="Height" value="48" ver="5"/>
+			<designed target="Text" value="Вентиляторы" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="36" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PMP_SE_AUT_1" display-name="PMP_SE_AUT_1" uuid="6e228bd5-db1c-4845-88e4-75221af99fe7" base-type="PMP_SE_AUT" base-type-id="1424bdb2-a794-4183-add1-18fa92cf323e" ver="5" description="" cardinal="1">
+			<designed target="X" value="-37" ver="5"/>
+			<designed target="Y" value="54" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_165" display-name="Text_165" uuid="92e80af3-f664-49d5-ab06-cef7741ae4b9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="19" ver="5"/>
+			<designed target="Y" value="115" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="72" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="B1" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PMP_SE_AUT_2" display-name="PMP_SE_AUT_2" uuid="dcd5bca3-5b5a-4d1a-927f-5f1c3f73de1a" base-type="PMP_SE_AUT" base-type-id="1424bdb2-a794-4183-add1-18fa92cf323e" ver="5" description="" cardinal="1">
+			<designed target="X" value="-37" ver="5"/>
+			<designed target="Y" value="135" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_166" display-name="Text_166" uuid="464bc5db-4bf3-44ca-bd95-192e2d1fc129" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="19" ver="5"/>
+			<designed target="Y" value="196" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="72" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="B2" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PMP_SE_AUT_3" display-name="PMP_SE_AUT_3" uuid="5425f4a7-2a36-444e-a0eb-39645e2e93a9" base-type="PMP_SE_AUT" base-type-id="1424bdb2-a794-4183-add1-18fa92cf323e" ver="5" description="" cardinal="1">
+			<designed target="X" value="93" ver="5"/>
+			<designed target="Y" value="55" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_167" display-name="Text_167" uuid="80990df2-6581-423c-8e16-9685f030190f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="149" ver="5"/>
+			<designed target="Y" value="116" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="72" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="B1a" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PMP_SE_AUT_4" display-name="PMP_SE_AUT_4" uuid="5f518630-b1d6-42f4-9d28-8b8ca699a51c" base-type="PMP_SE_AUT" base-type-id="1424bdb2-a794-4183-add1-18fa92cf323e" ver="5" description="" cardinal="1">
+			<designed target="X" value="93" ver="5"/>
+			<designed target="Y" value="136" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_168" display-name="Text_168" uuid="dbfe872b-8b1e-4e23-9572-07a7feb03be6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="149" ver="5"/>
+			<designed target="Y" value="197" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="72" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="B3" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+	</object>
+</type>
+
