@@ -33585,7 +33585,7 @@
         </dp:application-object>
         <opc:opcua-server name="OpcUaServer" uuid="d2843e70-c236-4696-9fd5-4d774aaa417c" tag-map="REGUL_SMC306_01_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
       </dp:external-runtime>
-      <eth:ethernet-adapter name="EthernetAdapter1" uuid="9be83e16-c029-4220-b239-58b6466e33de" network="Network1" address="192.168.0.31" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="9be83e16-c029-4220-b239-58b6466e33de" network="Network1" address="192.168.0.69" />
       <eth:ethernet-adapter name="EthernetAdapter2" uuid="74c759e8-4342-429d-b720-18df8113533b" network="Network2" address="192.168.1.31" />
     </dp:computer>
     <dp:computer name="REGUL_SMC306_07_B" uuid="4819581e-6519-4efe-b90d-8a4c0d005fd6">
