@@ -9565,7 +9565,7 @@
     <object Id="62a4ab08-7c26-4463-8ef4-2cc7f3eaf8e7" Left="801.983333333333" Top="26" Width="84.45" Height="98" />
     <object Id="96e9dc58-0bf0-4ca8-a252-db4315a44168" Left="313.85" Top="136" Width="94.0366666666667" Height="54" />
   </object>
-  <object Id="06fd7b8b-5c03-4049-939d-119a105fab77" OffsetX="0" OffsetY="3142.59731852931" Scale="0.7935060244728" SnapToGrid="false">
+  <object Id="06fd7b8b-5c03-4049-939d-119a105fab77" OffsetX="0" OffsetY="3052.90627614226" Scale="0.7935060244728" SnapToGrid="false">
     <object Id="a76c05d9-93f1-49e9-960d-529fab78c15a" Left="66" Top="26" Width="303.696666666667" Height="444.63">
       <Inputs />
       <Outputs />
@@ -9683,14 +9683,6 @@
       <Outputs />
     </object>
     <object Id="63f811f5-4306-49a9-a1a2-abe5890d66c7" Left="714.393333333333" Top="3246" Width="304.863333333333" Height="444.63">
-      <Inputs />
-      <Outputs />
-    </object>
-    <object Id="2bef6dd8-4f65-4aa1-a6c4-e1b16d8d5a03" Left="1039.25666666667" Top="3246" Width="304.863333333333" Height="444.63">
-      <Inputs />
-      <Outputs />
-    </object>
-    <object Id="b7b5594e-a0cc-4de3-b0eb-dbd1b34af360" Left="1045.25666666667" Top="3705" Width="304.863333333333" Height="444.63">
       <Inputs />
       <Outputs />
     </object>
