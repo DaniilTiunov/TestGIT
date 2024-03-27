@@ -957,8 +957,8 @@
 			</do-on>
 		</object>
 		<object access-modifier="private" name="Diagn" display-name="Diagn" uuid="10f96097-3376-49bc-bd2f-e1948baad46e" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
-			<designed target="X" value="293" ver="5"/>
-			<designed target="Y" value="203" ver="5"/>
+			<designed target="X" value="330" ver="5"/>
+			<designed target="Y" value="436" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="250" ver="5"/>
 			<designed target="Height" value="35" ver="5"/>
