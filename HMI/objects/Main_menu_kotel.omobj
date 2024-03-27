@@ -821,8 +821,8 @@
 			</do-on>
 		</object>
 		<object access-modifier="private" name="Air_vent" display-name="Air_vent" uuid="91c062ed-cd4c-4c4f-8779-f6fb970570d7" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
-			<designed target="X" value="20" ver="5"/>
-			<designed target="Y" value="150" ver="5"/>
+			<designed target="X" value="320" ver="5"/>
+			<designed target="Y" value="730" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="200" ver="5"/>
 			<designed target="Height" value="35" ver="5"/>
