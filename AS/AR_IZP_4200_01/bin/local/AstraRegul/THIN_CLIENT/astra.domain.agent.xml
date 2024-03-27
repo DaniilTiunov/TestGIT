@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Astra.Domain.Agent Name="THIN_CLIENT">
+  <EntryPointNetAgent Name="THIN_CLIENT" Address="127.0.0.1" Port="1010" />
+  <InstalledComponents>
+    <Astra.Server Name="AccessPoint" ServiceName="Astra.AccessPoint" />
+  </InstalledComponents>
+  <Workstation Dynamic="false">
+    <WorkstationRoles>
+      <WorkstationRole Name="THIN_CLIENT">
+        <Components StoragePath="C:\DomainStorage\cache">
+          <Component InstalledName="AccessPoint" Name="AccessPoint" />
+        </Components>
+      </WorkstationRole>
+    </WorkstationRoles>
+  </Workstation>
+  <Options LoggerLevel="2" />
+</Astra.Domain.Agent>

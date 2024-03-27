@@ -450,6 +450,8 @@
 			</do-on>
 		</object>
 		<object access-modifier="private" name="Diag" display-name="Diag" uuid="4c732f94-059b-4cbf-b737-32d1400db910" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="693" ver="5"/>
+			<designed target="Y" value="626.5" ver="5"/>
 			<designed target="X" value="289" ver="5"/>
 			<designed target="Y" value="201" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
@@ -903,6 +905,8 @@
 			<designed target="TextAlignment" value="36" ver="5"/>
 		</object>
 		<object access-modifier="private" name="Boiler_room_1" display-name="Boiler_room_1" uuid="c2ab814d-8ba9-4b85-8d52-e95102311119" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="19" ver="5"/>
+			<designed target="Y" value="40" ver="5"/>
 			<designed target="X" value="30" ver="5"/>
 			<designed target="Y" value="357" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
@@ -953,8 +957,8 @@
 			</do-on>
 		</object>
 		<object access-modifier="private" name="Diagn" display-name="Diagn" uuid="10f96097-3376-49bc-bd2f-e1948baad46e" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
-			<designed target="X" value="293" ver="5"/>
-			<designed target="Y" value="203" ver="5"/>
+			<designed target="X" value="330" ver="5"/>
+			<designed target="Y" value="436" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="250" ver="5"/>
 			<designed target="Height" value="35" ver="5"/>
@@ -966,8 +970,8 @@
 			</do-on>
 		</object>
 		<object access-modifier="private" name="Diagn_1" display-name="Diagn_1" uuid="e2eee222-6f15-4f23-b9ad-e8d58faa3193" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
-			<designed target="X" value="19" ver="5"/>
-			<designed target="Y" value="203" ver="5"/>
+			<designed target="X" value="1" ver="5"/>
+			<designed target="Y" value="342" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="250" ver="5"/>
 			<designed target="Height" value="35" ver="5"/>

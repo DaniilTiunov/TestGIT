@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Id="82d24c49-b728-4b6e-a2ee-73b54dbf3b39" Version="1.7.1.1" OutputPath="bin\" Comments="Библиотека типовых алгоритмов ПТК AstraRegul для нефтегазовой отрасли " IDE="Astra.AStudio 1.4.3" UpgradeVersion="5">
+<Project Id="82d24c49-b728-4b6e-a2ee-73b54dbf3b39" Version="1.7.1.3" OutputPath="bin\" Comments="Библиотека типовых алгоритмов ПТК AstraRegul для нефтегазовой отрасли " IDE="Astra.AStudio 1.4.6" UpgradeVersion="5">
   <Files>
     <SourceFile Name="PsTechOG.omx" />
   </Files>
