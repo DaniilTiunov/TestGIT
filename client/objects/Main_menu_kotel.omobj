@@ -1,0 +1,878 @@
+<type access-modifier="private" name="Main_menu_kotel" display-name="Main_menu_kotel" uuid="41f4f9ab-a334-44f4-bc9b-b204518fba8b" base-type="Mnemoschem" base-type-id="64806c44-c3c8-49e6-8d51-bb5ea5b1f1dc" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1900" ver="5"/>
+	<designed target="Height" value="960" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1900" ver="5"/>
+	<designed target="WindowHeight" value="960" ver="5"/>
+	<designed target="WindowCaption" value="Главное меню Котельной №1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Boiler4" display-name="Boiler4" uuid="c79651b6-f3a8-45c8-af25-87750299e7db" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="860" ver="5"/>
+		<designed target="Y" value="470" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="425" ver="5"/>
+		<designed target="Height" value="290" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="bc4c222f-2d34-4f05-8df6-91199fddbcfa" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="425" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Name" display-name="Name" uuid="eef1c525-4f5b-4b3a-aed5-4c8580082a91" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="425" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="Text" value="Водогрейные котлы" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Boiler" display-name="Boiler" uuid="7e24e8d4-f8c1-4c2b-8048-035c8da0f4b4" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="89.999999999999886" ver="5"/>
+			<designed target="Y" value="64.999999999999972" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Водогрейный котел №4" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="6e2e7472-24e2-45ab-bd6f-57285e42cf8e" base-type="Boiler" base-type-id="facc88c9-6a24-4277-8d47-486d526fbcb1" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Boiler_1" display-name="Boiler_1" uuid="92e30488-fbef-4f58-afe1-f588145832df" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="89.999999999999886" ver="5"/>
+			<designed target="Y" value="120.00000000000003" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Водогрейный котел №5" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="627ff446-cb62-4543-8ca5-e751a65e0966" base-type="Boiler" base-type-id="1b0ce6b6-9aa0-4231-877a-1b72f8bdd2ef" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Boiler_2" display-name="Boiler_2" uuid="861ce576-4270-42ee-b2e6-cd76ffe449f0" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="89.999999999999886" ver="5"/>
+			<designed target="Y" value="175.00000000000006" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Водогрейный котел №6" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="9f782ee7-3e27-42a2-908b-37986756b0bc" base-type="Boiler" base-type-id="eead08b7-0113-4418-ab2a-290b2a2f840d" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+	</object>
+	<init target="IsEnablePrev" ver="5" value="true"/>
+	<init target="IsEnableNext" ver="5" value="true"/>
+	<object access-modifier="private" name="Obshkot" display-name="Obshkot" uuid="ad773b4e-2d17-4ee1-b504-c1131338fc07" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="850" ver="5"/>
+		<designed target="Height" value="345" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="b9466811-65df-4692-aca0-9d02514ca313" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="850" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Name" display-name="Name" uuid="9793d8bc-4c73-4d1c-b80c-678006ee3f22" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="850" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="Text" value="Общекотельное оборудование" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Pres_Steam" display-name="Pres_Steam" uuid="57843df9-49d0-4ad7-921d-751bbf31fbe5" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="90.000000000000014" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Пар высокого давления" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="6b06b742-c373-4d3c-8125-9403fd99490f" base-type="Pres_Steam" base-type-id="d332c8a4-3977-433b-a6ea-7637e79bd655" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Diaerator" display-name="Diaerator" uuid="68830d1b-3ad2-42cd-948f-479940afa5f2" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="90" ver="5"/>
+			<designed target="Y" value="120" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Деаэраторы" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="e5d346d8-923b-4da5-a48f-133833077bdb" base-type="Diaerator" base-type-id="15a275a2-0495-43ba-906e-5e4a576e15ed" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Diag" display-name="Diag" uuid="3c08b226-3d26-491a-8c4c-86a31405cc95" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="509.99999999999994" ver="5"/>
+			<designed target="Y" value="230.00000000000003" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика РСУ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="523bfd43-5e37-4cde-a20a-43678c037394" base-type="SMC_306_7_Diagn" base-type-id="335c5177-2bae-4ed5-82b0-1c893b40d7c7" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Khim_voda" display-name="Khim_voda" uuid="17e6b6fd-9c0f-46a8-834f-f9a3934de6ae" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="90" ver="5"/>
+			<designed target="Y" value="175" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Химобессоленная вода" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="109fdac4-3953-4d06-a7ba-04c6ff1825b4" base-type="Khim_bes_voda" base-type-id="d13e8bd3-7f8d-4923-8790-3314a88084df" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Set_voda" display-name="Set_voda" uuid="86183c49-c7a1-40b4-bf4d-44776184b49f" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="509.99999999999989" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Сетевая вода" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="f5c29a76-cf6d-47cc-81a7-ae01b0b6220e" base-type="Set_Voda" base-type-id="a1f7ae50-35e8-4759-b134-e515951e5461" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Prom_teplo_voda" display-name="Prom_teplo_voda" uuid="472fca95-1ec4-443b-aa09-7fa76743c66e" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="509.99999999999994" ver="5"/>
+			<designed target="Y" value="119.99999999999999" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Промтеплофикационная вода" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="6272771d-8b35-4234-bf35-1cc578c8245d" base-type="Prom_Teplo_Voda" base-type-id="e6cd6ee0-e33c-44c9-bae3-6aecd2c2080f" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Diag_2" display-name="Diag_2" uuid="115fbbf9-b8f9-4f7a-96d0-c4fbaca4b044" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="509.99999999999994" ver="5"/>
+			<designed target="Y" value="175" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Дренаж и продувка" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="0b1b7bd3-be1b-4601-89c4-666db6429fb0" base-type="Dren_Prod" base-type-id="97bd276f-e203-472a-aa9b-434744001db6" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Steam1" display-name="Steam1" uuid="d1fd6329-a7a9-4029-adf5-73a6c2d3ef88" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="860" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="345" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="89f7c0ef-6453-4933-ac8f-28d18003a684" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="340" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Name" display-name="Name" uuid="ef921ed9-a499-4f3a-8d0e-63f0c8876e5f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="340" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="Text" value="Паровой котел №1" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Boiler" display-name="Boiler" uuid="cd88676d-8c27-4d97-8954-c92403b1a45d" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70" ver="5"/>
+			<designed target="Y" value="65.000000000000114" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Барабан и управление" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="58f8ed93-b2ca-4279-896b-4d47689f8ae6" base-type="Pres_Boiler" base-type-id="71def687-938e-4838-954a-a5829f7ef3d2" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Heater" display-name="Heater" uuid="826d5ee1-9762-4efa-bd5b-b0037614db49" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70" ver="5"/>
+			<designed target="Y" value="119.99999999999955" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="ПВТ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="442187fa-d67a-47d3-836b-0886811b63a6" base-type="Pres_Gorelka" base-type-id="e6ec9524-6cc2-49fd-9ffb-bf16885c37ef" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent" display-name="Air_vent" uuid="7319efda-358d-44a8-aa2d-772af34a11a3" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70.000000000000057" ver="5"/>
+			<designed target="Y" value="175" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="ТТ и ГВТ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="c7fcb9cb-5ae5-41ce-bde4-96f3fbb9e3e1" base-type="Pres_Boiler_fuel" base-type-id="ec4d0fd5-0ec6-4b88-b791-a7f1c7931051" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_1" display-name="Air_vent_1" uuid="46919c5c-3f99-43d7-baa9-3298b54cd23e" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70" ver="5"/>
+			<designed target="Y" value="285" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика РСУ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="b0b3902f-17a4-4fe0-8ace-5823361b1668" base-type="SMC_306_1_Diagn" base-type-id="b1e5e5e0-f96b-40a0-8486-80af8b3ddd97" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_2" display-name="Air_vent_2" uuid="bb1a5392-3c60-4ba2-9e0a-1ae1eb4bc44f" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="69.999999999999943" ver="5"/>
+			<designed target="Y" value="230.00000000000003" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика ТДМ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="e0338ec2-20b2-44d5-909d-e886aa0aed60" base-type="Exhauster_Diagn" base-type-id="258038a8-7d7c-4fc4-adc5-2f55f6349a68" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Steam1_1" display-name="Steam1_1" uuid="2b1008d7-377f-4389-883f-429a56d170b5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1200" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="345" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="a7cf88f7-c20c-4ebb-b0d7-d86ad6027baa" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="340" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Name" display-name="Name" uuid="83209e04-21f3-44ba-ac0c-8faa8e0dd609" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="340" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="Text" value="Паровой котел №2" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Boiler" display-name="Boiler" uuid="5344c81a-86fc-4d27-86e6-e27eeb070a07" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70.000000000000057" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Котел" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="13a901c1-a6c4-4859-9a3f-6bbc08536848" base-type="Pres_Boiler" base-type-id="fdf4aa93-9a3c-452f-b819-955d7e46ad2f" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Heater" display-name="Heater" uuid="dde0e2c8-9144-4fe4-8233-e684798d6d22" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70.000000000000057" ver="5"/>
+			<designed target="Y" value="120" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Горелка" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="5c33acd6-2118-493a-a3f0-3a1203c03b0e" base-type="Pres_Gorelka" base-type-id="4fad07ff-1aab-4af3-abc8-87fe046c0dc1" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent" display-name="Air_vent" uuid="9c69e047-470a-48d6-af56-0164bbfa9c18" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70.000000000000057" ver="5"/>
+			<designed target="Y" value="175" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Воздуховод" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="edd589ee-4034-4afc-9628-a69a7d6daa68" base-type="Pres_Boiler_fuel" base-type-id="3a8bb42b-6776-412e-b57f-96a53278ec3d" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_1" display-name="Air_vent_1" uuid="e7b6f48a-a0e8-4126-ad0d-f1d0cafefc4e" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70.000000000000114" ver="5"/>
+			<designed target="Y" value="285" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика РСУ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="e18799bf-55d4-4838-b8a9-d1328d786308" base-type="SMC_306_2_Diagn" base-type-id="666218b1-a791-41c4-aa97-db3bec64ef2a" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_3" display-name="Air_vent_3" uuid="90f91f7c-dcb9-49a5-9310-12937e39f621" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="70" ver="5"/>
+			<designed target="Y" value="230" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика ТДМ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="585903c4-079b-4ef1-aeaa-cfe78ec6e7d6" base-type="Exhauster_Diagn" base-type-id="258038a8-7d7c-4fc4-adc5-2f55f6349a68" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Steam1_2" display-name="Steam1_2" uuid="5cde8839-acef-4c12-b6f2-6561d617068c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1540" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="340" ver="5"/>
+		<designed target="Height" value="345" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="5ae0e352-57de-4018-a175-f635b48ae737" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="340" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Name_1" display-name="Name_1" uuid="420c768e-bc98-4eda-aff1-8eed62b21e53" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="340" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="Text" value="Паровой котел №3" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Boiler_1" display-name="Boiler_1" uuid="bd13d952-9edc-4326-9f3e-382f2628bb10" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="69.999999999999886" ver="5"/>
+			<designed target="Y" value="65" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Котел" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="f04ca495-4812-4978-92ff-1bd86a61c87d" base-type="Pres_Boiler" base-type-id="9382f718-5bcf-4ed4-8f69-26aec451bf09" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Heater_1" display-name="Heater_1" uuid="82a32996-8bc4-4fcc-81fe-47a196e7f396" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="69.999999999999886" ver="5"/>
+			<designed target="Y" value="120" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Горелка" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="f1a3a3fd-aaf0-435e-9837-4cfbd2c26577" base-type="Pres_Gorelka" base-type-id="f8ce801d-8b08-44cb-a1e9-0796761e35ea" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_3" display-name="Air_vent_3" uuid="862f2efe-1530-4229-8036-78371284ac3d" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="69.999999999999886" ver="5"/>
+			<designed target="Y" value="175" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Воздуховод" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="da9fb284-9ee6-4ba6-82a1-fc20a9fa29b6" base-type="Pres_Boiler_fuel" base-type-id="4fa9b4df-4aa8-4d72-a1d7-81130a547327" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_4" display-name="Air_vent_4" uuid="fac08e50-b4ea-4616-bce4-5182f95270fc" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="69.999999999999886" ver="5"/>
+			<designed target="Y" value="285" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика РСУ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="9dfaa02f-c905-4fe6-93c9-c5c575f747bf" base-type="SMC_306_3_Diagn" base-type-id="d6b71256-e06c-48d7-b972-d38d564f4002" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_5" display-name="Air_vent_5" uuid="0254218f-f8b6-4e6c-910d-7ad959be8d77" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="69.999999999999943" ver="5"/>
+			<designed target="Y" value="230" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика ТДМ" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="1e1c6023-6d52-432b-8730-3f3034380fdd" base-type="Exhauster_Diagn" base-type-id="258038a8-7d7c-4fc4-adc5-2f55f6349a68" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Overview" display-name="Overview" uuid="498e35ca-11e2-445e-bc84-ef165c85636e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="470" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="850" ver="5"/>
+		<designed target="Height" value="400" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="a32b6047-f6c1-490c-bc84-4fc58faf77c9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="850" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Name" display-name="Name" uuid="f4797132-db35-4db8-af2f-1393088c7947" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="850" ver="5"/>
+			<designed target="Height" value="40" ver="5"/>
+			<designed target="Text" value="Обзорные схемы" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Boiler_room_1" display-name="Boiler_room_1" uuid="9d56782f-9e3d-45e9-a9a9-9de82cf5c669" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="90" ver="5"/>
+			<designed target="Y" value="64.999999999999972" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Котельная №1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="9cb97383-9fd7-46ad-bd64-7b197f2318b3" base-type="Boiler_room_1" base-type-id="3dc1c24f-14a7-44e4-a4eb-d05a55e70a26" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Steam_Boilers" display-name="Steam_Boilers" uuid="ed7970d2-82b0-4e3b-8acf-ec0f3a701885" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="90" ver="5"/>
+			<designed target="Y" value="120.00000000000003" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Паровые котлы" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="f15ffa66-69b1-40c1-97c7-ce6d187f24da" base-type="Pres_Boilers" base-type-id="653a0caf-a281-4b09-a469-03dc1db15f19" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Water_Boilers" display-name="Water_Boilers" uuid="3a00fe79-aea8-40a0-b93d-1354bc0df06e" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="90" ver="5"/>
+			<designed target="Y" value="175" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Водогрейные котлы" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="7c4d337e-0345-42c2-961b-909b60293f9c" base-type="Water_Boilers" base-type-id="beedc563-8a17-4817-8d94-9ebcffd93f44" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Diagn" display-name="Diagn" uuid="104e01a6-355b-4b94-8cf3-f8f0cb7c827c" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="510" ver="5"/>
+			<designed target="Y" value="229.99999999999994" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика ИС" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="ff3c84a1-ed0e-45cc-b53a-ea9d64c8debd" base-type="Vent" base-type-id="b7a84b78-cc54-44cd-997e-63aa77097d16" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Diagn_1" display-name="Diagn_1" uuid="932d7247-c92c-46fb-9d9a-d11f8f445e0c" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="510" ver="5"/>
+			<designed target="Y" value="175.00000000000006" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика ПТК" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="6a1855eb-52bb-4999-b21c-0b9e95acc89d" base-type="PTK_Diagn" base-type-id="8fc8e6e5-e492-431e-8d24-7aa5e02a3717" ver="5"/>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Air_vent_2" display-name="Air_vent_2" uuid="0b9bd582-28ff-460a-ad46-9ef38a9dfadb" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="510" ver="5"/>
+			<designed target="Y" value="64.999999999999972" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Загазованность" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="33d38c2a-780f-43e4-b99e-bd7f229f42a4" base-type="GasDiagn" base-type-id="86a9fbd2-5d9c-40dc-9270-c656d408142f" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Diag_1" display-name="Diag_1" uuid="0040cd2b-0363-4577-b7f8-d7cb1f6a99e3" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="510" ver="5"/>
+			<designed target="Y" value="120.00000000000003" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Диагностика насосов" ver="5"/>
+			<designed target="BrushColor" value="0xff00172e" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="66a9f9b6-9861-40b9-974c-cc8c363090ad" base-type="PumpDiagn_P001" base-type-id="682f890b-4c1a-4a26-827b-65503da81ed1" ver="5">
+					<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+				</object>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PPG_2" display-name="PPG_2" uuid="bdbec2ee-8d9f-4f83-add6-eba6c2091fcf" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="90" ver="5"/>
+			<designed target="Y" value="230.99999999999926" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="ППГ №1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="b461e156-0894-4ed2-bcc7-8ce308b91352" base-type="PPG" base-type-id="40b08852-aca5-415a-bd32-31e6cb630234" ver="5"/>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="PPG_3" display-name="PPG_3" uuid="276acf3b-1dbe-428d-8e2c-82545e823ec8" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+			<designed target="X" value="89.999999999999986" ver="5"/>
+			<designed target="Y" value="286.00000000000205" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="250" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Text" value="Узел подогрева газа" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+				<object access-modifier="private" uuid="a6069633-c979-43c9-ae3e-06ab38275a6b" base-type="Heating_PPG" base-type-id="d7d2877c-d377-487d-99b5-4ab8409e30b2" ver="5"/>
+			</do-on>
+			<designed target="Scale" value="1.5" ver="5"/>
+		</object>
+	</object>
+</type>
+

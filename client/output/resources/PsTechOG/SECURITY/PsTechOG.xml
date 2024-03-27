@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="PsTechOG" IsSystem="false">
+  <Tokens>
+    <Token Type="Boolean" Name="sAckEn" Description="Квитирование">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="9040380e-9026-4c3f-87ff-c2759eeb19f2" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+    <Token Type="Boolean" Name="sChangeModeEn" Description="Изменение режима">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="d12e972b-7a05-4357-8cbc-7a2119d19413" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+    <Token Type="Boolean" Name="sChangeParamEn" Description="Изменение параметров и уставок блоков">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="2ee2443b-1f51-4ff2-8776-5fc5e411f83d" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+    <Token Type="Boolean" Name="sCtlEn" Description="Управление">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="7040c55d-ad96-4338-bb57-9c2042fc4ff0" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+    <Token Type="Boolean" Name="sMaintanceInhibitEn" Description="Запрет технического обслуживания">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="ce288313-c3c1-48c2-9d64-fe339118d452" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+    <Token Type="Boolean" Name="sPidConfigEn" Description="Задание коэффициентов ПИД регулятора">
+      <Rights />
+    </Token>
+    <Token Type="Boolean" Name="sPstControlEn" Description="Разрешение управления PST">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="c24229ea-e7d2-47bc-a470-a40468069c60" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+    <Token Type="Boolean" Name="sResetTotalizerEn" Description="Сброс суммирующего устройства">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="752d34aa-88e1-4fb0-8407-bfe84592ab66" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+    <Token Type="Boolean" Name="sTestModeEn" Description="Режим испытаний">
+      <Rights>
+        <Right xsi:type="RightOfBoolean" Id="c7a800a2-a7b5-430c-86fc-07bd70f5c677" Allow="true" Deny="false">
+          <Subjects>
+            <Subject>alpha:24b605ca-8ed9-4247-9aac-4c3c4c5b8097</Subject>
+            <Subject>alpha:a89ab93c-d9f9-4f0b-bf1c-acb1705b313e</Subject>
+          </Subjects>
+        </Right>
+      </Rights>
+    </Token>
+  </Tokens>
+  <Roles />
+</Application>

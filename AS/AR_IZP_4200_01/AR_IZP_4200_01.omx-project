@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Id="84e83303-1124-47b4-b93c-d019f9a1fd83" Version="1.0.0.0" UpgradeVersion="5">
+  <Files>
+    <AddressFile Name="SRVNTP_SnmpMap.xml" />
+    <AddressFile Name="SWITCH1_SnmpMap.xml" />
+    <AddressFile Name="SRVH_SnmpMap.xml" />
+    <AddressFile Name="OWS2_SnmpMap.xml" />
+    <AddressFile Name="OWS3_SnmpMap.xml" />
+    <AddressFile Name="OWS1_SnmpMap.xml" />
+    <AddressFile Name="OWS4_SnmpMap.xml" />
+    <AddressFile Name="OWS5_SnmpMap.xml" />
+    <AddressFile Name="OWS6_SnmpMap.xml" />
+    <AddressFile Name="OWS7_SnmpMap.xml" />
+    <AddressFile Name="STATION_SnmpMap.xml" />
+    <AddressFile Name="SRVP_SnmpMap.xml" />
+    <AddressFile Name="SRVR_SnmpMap.xml" />
+    <AddressFile Name="REGUL_SMC306_07_Map.xml" />
+    <AddressFile Name="REGUL_SMC306_07_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_07_B_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_02_Map.xml" />
+    <AddressFile Name="REGUL_SMC306_02_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_02_B_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_03_Map.xml" />
+    <AddressFile Name="REGUL_SMC306_03_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_03_B_DiagnMap.xml" />
+    <AddressFile Name="REGUL_PPG_1_Map.xml" />
+    <AddressFile Name="REGUL_PPG_1_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_PPG_1_B_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_04_Map.xml" />
+    <AddressFile Name="REGUL_SMC306_04_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_04_B_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_05_Map.xml" />
+    <AddressFile Name="REGUL_SMC306_05_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_05_B_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_06_Map.xml" />
+    <AddressFile Name="REGUL_SMC306_06_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_06_B_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_01_Map.xml" />
+    <AddressFile Name="REGUL_SMC306_01_A_DiagnMap.xml" />
+    <AddressFile Name="REGUL_SMC306_01_B_DiagnMap.xml" />
+    <SourceFile Name="AR_IZP_4200_01.omx" />
+  </Files>
+</Project>

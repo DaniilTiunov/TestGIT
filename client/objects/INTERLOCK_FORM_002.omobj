@@ -1,0 +1,1132 @@
+<type access-modifier="public" name="INTERLOCK_FORM_002" display-name="INTERLOCK_FORM_002" uuid="1ffff294-5309-40f1-9f3c-fe3ea9a66791" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="300" ver="5"/>
+	<designed target="Height" value="300" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="400" ver="5"/>
+	<designed target="WindowHeight" value="300" ver="5"/>
+	<designed target="WindowCaption" value="Form_1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<param access-modifier="private" name="init_Path" display-name="init_Path" uuid="e0629f29-a47f-44cb-8423-e9a92d147a22" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description=""/>
+	<param access-modifier="private" name="init_Source" display-name="init_Source" uuid="ed3bd364-05c7-47d3-bcdf-d247926fe80c" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<init target="init_Source" ver="5" ref="here.init_Source"/>
+	<init target="init_Path" ver="5" ref="here.init_Path"/>
+	<object access-modifier="private" name="Checkbox_1" display-name="Checkbox_1" uuid="096f7299-9e5a-4c05-b563-96dcba01573f" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="52" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="73" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Авария ПЧ" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AVAR_PCH == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_INT_1.Value & 1)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 0;
+if (this.State == true){
+		BYPASS_SIG_INT.Value = BYPASS_SIG_INT.Value | x<<y;
+}
+else{
+		BYPASS_SIG_INT.Value = BYPASS_SIG_INT.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="6de81d80-4eed-46cc-9ff6-41ad5b91a409" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="196" ver="5"/>
+		<designed target="Y" value="193" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="194" ver="5"/>
+		<designed target="Height" value="12" ver="5"/>
+		<designed target="Text" value="Тест пути" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+		<init target="Text" ver="5">
+			<expr>
+				<![CDATA[String.Concat(here.init_Path, ".SV_PUMP")
+]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="AVAR_PCH" display-name="AVAR_PCH" uuid="ae26518e-688d-4f27-8e0e-1ce630817a80" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".AVAR_PCH"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="CURRENT" display-name="CURRENT" uuid="9fd9987f-6b0e-4666-a12d-138833eb6c14" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".CUR_VAL"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="425edac6-1d79-44e2-bd53-d519f3096a80" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="126" ver="5"/>
+		<designed target="Y" value="2" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="TAGNAME" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[TAGNAME]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="f7d61c09-6256-4d19-a360-d42253fc6634" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="23" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="185" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<designed target="Text" value="COMMENT" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[COMMENT]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Checkbox_2" display-name="Checkbox_2" uuid="e84e51d4-4d32-4174-b369-96e040596a0f" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="116" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Выключатель выкл" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(SWITCH_OFF == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_INT_1.Value & 1<<1)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 1;
+if (me.State == true){
+		BYPASS_SIG_INT.Value =  BYPASS_SIG_INT.Value | x<<y;
+}
+else{
+		BYPASS_SIG_INT.Value = BYPASS_SIG_INT.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_3" display-name="Checkbox_3" uuid="e01d7793-3fe6-4d83-bdcc-5be88af07489" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="213" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="144" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев подшипника 1" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(TEMP_6 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_TEMP_1.Value & 1<<5)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 5;
+if (me.State == true){
+		BYPASS_SIG_TEMP.Value =  BYPASS_SIG_TEMP.Value | x<<y;
+}
+else{
+		BYPASS_SIG_TEMP.Value = BYPASS_SIG_TEMP.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="TAGNAME" display-name="TAGNAME" uuid="29a0d754-0bee-4be9-8fe5-c1a093c36b25" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TAGNAME"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Checkbox_4" display-name="Checkbox_4" uuid="749a6ee4-7a92-4c63-97a1-c67e263c8c0e" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="250" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="186" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Вибрация двигателя" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(VIBR_8 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_INT_1.Value & 1<<4)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 4;
+if (me.State == true){
+		BYPASS_SIG_INT.Value =  BYPASS_SIG_INT.Value | x<<y;
+}
+else{
+		BYPASS_SIG_INT.Value = BYPASS_SIG_INT.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_5" display-name="Checkbox_5" uuid="daf0e506-5359-4149-95cc-5323c23cda7c" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="176" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="186" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев подшипника двигателя 1" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(TEMP_4 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_TEMP_1.Value & 1<<3)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 3;
+if (me.State == true){
+		BYPASS_SIG_TEMP.Value =  BYPASS_SIG_TEMP.Value | x<<y;
+}
+else{
+		BYPASS_SIG_TEMP.Value = BYPASS_SIG_TEMP.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_6" display-name="Checkbox_6" uuid="7dde9881-95d1-4781-91d3-a7b256d6a6e9" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="194" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="187" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев подшипника двигателя 2" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(TEMP_5 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_TEMP_1.Value & 1<<4)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 4;
+if (me.State == true){
+		BYPASS_SIG_TEMP.Value =  BYPASS_SIG_TEMP.Value | x<<y;
+}
+else{
+		BYPASS_SIG_TEMP.Value = BYPASS_SIG_TEMP.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_7" display-name="Checkbox_7" uuid="7c67d041-4c29-40ab-bf31-67cf43ffb7b1" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="122" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="187" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев обмотки 1" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(TEMP_1 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_TEMP_1.Value & 1)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 0;
+if (me.State == true){
+		BYPASS_SIG_TEMP.Value =  BYPASS_SIG_TEMP.Value | x<<y;
+}
+else{
+		BYPASS_SIG_TEMP.Value = BYPASS_SIG_TEMP.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_8" display-name="Checkbox_8" uuid="0df8e0c3-1378-4af2-a9c5-869e64bca382" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="138" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев обмотки 2" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(TEMP_2 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_TEMP_1.Value & 1<<1)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 1;
+if (me.State == true){
+		BYPASS_SIG_TEMP.Value =  BYPASS_SIG_TEMP.Value | x<<y;
+}
+else{
+		BYPASS_SIG_TEMP.Value = BYPASS_SIG_TEMP.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_9" display-name="Checkbox_9" uuid="fa1cad1e-9b4c-4d5f-a249-e1a76f2f8b74" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="158" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="136" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев обмотки 3" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(TEMP_3 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_TEMP_1.Value & 1<<2)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 2;
+if (me.State == true){
+		BYPASS_SIG_TEMP.Value =  BYPASS_SIG_TEMP.Value | x<<y;
+}
+else{
+		BYPASS_SIG_TEMP.Value = BYPASS_SIG_TEMP.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="COMMENT" display-name="COMMENT" uuid="02732c29-033e-4072-a66c-9ab2bc46e0ee" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TAGCOMMENT"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="SWITCH_OFF" display-name="SWITCH_OFF" uuid="bacdc48b-b55d-4a43-bae3-3e3455794b81" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".SWITCH_OFF"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="TEMP_1" display-name="TEMP_1" uuid="99f541e2-76a1-403f-b711-fc47d0b4e183" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_1"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="TEMP_2" display-name="TEMP_2" uuid="c307a487-7954-4790-94ec-9952d72b02f9" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_2"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="TEMP_3" display-name="TEMP_3" uuid="4c5d62e7-be2e-4cdc-91ef-5f91abbb9f53" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_3"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="TEMP_4" display-name="TEMP_4" uuid="09774980-a5f6-4bf7-9e9a-6a8b3cef6eca" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_4"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="TEMP_5" display-name="TEMP_5" uuid="65559c7f-6ac6-4f4a-bfe2-1cbf6649845a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_5"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="TEMP_6" display-name="TEMP_6" uuid="2a879743-9e08-4eb4-a0f6-00d328d47b52" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_6"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="VIBR_8" display-name="VIBR_8" uuid="caae4862-a2a1-4103-a575-602fccfd95b9" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".VIBR_8"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="BYPASS_SIG_TEMP" display-name="BYPASS_SIG_TEMP" uuid="2c4b5495-6536-4dff-81d9-bc7b7c022f20" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".BYPASS_TEMP.wvalue"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Text_7" display-name="Text_7" uuid="d7887ddb-4d4a-4c0c-86ef-472d82d5cee6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="255" ver="5"/>
+		<designed target="Y" value="221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="30" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Текст" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[BYPASS_SIG_TEMP]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="3a8cf26f-6f77-46de-ae67-feede05f4fea" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="-7" ver="5"/>
+		<designed target="Y" value="36" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="13" ver="5"/>
+		<designed target="Text" value="Байпас блокировок" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+	</object>
+	<object access-modifier="private" name="BYPASS_SIG_INT" display-name="BYPASS_SIG_INT" uuid="d25133c2-22ef-4f41-9183-dc93ae3bbaa6" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".BYPASS_INT.wvalue"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Text_9" display-name="Text_9" uuid="ea4b3e28-c383-4170-bf57-9e218748a178" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="253" ver="5"/>
+		<designed target="Y" value="244" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="34" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Текст" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[BYPASS_SIG_INT]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="BYPASS_SIG_TEMP_1" display-name="BYPASS_SIG_TEMP_1" uuid="9d531664-b4fa-46ca-935b-752f427df500" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".BYPASS_TEMP"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="BYPASS_SIG_INT_1" display-name="BYPASS_SIG_INT_1" uuid="9692ff1c-d06a-4a9d-9086-ad7d802a7c04" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".BYPASS_INT"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Text_10" display-name="Text_10" uuid="d2a17de4-1a6b-4fcd-bf62-3cfb288593ad" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="212" ver="5"/>
+		<designed target="Y" value="212" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="43" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="TEMP" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_11" display-name="Text_11" uuid="6f86673f-7e3b-4261-863b-be40760d7a84" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="213" ver="5"/>
+		<designed target="Y" value="235" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="43" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="INTRLK" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+	</object>
+	<object access-modifier="private" name="SAFE_TRIP_AN" display-name="SAFE_TRIP_AN" uuid="4a749e59-a69f-42b8-abb6-df6811e9da5a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".SAFE_TRIP_AN"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="btnMenuNavigation_1" display-name="btnMenuNavigation_1" uuid="d65ea24c-1855-45ce-b61c-ae1b1ed3e033" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+		<designed target="X" value="196" ver="5"/>
+		<designed target="Y" value="146" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="101" ver="5"/>
+		<designed target="Height" value="19" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="Диагностика" ver="5"/>
+	</object>
+	<object access-modifier="private" name="refMainForm" display-name="refMainForm" uuid="0051f3ae-9750-4d00-9b8b-3aff3610aa79" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<object access-modifier="private" name="MainFrame" display-name="MainFrame" uuid="0c6ade91-480a-4b9c-82f1-3d6bf919b232" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" base-const="true" base-ref="true" ver="5" description=""/>
+	</object>
+	<object access-modifier="private" name="Checkbox_10" display-name="Checkbox_10" uuid="a5df5ed6-3747-4cd8-91d2-1f8c81d48924" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="269" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="136" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Сработал АВР" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AVR == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[BYPASS_AVR_1.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[if (me.State == true){
+		BYPASS_AVR.Value =  true;
+}
+else{
+		BYPASS_AVR.Value = false;
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="AVR" display-name="AVR" uuid="e171dd7a-7cda-4b80-9726-8da5af95c8e2" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".AVR"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="BYPASS_AVR" display-name="BYPASS_AVR" uuid="0b17732c-e09d-4284-8477-3cbb735037bb" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".BYPASS_AVR.wvalue"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="BYPASS_AVR_1" display-name="BYPASS_AVR_1" uuid="a2e1e7df-7853-4182-9940-a819bdfcdbb8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".BYPASS_AVR"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="Checkbox_11" display-name="Checkbox_11" uuid="f5dedcc9-2812-4fa0-bf14-b34496d4b420" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="88" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев трансформатора" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(HEAT_TRANS == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_INT_1.Value & 1<<2)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 2;
+if (me.State == true){
+		BYPASS_SIG_INT.Value =  BYPASS_SIG_INT.Value | x<<y;
+}
+else{
+		BYPASS_SIG_INT.Value = BYPASS_SIG_INT.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_12" display-name="Checkbox_12" uuid="bdea6899-1bcc-42bd-8842-3d78084de2d1" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="106" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="116" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Неисправность ПЧ" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(FAULT_PCH == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_INT_1.Value & 1<<3)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 3;
+if (me.State == true){
+		BYPASS_SIG_INT.Value =  BYPASS_SIG_INT.Value | x<<y;
+}
+else{
+		BYPASS_SIG_INT.Value = BYPASS_SIG_INT.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="HEAT_TRANS" display-name="HEAT_TRANS" uuid="562dfda8-43cb-48bd-b1d8-a7bd753f9e5b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".HEAT_TRANS"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="FAULT_PCH" display-name="FAULT_PCH" uuid="072ab821-656b-473d-b09f-2ef7dff24770" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".FAULT_PCH"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="btnMenuNavigation_2" display-name="btnMenuNavigation_2" uuid="36b7d160-9c2e-430f-bdbc-63811432684a" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
+		<designed target="X" value="150" ver="5"/>
+		<designed target="Y" value="270" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="130" ver="5"/>
+		<designed target="Height" value="19" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="Сброс блокировок" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[here.INTERLOCK_RESET.Value = false;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MousePress">
+			<body kind="om">
+				<![CDATA[here.INTERLOCK_RESET.Value = true;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="INTERLOCK_RESET" display-name="INTERLOCK_RESET" uuid="5476c62b-0b63-49d6-a0a7-fce440f885cf" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".INTERLOCK_RESET.wvalue"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="INTERLOCK_RESET_1" display-name="INTERLOCK_RESET_1" uuid="b58123b2-5ae4-4cb8-8cec-001e28fcb7df" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".INTERLOCK_RESET"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="RESET_OFF" display-name="RESET_OFF" uuid="90b60400-d8be-45ff-9c1a-d2d04cfa3702" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[here.INTERLOCK_RESET.Value = false;
+here.INTERLOCK_RESET_1.Value = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_13" display-name="Checkbox_13" uuid="a929c1f8-ddda-48ba-a38b-9407393efc4f" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="6" ver="5"/>
+		<designed target="Y" value="231" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="144" ver="5"/>
+		<designed target="Height" value="16" ver="5"/>
+		<designed target="Text" value="Перегрев подшипника 2" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(TEMP_7 == true)&&(SAFE_TRIP_AN == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[TypeConvert.ToBool(BYPASS_SIG_TEMP_1.Value & 1<<6)]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+			<body kind="om">
+				<![CDATA[x: uint1 = 1;
+y: uint1 = 6;
+if (me.State == true){
+		BYPASS_SIG_TEMP.Value =  BYPASS_SIG_TEMP.Value | x<<y;
+}
+else{
+		BYPASS_SIG_TEMP.Value = BYPASS_SIG_TEMP.Value ^ (x<<y);
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="TEMP_7" display-name="TEMP_7" uuid="95ab4767-b77a-4381-834a-1539f4e86a40" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_7"]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="TEMP_8" display-name="TEMP_8" uuid="e615f37c-3169-4455-939a-738eda0d6ae6" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.init_Source"/>
+		<init target="Path" ver="5">
+			<expr>
+				<![CDATA[here.init_Path + ".TEMP_8"]]>
+			</expr>
+		</init>
+	</object>
+</type>
+

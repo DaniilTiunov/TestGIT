@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Id="d36799ba-d03a-4c3f-b669-5c8d1b499661" Version="1.7.1.0" OutputPath="bin\" IDE="Astra.AStudio 1.4.3" UpgradeVersion="5">
+  <Files>
+    <SourceFile Name="PsTechMT.omx" />
+  </Files>
+</Project>

@@ -1,0 +1,619 @@
+<type access-modifier="private" name="Explorer_Toolbar" display-name="Explorer_Toolbar" uuid="74dee441-5cf6-417f-a39e-ba83d9220167" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="500" ver="5"/>
+	<designed target="Height" value="30" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="pExplorer" display-name="pExplorer" uuid="d4756211-b4f9-4f54-88ff-7300b86d4dc6" base-type="Explorer" base-type-id="9013d06f-00da-4a39-a352-02b02f4a6679" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="pLogView" display-name="pLogView" uuid="b04e0982-5e44-48d8-a4e2-ea967bc22b76" base-type="LogView" base-type-id="493c7166-bdbb-4717-8f49-2906ed88e930" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="btnConnect" display-name="btnConnect" uuid="9bf00292-c5fe-4f72-b820-f9b7bb822410" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="IconFile" ver="5" value="Explorer_Icons/Connect24.png"/>
+		<designed target="Tooltip" value="Подключиться к серверу" ver="5"/>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pDropDown" ver="5" ref="btnConnectExt"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[ShowConnectDialog.DialogResult.Location = pExplorer.ApSource.Location;
+ShowConnectDialog.DialogResult.Port = pExplorer.ApSource.Port;
+ShowConnectDialog.Invoke();]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="ShowConnectDialog" display-name="ShowConnectDialog" uuid="3ed2562b-47f0-408e-9c02-5ac2163aedd0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<object access-modifier="private" name="OnComplete" display-name="OnComplete" uuid="8f938dab-57bc-4f51-a662-b2866daf061a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="InvokeTrigger" value="false" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+					<body kind="om">
+						<![CDATA[pExplorer.Connect(DialogResult.Location, DialogResult.Port);
+here.private.UpdateRecentlyServers(DialogResult.Location, DialogResult.Port);]]>
+					</body>
+				</do-on>
+			</object>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+				<object access-modifier="private" uuid="8c7d31c5-21df-49da-8900-8bde1516ca46" base-type="ConnectDialog" base-type-id="7ef11704-9e99-4515-a010-013b1fe1012f" ver="5">
+					<init target="pResult" ver="5" ref="DialogResult"/>
+					<init target="OkAction" ver="5" ref="OnComplete"/>
+					<init target="pTheme" ver="5" ref="here.private.theme"/>
+				</object>
+			</do-on>
+			<object access-modifier="private" name="DialogResult" display-name="DialogResult" uuid="72f2ef52-e5aa-4449-95a1-fbe619095bf1" base-type="ConnectDialogResult" base-type-id="d594d8ef-50a0-48fe-8a09-acb33eda25ec" ver="5" description="" cardinal="1">
+				<init target="Port" ver="5" value="4388"/>
+				<init target="HistoryPort" ver="5" value="4950"/>
+			</object>
+		</object>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="btnConnectExt" display-name="btnConnectExt" uuid="1e4e22f6-b1aa-40e7-9807-adc2cc53f054" base-type="ToolbarDropDown" base-type-id="0e258e56-d922-4a8f-b8c3-7d577d177609" ver="5" description="" cardinal="1">
+		<designed target="X" value="19" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="11" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pButton" ver="5" ref="btnConnect"/>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[here.private.RecentlyServers != ""]]>
+			</body>
+		</do-trace>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+		<object access-modifier="private" name="MenuResult" display-name="MenuResult" uuid="d1278844-ef93-49b3-9c7c-aea22885a536" base-type="MenuResult" base-type-id="0fe7658c-92f4-4af7-b038-3594414ac651" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="MenuClick" display-name="MenuClick" uuid="18569c6d-1368-49cb-aeaf-51822b7fe5d0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="javascript">
+					<![CDATA[if (MenuResult.Id == "clearList")
+	here.private.RecentlyServers = "";
+else
+{
+	var recentlyServers = JSON.parse(here.private.RecentlyServers.Value);
+	var server = recentlyServers[MenuResult.Id];
+	pExplorer.Connect(server.location, server.port);
+	here.private.UpdateRecentlyServers(server.location, server.port);
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<do access-modifier="private" name="GetMenuItems" display-name="GetMenuItems" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+			<body kind="javascript">
+				<![CDATA[var items = [];
+
+var recentlyServers = JSON.parse(here.private.RecentlyServers.Value);
+for (var i = 0; i < recentlyServers.length; i++)
+{
+	var server = recentlyServers[i];
+	items.push({ 'id': i, 'title': server.location + ":" + server.port });
+}
+
+items.push({'title': "-" });
+items.push({'id': "clearList", 'title': "Очистить" });
+
+return JSON.stringify(items);]]>
+			</body>
+		</do>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="c9b4a0a1-d27f-4a68-a28b-fde5ea5cf8ff" base-type="Menu" base-type-id="07bb4545-980a-4140-bbaa-4d1397447864" ver="5">
+				<init target="Items" ver="5">
+					<expr>
+						<![CDATA[GetMenuItems()]]>
+					</expr>
+				</init>
+				<init target="pResult" ver="5" ref="MenuResult"/>
+				<init target="pAction" ver="5" ref="MenuClick"/>
+				<init target="pTheme" ver="5" ref="here.private.theme"/>
+				<init target="PointHeight" ver="5" value="30"/>
+				<init target="WindowX" ver="5">
+					<expr>
+						<![CDATA[btnConnect.ScreenX(0,0)]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="5">
+					<expr>
+						<![CDATA[btnConnect.ScreenY(0, btnConnect.Height)]]>
+					</expr>
+				</init>
+				<init target="pOnClosed" ver="5" ref="MenuClosed"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="MenuClosed" display-name="MenuClosed" uuid="f739547d-70a9-4293-8d74-d046b4a4f9a9" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[btnConnect.Checked = false;
+btnConnectExt.Checked = false;]]>
+				</body>
+			</do-on>
+		</object>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[btnConnect.Checked = true;
+btnConnectExt.Checked = true;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="btnDisconnect" display-name="btnDisconnect" uuid="a203bc71-719a-47ce-8ad1-bf1fa1dca14e" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="32" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="IconFile" ver="5" value="Explorer_Icons/Disconnect24.png"/>
+		<designed target="Tooltip" value="Отключиться от сервера" ver="5"/>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[pExplorer.Disconnect();]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[pExplorer.ApSource.ConnectionState > 0]]>
+			</body>
+		</do-trace>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="seaprator_0" display-name="seaprator_0" uuid="88bcb257-4c82-4d11-8a1b-fe5003475fb1" base-type="Explorer_ToolbarSeparator" base-type-id="0874ba53-66f8-4e74-b0d8-6e8f95558824" ver="5">
+		<designed target="X" value="90" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="8" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="btnOpenSignalFile" display-name="btnOpenSignalFile" uuid="7fdb03b1-451e-414c-b054-6aa2d857f915" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="60" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="IconFile" ver="5" value="Explorer_Icons/OpenFile24.png"/>
+		<designed target="Tooltip" value="Загрузить список сигналов из файла" ver="5"/>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="e1415485-f9ab-428e-b3f7-9bd35cbe3d7f" base-type="OpenFileDialog" base-type-id="41505bc5-e0a8-4d93-b1a9-de842aaf215b" ver="5">
+				<init target="OnComplete" ver="5" ref="FileChosen"/>
+				<init target="ShowBrowsePanel" ver="5" value="true"/>
+				<init target="CreateFolderAllowed" ver="5" value="true"/>
+				<init target="FileTypeFilter" ver="5" value="Список сигналов (*.esl)|*.esl|Список сигналов (*.json)|*.json"/>
+				<designed target="WindowCaption" value="Открыть файл списка сигналов" ver="5"/>
+				<designed target="WindowBorderStyle" value="2" ver="5"/>
+				<init target="Result" ver="5" ref="DialogResult"/>
+				<init target="pTheme" ver="5" ref="here.private.theme"/>
+				<init target="DefaultPath" ver="5">
+					<expr>
+						<![CDATA[here.private.DefaultFolder]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+		<init target="pDropDown" ver="5" ref="btnOpenSignalFileExt"/>
+		<object access-modifier="private" name="DialogResult" display-name="DialogResult" uuid="6742e7d9-220a-42f9-973a-d448d6db3750" base-type="FileDialogResult" base-type-id="602926f1-7d01-4d50-a5c0-d8fd35eadc74" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="FileChosen" display-name="FileChosen" uuid="2d387e2d-5d77-46b8-972a-e3f1cdea08b6" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[pExplorer.LoadSignals(DialogResult.FilePath);
+here.private.DefaultFolder = DialogResult.FolderPath;
+here.private.UpdateRecentlyFiles(DialogResult.FilePath);]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="btnOpenSignalFileExt" display-name="btnOpenSignalFileExt" uuid="aa0d0ddc-c8b6-4c1b-951d-77686993fe04" base-type="ToolbarDropDown" base-type-id="0e258e56-d922-4a8f-b8c3-7d577d177609" ver="5">
+		<designed target="X" value="78" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="11" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="db2ffd89-4817-482c-9746-77bbceccb257" base-type="Menu" base-type-id="07bb4545-980a-4140-bbaa-4d1397447864" ver="5">
+				<init target="WindowX" ver="5">
+					<expr>
+						<![CDATA[btnOpenSignalFile.ScreenX(0,0)]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="5">
+					<expr>
+						<![CDATA[btnOpenSignalFile.ScreenY(0, btnOpenSignalFile.Height)]]>
+					</expr>
+				</init>
+				<init target="pTheme" ver="5" ref="here.private.theme"/>
+				<init target="pResult" ver="5" ref="MenuResult"/>
+				<init target="pAction" ver="5" ref="MenuClick"/>
+				<init target="pOnClosed" ver="5" ref="MenuClosed"/>
+				<init target="Items" ver="5">
+					<expr>
+						<![CDATA[GetMenuItems()]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+		<object access-modifier="private" name="MenuResult" display-name="MenuResult" uuid="1da2ef2b-735f-4007-81eb-9972b0f64a97" base-type="MenuResult" base-type-id="0fe7658c-92f4-4af7-b038-3594414ac651" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="MenuClick" display-name="MenuClick" uuid="9f3469aa-42e0-429d-9be2-725ec0c6310c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[if (MenuResult.Id == "clearList")
+	here.private.RecentlyFiles = "";
+else
+{
+	pExplorer.LoadSignals(MenuResult.Id);
+	here.private.UpdateRecentlyFiles(MenuResult.Id);
+}]]>
+				</body>
+			</do-on>
+		</object>
+		<do access-modifier="private" name="GetMenuItems" display-name="GetMenuItems" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+			<body kind="javascript">
+				<![CDATA[var items = [];
+
+var recentlyFiles = JSON.parse(here.private.RecentlyFiles.Value);
+for (var i = 0; i < recentlyFiles.length; i++)
+{
+	var filePath = recentlyFiles[i];
+	items.push({ 'id': filePath, 'title': filePath });
+}
+
+items.push({'title': "-" });
+items.push({'id': "clearList", 'title': "Очистить" });
+
+return JSON.stringify(items);]]>
+			</body>
+		</do>
+		<init target="pButton" ver="5" ref="btnOpenSignalFile"/>
+		<object access-modifier="private" name="MenuClosed" display-name="MenuClosed" uuid="774f720b-f23d-4326-86b2-42f712cb6722" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[btnOpenSignalFile.Checked = false;
+btnOpenSignalFileExt.Checked = false;]]>
+				</body>
+			</do-on>
+		</object>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[btnOpenSignalFile.Checked = true;
+btnOpenSignalFileExt.Checked = true;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[here.private.RecentlyFiles != ""]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="btnSaveSignalFile" display-name="btnSaveSignalFile" uuid="53a3dfe6-cc08-46a0-9053-450e6878496a" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="91" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="f3ca70bb-b4a8-4a9c-8972-b3acc6d82c22" base-type="SaveFileDialog" base-type-id="d69a91c3-89e9-4e7b-994e-9242dbc5e095" ver="5">
+				<init target="OnComplete" ver="5" ref="SaveFile"/>
+				<init target="FileTypeFilter" ver="5" value="Список сигналов (*.esl)|*.esl"/>
+				<designed target="WindowCaption" value="Сохранить файл списка сигналов" ver="5"/>
+				<designed target="WindowBorderStyle" value="2" ver="5"/>
+				<init target="Result" ver="5" ref="DialogResult"/>
+				<init target="pTheme" ver="5" ref="here.private.theme"/>
+				<init target="DefaultPath" ver="5">
+					<expr>
+						<![CDATA[here.private.DefaultFolder]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+		<init target="IconFile" ver="5" value="Explorer_Icons/SaveFile24.png"/>
+		<designed target="Tooltip" value="Сохранить список сигналов в файл" ver="5"/>
+		<init target="IsVisible" ver="5" value="true"/>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[pExplorer.ItemTable.View.RowCount > 0]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+		<object access-modifier="private" name="DialogResult" display-name="DialogResult" uuid="af37f93c-b241-488d-be3e-620447ba42ee" base-type="FileDialogResult" base-type-id="602926f1-7d01-4d50-a5c0-d8fd35eadc74" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="SaveFile" display-name="SaveFile" uuid="96a3653e-d388-4f4e-be51-1da0f26d1867" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[pExplorer.SaveSignals(DialogResult.FilePath);
+here.private.DefaultFolder = DialogResult.FolderPath;]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="seaprator_1" display-name="seaprator_1" uuid="ed35c7ea-20b8-4fc0-975e-557ceb4edd32" base-type="Explorer_ToolbarSeparator" base-type-id="0874ba53-66f8-4e74-b0d8-6e8f95558824" ver="5">
+		<designed target="X" value="160" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="8" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="btnTreeVisible" display-name="btnTreeVisible" uuid="8da0f01c-118d-4686-b5a2-9f8d8864a823" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="196" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="IconFile" ver="5" value="Explorer_Icons/ItemTree24.png"/>
+		<designed target="Tooltip" value="Дерево сигналов" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[pExplorer.TreeVisible = !pExplorer.TreeVisible;]]>
+			</body>
+		</do-on>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<body>
+				<![CDATA[pExplorer.TreeVisible]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="btnLogView" display-name="btnLogView" uuid="0c78ca69-08bb-41ff-a2e9-b4730d428b10" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="139" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="IconFile" ver="5" value="Explorer_Icons/Log24.png"/>
+		<designed target="Tooltip" value="Дерево сигналов" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[pLogView.IsVisible = !pLogView.IsVisible;]]>
+			</body>
+		</do-on>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<body>
+				<![CDATA[pLogView.IsVisible]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA[Checked ? "Скрыть журнал" : "Показать журнал"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="seaprator_2" display-name="seaprator_2" uuid="8c1a8499-b4c7-4a6c-9ce0-44ab64e05627" base-type="Explorer_ToolbarSeparator" base-type-id="0874ba53-66f8-4e74-b0d8-6e8f95558824" ver="5">
+		<designed target="X" value="260" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="6" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="btnAddSignal" display-name="btnAddSignal" uuid="fe981b75-80f1-4bf8-9289-4c1433dce27c" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="147" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[pExplorer.ItemTable.AddItem.Enabled]]>
+			</body>
+		</do-trace>
+		<init target="IconFile" ver="5" value="Explorer_Icons/Add24.png"/>
+		<designed target="Tooltip" value="Добавить новый сигнал..." ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[pExplorer.ItemTable.AddItem.Invoke();]]>
+			</body>
+		</do-on>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="btnRemoveSignal" display-name="btnRemoveSignal" uuid="c9ad181b-0f3d-4287-8d4e-535fa14b8abf" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="167" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[pExplorer.ItemTable.DeleteSelected.Invoke();]]>
+			</body>
+		</do-on>
+		<designed target="Tooltip" value="Удалить выделенные сигналы" ver="5"/>
+		<init target="IconFile" ver="5" value="Explorer_Icons/Remove24.png"/>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[pExplorer.ItemTable.DeleteSelected.Enabled]]>
+			</body>
+		</do-trace>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="btnFilterSignal" display-name="btnFilterSignal" uuid="ef6fc574-4084-400f-a77d-b6e9a681ffc7" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="187" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="IconFile" ver="5" value="Explorer_Icons/Filter24.png"/>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<body>
+				<![CDATA[pExplorer.ItemTable.View.Filter.Active]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[pExplorer.ItemTable.View.Filter.Active = !pExplorer.ItemTable.View.Filter.Active;]]>
+			</body>
+		</do-on>
+		<designed target="Tooltip" value="Фильтровать список " ver="5"/>
+		<init target="IsVisible" ver="5" value="true"/>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="seaprator_3" display-name="seaprator_3" uuid="5fe02be3-654b-4e67-9c5c-ed926edd1e00" base-type="Explorer_ToolbarSeparator" base-type-id="0874ba53-66f8-4e74-b0d8-6e8f95558824" ver="5">
+		<designed target="X" value="215" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="8" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="btnClearList" display-name="btnClearList" uuid="5065b4ad-7fca-430f-974f-47dbe778cb50" base-type="Explorer_ToolbarButton" base-type-id="06f54e9d-00fa-4fc7-81ad-fd37c305cbb1" ver="5">
+		<designed target="X" value="215" ver="5"/>
+		<designed target="Y" value="6" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_Inspector" display-name="Handler_Inspector" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[pExplorer.ItemTable.Clear();]]>
+			</body>
+		</do-on>
+		<init target="IconFile" ver="5" value="Explorer_Icons/Clear24.png"/>
+		<designed target="Tooltip" value="Очистить список" ver="5"/>
+		<init target="IsVisible" ver="5" value="true"/>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<body>
+				<![CDATA[pExplorer.ItemTable.View.RowCount > 0]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="18" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<init target="pTheme" ver="5" ref="here.private.theme"/>
+	</object>
+	<object access-modifier="private" name="private" display-name="private" uuid="c968b6a6-7cc9-478c-9692-a880f8641b30" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5">
+		<object access-modifier="private" name="theme" display-name="theme" uuid="197e9489-fbfa-45fd-8565-0f03ed0f36aa" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" ver="5">
+			<do-trace access-modifier="private" target="BackgroundColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.BackgroundColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="ForegroundColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.ForegroundColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="DisabledFontColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.DisabledFontColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="EditorBrushColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.EditorBrushColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="EditorFontColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.EditorFontColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="SelectionColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.SelectionColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="BorderColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.BorderColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="DisabledBorderColor" ver="5">
+				<body>
+					<![CDATA[here.pTheme.DisabledBorderColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="DefaultFolder" display-name="DefaultFolder" uuid="df66a2e2-5a03-47e6-9826-2ceee93f56ce" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="RecentlyFiles" display-name="RecentlyFiles" uuid="9fef9fd5-8e25-4300-b0cd-667d2bb83c34" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<do access-modifier="private" name="UpdateRecentlyFiles" display-name="UpdateRecentlyFiles" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+			<body kind="javascript">
+				<![CDATA[var recentlyFiles = [];
+if (RecentlyFiles.Value != "")
+	recentlyFiles = JSON.parse(RecentlyFiles.Value);
+
+// удаляем путь, если он уже есть в списке
+const index = recentlyFiles.indexOf(filePath);
+if (index > -1)
+	recentlyFiles.splice(index, 1);
+
+// добавляем в начало списка
+recentlyFiles.unshift(filePath);
+
+// ограничиваем список десятью элементами
+if (recentlyFiles.length > 10)
+	recentlyFiles.splice(10);
+
+RecentlyFiles = JSON.stringify(recentlyFiles);]]>
+			</body>
+			<param access-modifier="private" name="filePath" display-name="" uuid="1335cbab-6520-40e3-9e4a-d92aaa5cc946" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+		</do>
+		<object access-modifier="private" name="RecentlyServers" display-name="RecentlyServers" uuid="1a055350-81fb-4018-83b9-15807677d20c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<do access-modifier="private" name="UpdateRecentlyServers" display-name="UpdateRecentlyServers" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+			<body kind="javascript">
+				<![CDATA[var newServer = { "location": location, "port": port.toString() };
+
+var recentlyServers = [];
+if (RecentlyServers.Value != "")
+	recentlyServers = JSON.parse(RecentlyServers.Value);
+	
+// удаляем, если уже есть в списке
+var index = recentlyServers.findIndex(s => (s.location == newServer.location && s.port == newServer.port));
+if (index > -1)
+	recentlyServers.splice(index, 1);
+	
+// добавляем в начало списка
+recentlyServers.unshift(newServer);
+	
+// ограничиваем список десятью элементами
+if (recentlyServers.length > 10)
+	recentlyServers.splice(10);
+
+RecentlyServers = JSON.stringify(recentlyServers);]]>
+			</body>
+			<param access-modifier="private" name="location" display-name="" uuid="2c8d1729-5abf-417f-8967-a722f0844d80" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+			<param access-modifier="private" name="port" display-name="" uuid="9aba81eb-52d8-443c-a1b1-6e45945e23c9" base-type="uint2" base-type-id="ae923ad8-8b75-4813-8121-36efe3cc8c12" ver="5"/>
+		</do>
+		<init target="DefaultFolder" ver="5">
+			<expr>
+				<![CDATA[unit.ProductInfo.GetProgramDataFolder()]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="pTheme" display-name="Тема оформления" uuid="6eebe014-b999-4fd0-8607-ab1b2a19dfad" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" base-const="true" base-ref="true" ver="5"/>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<body>
+			<![CDATA[pTheme.BackgroundColor]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="Layout" display-name="Layout" uuid="572ba2f4-51cc-423e-983e-26a6999c35d7" base-type="LinearLayout" base-type-id="800edd71-7303-408c-890b-8346e98f5718" ver="5" description="" cardinal="1">
+		<designed target="Orientation" value="1" ver="5"/>
+		<designed target="Gap" value="0" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

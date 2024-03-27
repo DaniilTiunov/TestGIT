@@ -1,0 +1,611 @@
+<type access-modifier="private" name="SMC_306_8_Diagn" display-name="SMC_306_8_Diagn" uuid="7728cc72-24ed-4d93-949d-093fa288250f" base-type="Mnemoschem" base-type-id="64806c44-c3c8-49e6-8d51-bb5ea5b1f1dc" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1900" ver="5"/>
+	<designed target="Height" value="960" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffc0c0c0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Шкаф №8" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="CRATE03" display-name="CRATE03" uuid="625bfe7b-c1c7-47c5-97f1-9b21d682720b" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="7.0196078431370097" ver="5"/>
+		<designed target="Y" value="108.33333333333334" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="940" ver="5"/>
+		<designed target="Height" value="400" ver="5"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+		<object access-modifier="private" name="R500_ST_02_012_3" display-name="R500_ST_02_012_3" uuid="eb7cba20-2819-4c4d-9730-bbc0316263e6" base-type="R500_ST_02_012" base-type-id="6482c557-8e24-4474-97a6-60023a3ff147" ver="5" description="" cardinal="1">
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="X" value="-114.10080594378189" ver="5"/>
+			<designed target="Y" value="-315" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path_MB1" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.ST_02_012_3"/>
+			<init target="init_Path_MB2" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.ST_02_012_3"/>
+		</object>
+		<object access-modifier="private" name="R500_PP_00_0111_3" display-name="R500_PP_00_0111_3" uuid="2edb886f-8805-4def-a3ff-e9c6882feddf" base-type="R500_PP_00_011" base-type-id="6f040ed8-e128-4e0c-b238-a2b139ffb594" ver="5" description="" cardinal="1">
+			<designed target="X" value="-0.35080594378185026" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="Focus" ver="5" value="false"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.PP_00_0111_3"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_8" display-name="R500_AI_16_081_8" uuid="fb4c82b0-d71c-4b49-9fa6-01730b1f50ad" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="87.149194056218107" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.AI_16_081_8"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_9" display-name="R500_AI_16_081_9" uuid="e28027e7-e07d-40f7-9876-322eceaeadab" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="174.64919405621811" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.AI_16_081_9"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_10" display-name="R500_AI_16_081_10" uuid="c323008b-2400-44e3-a075-7f4eabb944db" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="262.14919405621822" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.AI_16_081_10"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_11" display-name="R500_AI_16_081_11" uuid="34061244-35e2-47ff-9a70-759a779a3e8a" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="349.64919405621794" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.AI_16_081_11"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_12" display-name="R500_AI_16_081_12" uuid="88b380d4-554e-48c1-8243-870132d90b86" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="437.14919405621822" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.AI_16_081_12"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_13" display-name="R500_AI_16_081_13" uuid="0a3e5894-e00f-49eb-9555-c5c4bfbbaa11" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="524.64919405621822" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.AI_16_081_13"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_14" display-name="R500_AI_16_081_14" uuid="600ebca9-8a06-4b38-ae51-b535f32043a5" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="612.14919405621845" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.AI_16_081_14"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_PP_00_0112_3" display-name="R500_PP_00_0112_3" uuid="2eed4541-5b67-4792-87c1-19ec9b0851dd" base-type="R500_PP_00_011" base-type-id="6f040ed8-e128-4e0c-b238-a2b139ffb594" ver="5" description="" cardinal="1">
+			<designed target="X" value="699.64919405621845" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="Focus" ver="5" value="false"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.PP_00_0112_3"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_ST_02_022_3" display-name="R500_ST_02_022_3" uuid="f90ad7dc-d04e-496b-97e8-a84b08c518e0" base-type="R500_ST_02_022" base-type-id="9338deb7-7bdd-4efc-b54f-fe3cde6078b4" ver="5" description="" cardinal="1">
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="X" value="738.39919405621833" ver="5"/>
+			<designed target="Y" value="-315" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Path_MB1" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.ST_02_022_3"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path_MB2" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE03.ST_02_022_3"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="CRATE04" display-name="CRATE04" uuid="04526b9b-40e6-46fd-8f93-529d3262ca9b" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="947.01960784313701" ver="5"/>
+		<designed target="Y" value="108.33333333333334" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="940" ver="5"/>
+		<designed target="Height" value="400" ver="5"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+		<object access-modifier="private" name="R500_ST_02_012_4" display-name="R500_ST_02_012_4" uuid="94361192-3bdb-4c4e-ae69-5aa99970d706" base-type="R500_ST_02_012" base-type-id="6482c557-8e24-4474-97a6-60023a3ff147" ver="5" description="" cardinal="1">
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="X" value="-114.99672533769979" ver="5"/>
+			<designed target="Y" value="-315" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path_MB1" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.ST_02_012_4"/>
+			<init target="init_Path_MB2" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.ST_02_012_4"/>
+		</object>
+		<object access-modifier="private" name="R500_PP_00_0111_4" display-name="R500_PP_00_0111_4" uuid="d6fe24fb-f964-4971-915c-5dab828e3def" base-type="R500_PP_00_011" base-type-id="6f040ed8-e128-4e0c-b238-a2b139ffb594" ver="5" description="" cardinal="1">
+			<designed target="X" value="-1.2467253376994449" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.PP_00_0111_4"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_15" display-name="R500_AI_16_081_15" uuid="e4e67cd2-6289-46a5-9f1f-c5e3ed173799" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="86.253274662300555" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.AI_16_081_15"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_16" display-name="R500_AI_16_081_16" uuid="59603a9d-0889-4fec-bc47-0a422abc1c98" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="173.75327466230056" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.AI_16_081_16"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_17" display-name="R500_AI_16_081_17" uuid="b1e79af6-e7ff-41be-b8d7-003e9b56a713" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="261.25327466230078" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.AI_16_081_17"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_18" display-name="R500_AI_16_081_18" uuid="67c24f5b-c0c1-44ad-b8fa-41021b08ffe9" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="348.75327466230056" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.AI_16_081_18"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AI_16_081_19" display-name="R500_AI_16_081_19" uuid="6a0f96bd-2023-412b-a87d-7f20667cc0a4" base-type="R500_AI_16_081" base-type-id="ee5b63db-4645-4510-b94a-b5e639163896" ver="5" description="" cardinal="1">
+			<designed target="X" value="436.25327466230056" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path_MB1" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE01.AI_16_081_5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.AI_16_081_19"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AO_08_021" display-name="R500_AO_08_021" uuid="7656d476-1bb2-452f-87ef-d177aba686dd" base-type="R500_AO_08_021" base-type-id="afba3729-2613-4fc1-a2c3-e5b170b9349b" ver="5" description="" cardinal="1">
+			<designed target="X" value="523.75327466230056" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.AO_08_021"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AO_08_021_1" display-name="R500_AO_08_021_1" uuid="3c3ce19a-a907-4527-a4df-8b4e4c249c0b" base-type="R500_AO_08_021" base-type-id="afba3729-2613-4fc1-a2c3-e5b170b9349b" ver="5" description="" cardinal="1">
+			<designed target="X" value="611.25327466230078" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.AO_08_021_1"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_PP_00_0112_4" display-name="R500_PP_00_0112_4" uuid="7faefb0a-e534-4607-8c37-7cbb383857f6" base-type="R500_PP_00_011" base-type-id="6f040ed8-e128-4e0c-b238-a2b139ffb594" ver="5" description="" cardinal="1">
+			<designed target="X" value="698.75327466230078" ver="5"/>
+			<designed target="Y" value="-337.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.PP_00_0112_4"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_ST_02_022_4" display-name="R500_ST_02_022_4" uuid="57890173-0a47-46f3-a5fb-5bfed6185de5" base-type="R500_ST_02_022" base-type-id="9338deb7-7bdd-4efc-b54f-fe3cde6078b4" ver="5" description="" cardinal="1">
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="X" value="737.50327466230056" ver="5"/>
+			<designed target="Y" value="-315" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path_MB1" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.ST_02_022_4"/>
+			<init target="init_Path_MB2" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE04.ST_02_022_4"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="CRATE05" display-name="CRATE05" uuid="89775ae8-c4e1-4fe1-a206-835115c0d1a4" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="947.01960784313701" ver="5"/>
+		<designed target="Y" value="559.36274509803911" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="940" ver="5"/>
+		<designed target="Height" value="400" ver="5"/>
+		<designed target="PenColor" value="0xffc0c0c0" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+		<object access-modifier="private" name="R500_ST_02_012_5" display-name="R500_ST_02_012_5" uuid="95c3bbf2-6884-4bfb-b57f-1a7cf6ac43f0" base-type="R500_ST_02_012" base-type-id="6482c557-8e24-4474-97a6-60023a3ff147" ver="5" description="" cardinal="1">
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="X" value="-115.44117647058829" ver="5"/>
+			<designed target="Y" value="-315.00000000000023" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path_MB1" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.ST_02_012_5"/>
+			<init target="init_Path_MB2" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.ST_02_012_5"/>
+		</object>
+		<object access-modifier="private" name="R500_PP_00_0111_5" display-name="R500_PP_00_0111_5" uuid="fda1850b-323c-40d1-a116-780887ee2469" base-type="R500_PP_00_011" base-type-id="6f040ed8-e128-4e0c-b238-a2b139ffb594" ver="5" description="" cardinal="1">
+			<designed target="X" value="-1.6911764705882888" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.PP_00_0111_5"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AO_08_021_2" display-name="R500_AO_08_021_2" uuid="f774e76f-5e7d-4790-a2d1-96e81bce14f6" base-type="R500_AO_08_021" base-type-id="afba3729-2613-4fc1-a2c3-e5b170b9349b" ver="5" description="" cardinal="1">
+			<designed target="X" value="85.808823529411711" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.AO_08_021_2"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AO_08_021_3" display-name="R500_AO_08_021_3" uuid="fab8c142-9b87-457a-97d1-060655968190" base-type="R500_AO_08_021" base-type-id="afba3729-2613-4fc1-a2c3-e5b170b9349b" ver="5" description="" cardinal="1">
+			<designed target="X" value="173.30882352941137" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.AO_08_021_3"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_AO_08_021_4" display-name="R500_AO_08_021_4" uuid="1f2d6a89-530e-4a91-9f6d-0d24b093d1c7" base-type="R500_AO_08_021" base-type-id="afba3729-2613-4fc1-a2c3-e5b170b9349b" ver="5" description="" cardinal="1">
+			<designed target="X" value="260.80882352941137" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.AO_08_021_4"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_DI_32_011_5" display-name="R500_DI_32_011_5" uuid="01e7e672-0403-458b-8aae-eebcc674387d" base-type="R500_DI_32_011" base-type-id="9493d980-0778-4a7e-99d6-9fa1f68f60f4" ver="5" description="" cardinal="1">
+			<designed target="X" value="348.30882352941126" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.DI_32_011_5"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_DI_32_011_6" display-name="R500_DI_32_011_6" uuid="cf34db7a-3f76-48ab-8a7c-64c7ff9f2bb9" base-type="R500_DI_32_011" base-type-id="9493d980-0778-4a7e-99d6-9fa1f68f60f4" ver="5" description="" cardinal="1">
+			<designed target="X" value="435.80882352941126" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.DI_32_011_6"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_DI_32_011_7" display-name="R500_DI_32_011_7" uuid="c1218c2d-7867-4c19-ba5f-a14b2f28db80" base-type="R500_DI_32_011" base-type-id="9493d980-0778-4a7e-99d6-9fa1f68f60f4" ver="5" description="" cardinal="1">
+			<designed target="X" value="523.30882352941171" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.DI_32_011_7"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_DO_32_012_1" display-name="R500_DO_32_012_1" uuid="df78987b-e5ff-4f3c-bd75-fc29a83745e1" base-type="R500_DO_32_012" base-type-id="f95ebf48-c8a1-4156-82b8-c6de6c5938fd" ver="5" description="" cardinal="1">
+			<designed target="X" value="610.80882352941148" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.DO_32_012_1"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_PP_00_0112_5" display-name="R500_PP_00_0112_5" uuid="6453e05b-ff7f-49c7-beb1-9fdbe2f36d43" base-type="R500_PP_00_011" base-type-id="6f040ed8-e128-4e0c-b238-a2b139ffb594" ver="5" description="" cardinal="1">
+			<designed target="X" value="698.30882352941148" ver="5"/>
+			<designed target="Y" value="-337.49999999999977" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.PP_00_0112_5"/>
+			<designed target="Scale" value="0.34999999999999998" ver="5"/>
+		</object>
+		<object access-modifier="private" name="R500_ST_02_022_5" display-name="R500_ST_02_022_5" uuid="407fcb6e-30ed-4d3a-a2b8-3d15aac04bce" base-type="R500_ST_02_022" base-type-id="9338deb7-7bdd-4efc-b54f-fe3cde6078b4" ver="5" description="" cardinal="1">
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="X" value="737.05882352941137" ver="5"/>
+			<designed target="Y" value="-315.00000000000023" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<init target="init_Path_MB1" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.ST_02_022_5"/>
+			<init target="init_Path_MB2" ver="5" value="REGUL_SMC306_07.DIAGN.CRATE05.ST_02_022_5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="e974be19-455f-4ae2-a10a-10229597f996" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="352.01960784313701" ver="5"/>
+		<designed target="Y" value="57.333333333333343" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="Text" value="CRATE03" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,32,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="3fa74a48-95ec-4b0d-9d4f-61cebd76fb4c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1292.019607843137" ver="5"/>
+		<designed target="Y" value="57.333333333333343" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="Text" value="CRATE04" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,32,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="5a7219af-0b3c-4eda-a2ce-38fd9eb3bb87" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1292.019607843137" ver="5"/>
+		<designed target="Y" value="508.33333333333326" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="Text" value="CRATE05" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,32,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="GoLeft" display-name="GoLeft" uuid="b40ad3d0-6c48-4690-b52e-5c66eb387cf4" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="7d5fef26-ed8b-4454-b5e7-80dc010b6638" base-type="SMC_306_7_Diagn" base-type-id="335c5177-2bae-4ed5-82b0-1c893b40d7c7" ver="5">
+				<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="GoRight" display-name="GoRight" uuid="b950adf8-65fa-47fa-bce2-afd308352254" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="329e0d0d-f08f-4108-a6f2-12d28a53c495" base-type="SMC_306_9_Diagn" base-type-id="27c9254d-cb3b-46b3-b3f3-e9abf614e1b5" ver="5">
+				<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="GoToBack" display-name="GoToBack" uuid="05737bc9-6546-4304-bb4f-0829aa5c59cb" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="refMainForm.MainFrame" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="b9165b1f-9046-4dbb-ac05-e018e240d51f" base-type="Main_menu_kotel" base-type-id="41f4f9ab-a334-44f4-bc9b-b204518fba8b" ver="5">
+				<init target="refMainForm" ver="5" ref="here.refMainForm"/>
+			</object>
+		</do-on>
+	</object>
+	<init target="CommandPrev" ver="5" ref="here.GoLeft"/>
+	<init target="CommandNext" ver="5" ref="here.GoRight"/>
+	<init target="CommandBack" ver="5" ref="here.GoToBack"/>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="855880d7-e295-44e0-803c-97b333d6b09d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="12.749019607843053" ver="5"/>
+		<designed target="Y" value="728.87500000000023" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="420" ver="5"/>
+		<designed target="Height" value="220" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="DI_AL_1" display-name="DI_AL_1" uuid="93d345b1-b431-41fd-b2e4-4c1685d592a7" base-type="DI_AL" base-type-id="54e4a058-f3b1-4949-a11a-bf39013ad606" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.1461309523804175" ver="5"/>
+			<designed target="Y" value="5.8233396043342509" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_1_4200"/>
+		</object>
+		<object access-modifier="private" name="DI_AL_2" display-name="DI_AL_2" uuid="7398dc43-63b9-46a0-8864-c32b031b3d54" base-type="DI_AL" base-type-id="54e4a058-f3b1-4949-a11a-bf39013ad606" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.1461309523804175" ver="5"/>
+			<designed target="Y" value="42.615863803088814" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_2_4200"/>
+		</object>
+		<object access-modifier="private" name="DI_AL_3" display-name="DI_AL_3" uuid="26f19228-90f7-4f54-9ba8-9bb01d9f24fa" base-type="DI_AL" base-type-id="54e4a058-f3b1-4949-a11a-bf39013ad606" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.1461309523804175" ver="5"/>
+			<designed target="Y" value="153.99954014925788" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_5_4200"/>
+		</object>
+		<object access-modifier="private" name="DI_AL_6" display-name="DI_AL_6" uuid="5883ffb8-f95f-4640-abd7-31c83847ebaa" base-type="DI_AL" base-type-id="54e4a058-f3b1-4949-a11a-bf39013ad606" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.1461309523804175" ver="5"/>
+			<designed target="Y" value="79.924025630004962" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_3_4200"/>
+		</object>
+		<object access-modifier="private" name="DI_AL_7" display-name="DI_AL_7" uuid="c8a61649-86f2-4eb4-a3a4-91e226f2edf1" base-type="DI_AL" base-type-id="54e4a058-f3b1-4949-a11a-bf39013ad606" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.1461309523804175" ver="5"/>
+			<designed target="Y" value="116.67368261716956" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="init_Source" ver="5" ref="Connections.MAIN_SOURCE"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<init target="init_Path" ver="5" value="REGUL_SMC306_07.02_DI.CRATE05_DI06.SMC_306_08_4_4200"/>
+		</object>
+		<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="dce0891b-f88d-46ba-b51e-475d4b01235c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="177.12232142857113" ver="5"/>
+			<designed target="Y" value="6.7706015090961955" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="230" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Контроль открытия дверей шкафа" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="da84b10a-0bc0-4b43-9495-dcaf83a8e8e1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="177.12232142857113" ver="5"/>
+			<designed target="Y" value="43.563125707850759" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="230" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Контроль температуры в шкафу" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="e5497263-41ab-41ce-9fb4-240b4dba6e24" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="177.12232142857124" ver="5"/>
+			<designed target="Y" value="154.94680205401983" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="230" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Напряжение на полевых устройствах" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_9" display-name="Text_9" uuid="c5500d34-99ab-4338-8026-bfaeac20a909" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="177.12232142857113" ver="5"/>
+			<designed target="Y" value="80.871287534766907" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="230" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Напряжение на вводе 1" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_10" display-name="Text_10" uuid="356556cc-ccf2-40de-8823-bd9ce5bc72e0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="177.12232142857113" ver="5"/>
+			<designed target="Y" value="117.62094452193151" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="230" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Напряжение на вводе 2" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+	</object>
+</type>
+

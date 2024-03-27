@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Astra.Domain.Agent Name="SRVH">
+  <EntryPointNetAgent Name="SRVH" Address="127.0.0.1" Port="1010" />
+  <InstalledComponents />
+  <Options LoggerLevel="2" />
+</Astra.Domain.Agent>

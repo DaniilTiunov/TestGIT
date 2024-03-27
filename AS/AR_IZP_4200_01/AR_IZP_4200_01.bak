@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<omx name="ar_izp_4200_01" uuid="1041f38b-8743-438c-b059-da60fd2bc05a" xmlns="system" xmlns:a="automation" xmlns:ct="automation.control" xmlns:dp="automation.deployment" xmlns:eth="automation.ethernet" xmlns:modbus="automation.modbus" xmlns:opc="automation.opc" xmlns:r="automation.reference" xmlns:srv="server" xmlns:regul="prosoft.regul" xmlns:snmp="automation.snmp" migration="27">
+  <link-unit name="System" uuid="18cd440c-700d-4ba7-a78c-c27395629f32" target="Om.System" />
+  <link-unit name="Server" uuid="297bd674-85d9-43f9-beb2-7ddf0dec355b" target="Om.Server" />
+  <link-unit name="PLC" uuid="597be54d-84c5-44c1-84c2-18d8d1a9affb" target="Om.PLC" />
+  <link-unit name="PsDiagn" uuid="41274ca5-7ce6-4f94-baa0-bfb6000bd37c" target="PsDiagn" />
+  <link-unit name="PsTechOG" uuid="d83a8332-d1ef-49fd-8606-64f5822ab665" target="PsTechOG" />
+  <link-unit name="PsBase" uuid="b78a997d-2f48-4bcf-af3e-57b3af4cba23" target="PsBase" />
+  <dp:domain name="AstraRegul" uuid="5c4cc7ed-5136-41ac-9650-59c4eb2a5490" address="AstraRegul">
+    <dp:domain-node name="STATION" uuid="acff9f5a-bc47-4235-a7dc-2742deb1cec4" address="">
+      <attribute type="unit.System.Attributes.Comment" value="Инженерная станция" />
+      <srv:io-server name="AstraServer" uuid="4883b547-ad02-435d-ab3c-25d0dcb8c6a1">
+        <srv:opcda-server name="DaServer" uuid="3aa65c60-d9d7-451c-8963-bc7e35657287" class-id="AP.OPCDAServer" />
+        <srv:tcp-server name="TcpServer" uuid="13abb1e4-0504-434c-87a1-b2e2d3a9cf64" history-port="4950" />
+        <srv:opcaeserver-module name="AeServer" uuid="e0d9733e-2b73-4eb9-bc25-460a15b3fdae" />
+        <srv:opcua-module name="UaServer" uuid="d340ec0c-5876-402c-87c8-1dd66eff98c5" />
+        <srv:hda-server name="HdaServer" uuid="7dbf82cc-b5a0-4c17-88aa-8f82130c5224" />
+        <srv:snmp-manager name="SNMP Manager" uuid="9c5a3ba7-17a0-4832-913f-1afcdebd3620">
+          <srv:agent-config agent="SNMP.SnmpAgent" />
+          <srv:agent-config agent="SRVNTP.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SWITCH1.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SRVP.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SRVR.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SRVH.SNMP.SnmpAgent" />
+        </srv:snmp-manager>
+        <dp:host module="IOS_App" />
+        <srv:opcua-client name="OpcUaClient" uuid="fcb82cc5-553e-40e8-805e-0fa0fd5dafab" application-name="REGLABOpcUaClient">
+          <srv:opcua-server-link server="REGUL_SMC306_07_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="P0pDxdhiUwvOz3Vpif6mbpiQ7dz22x+2P+mu3FMRH2BjU7DnYspg8zpf0xWHvIdIXUOMDx2hrW6ygGj2h7x0nIhojlOCeBjWYcky7PkmkurYFazEXtmM3bBPNmI3DyLDRLejvudRlip0/ZIwBASRsPT0yU4M4rkBUR5fQunvg0c" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_07_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="hPrEa6ff4D9REP1JAhDmNeHjVZMsM7Vu1riLUsKTSj19xzrylEFkoe3WZ0sYS08MSJ7iGz27exgrAhZmnbAidDol9uFWMOjnWhgRUmFfndsv5LrTiXx2UnnFa71025SSOtXCTFQJlzjoIizsuXqQYNJFvwnXFgoXUlCvy7zQJ50" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_07_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="qjcI2HYaN5nh/2UYAQzgq8Ou9FNl6Bt72aJCacjPP552xn3OkI0fcddOMUGni0lf4IWANd+baoVaIfRXKU3Zl63CpPaMJTcF8FKI0Fv1beA01+ybvtW1C/qKeuwEKjdiA+ME9UWsteox3MIbISEq76EByGDzLQmFzmne8x0fUSQ" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_02_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="LeU9vwkVL/HbIUoYhSVrMaWpJgGoVOc793Co2dSYJGw3CE43kPDXqfMpD0CpN44vdFE6dinp9jtwz7Z+hRp5tScHU+4HIW0JPqgizwbQlfaCZg5L52mdB1vXp8rHgEAVeYvfUq0SHXP8GVhn7Uk5g4jgznBSwNiyaBeZEyOgxr0" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_02_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="IrB0PM3r6pHJxeF8b7OJ1nVi80e0TmIWUkjxFq0AXxu2tG3RS1WN48J+yfSu0YC/z9hNXuQg87Z+9T5KyylekUU1xWAdYgox3QGgp/aHbbxh+ccEwTJOnwkUbu4B0DRnGRdfaaX9tZBtfTjIe6JZvnkow4+gHm9W+sPIoOuPjxU" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_02_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="NFXugPNM9A5wqOp6ZxmXX31/yoRp8s13XUzN4+OVftEcvU4kP3XaVUJ8K/UjYJv0knBZ+zW9BOu4b9LHVWnOb2Edq2FmGsvq8PNQTNN+0tjnkn0SqKT1yGOAHtmYoWH5JOuE1Jt5IZ6rW66GAA0NaivuKBqSMgJofu9ae9uT/is" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_03_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="iLkGz/sslYKMa/wDTUZAEBLCr1D18EF8tSLlpZFhF6pD8M4RJmVgdlre2bmb/1dKElTFpPHPlLadpbhRGdB3m/VDN1kFDP5YLFtb12hmemjRg2QrbYaz/k5HbwaA7hqvE+I9QdN76plX2/oe04aJpNR20FP0bEMfEUBeWsvNZz8" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_03_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="OsUAKKd5kGFr67cm8Kuct4Z73xlrY5MHjO7SiGQRpTkY/aybbBAWE/m/SHCN1Q/wppRbGno4kUx7OMOIseGS72Q9WjFiW7CPcp3thn7S7ch7JeJWV2CGbDFfE3HDBq0Esa9dLHfWzgr0wTrVfLanO3nh6ULpdfR8TnQUyNA8RO4" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_03_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="lSE1p6glPkrDhYtX7ybXb7wyPya9ZI4aQRKIjQOIsSFQw+41JVw/LvwFsXCeJjfmOLAug2lbCq68nZG4C7w4HsW6Vl2IX7wKJ4oFNueiVCjl0mlamWwW15jQhxSC1qDdezTuttGj9upYW/1V+C3ulRD1R69VN1ZWx25L1W8CH4M" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_PPG_1_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_PPG_1_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_PPG_1_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_04_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_04_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_04_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_05_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_05_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_05_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_06_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_06_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_06_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_01_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_01_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_01_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+        </srv:opcua-client>
+        <srv:history-module name="HistoryModule" uuid="214466db-f9bc-4b39-a9ac-f205cba92b52">
+          <srv:historian-database-link database="AstraRegul.STATION.Historian.DB_HISTORY" queue-path="C:\AstraRegul\Astra.Historian\Queues" />
+          <srv:historian-database-link database="AstraRegul.STATION.Historian.DB_EVENTS" queue-path="C:\AstraRegul\Astra.Historian\Queues" />
+          <srv:historian-database-link database="AstraRegul.STATION.Historian.DB_IMIT" queue-path="C:\AstraRegul\Astra.Historian\Queues" />
+        </srv:history-module>
+      </srv:io-server>
+      <srv:historian name="Historian" uuid="540c14c8-aa7e-405f-a4e7-25346a4ca888" instance="tcp:4949">
+        <srv:historian-database name="DB_HISTORY" uuid="e535fd5e-3a85-4f3c-abfb-22f6eb046b32" usage="values" alias="DB_HISTORY" />
+        <srv:historian-database name="DB_EVENTS" uuid="e7b0ee5e-f6f2-4d5f-9877-b8f6da2c38f6" usage="events" alias="DB_EVENTS" />
+        <srv:historian-database name="DB_IMIT" uuid="a101a5bb-4eca-494d-9052-55e2d233b871" usage="imitation" alias="DB_IMIT" />
+      </srv:historian>
+      <dp:external-runtime name="SNMP" uuid="7d153d9a-e3c0-4856-b57a-8e01e6722a53">
+        <dp:application-object name="STATION_SnmpApp" uuid="0a17d4aa-8a63-45c6-a134-07abbe9eac8c">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="ecfab897-4d3a-4c9c-9f4c-d709276f4e41" file="STATION_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="46a8487b-10f0-4930-9ba6-d117647178fc" address-map="STATION_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="b39bd324-b558-48d7-8c24-ef8d9600a0e9" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="475178af-ce10-49da-aff1-7e3a631b00ba" network="Network1" address="192.168.0.100" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="2c6cd0c7-79a0-4537-847e-6a3980c2bc84" network="Network2" address="192.168.1.100" />
+    </dp:domain-node>
+    <dp:application-object name="IOS_App" uuid="fcafc4a4-2c9e-4875-bb9c-7e166f77cf97" />
+    <dp:workstation name="THIN_CLIENT" uuid="97ffe244-6245-4bb5-99b5-4486ae9bd4b5">
+      <srv:access-point name="AccessPoint" uuid="b0d6c3cf-8f3d-4329-9d5c-106d37cb0b7d">
+        <srv:hub-module name="HubModule" uuid="0b82412c-10a1-464a-89a6-884fcf50649f">
+          <srv:hub-module-source-config runtime="SRVP.AstraServer" />
+        </srv:hub-module>
+        <srv:history-module name="HistoryModule" uuid="51191245-5592-4e39-af6e-36eebe9cce82" />
+        <dp:application-object name="THIN_CLIENT_App" uuid="800676ff-60a5-47ab-a586-a305a62c76a1" />
+        <srv:tcp-server name="TcpServer" uuid="58eea9d7-97e8-457c-8efd-99109d45c618" history-port="4950" />
+        <srv:opcda-server name="DaServer" uuid="7ff3a66e-7fb6-41d6-8d55-ed9479ae870b" class-id="AP.OPCDAServer" />
+        <srv:opcaeserver-module name="AeServer" uuid="ce0d26de-1ee5-41c0-81bc-06cc58b67dbe" />
+        <srv:hda-server name="HdaServer" uuid="a859a336-dae7-4c3e-aba7-c29cc8c3cdca" />
+        <srv:opcua-module name="OpcUaServer" uuid="e31d34be-ea83-4810-b83a-090a260da777" />
+      </srv:access-point>
+      <eth:abstract-ethernet-adapter name="EthernetAdapter1" uuid="2cf6034b-a609-4e39-8931-cd9c0c378182" network="LocalNetwork" />
+      <eth:abstract-ethernet-adapter name="EthernetAdapter2" uuid="5404fdbf-e08a-4abb-9568-64e26eb5ea15" network="Network1" />
+      <eth:abstract-ethernet-adapter name="EthernetAdapter3" uuid="c483b871-e6fe-4d25-80c2-eaf9d4895e8b" network="Network2" />
+    </dp:workstation>
+    <dp:computer name="REGUL_SMC306_07_A" uuid="ba96ff29-1a3a-4e3f-8606-38e2e6c7f2d2">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_SMC306_07" />
+      <dp:external-runtime name="Runtime" uuid="870ca02b-812f-47bd-b993-a15e80f649fc">
+        <dp:application-object name="REGUL_SMC306_07_App" uuid="18e4b3df-c09a-4ac6-8e94-ebfb0f9e6c9a">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="b7fa03ef-2820-4530-996f-81a441a15fb2" file="REGUL_SMC306_07_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="9c93d9ee-49f4-4ba5-a97b-72c2abf74b4b" tag-map="REGUL_SMC306_07_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="d3871868-f20f-49ec-9d83-e784c7c59ad6">
+        <dp:application-object name="REGUL_SMC306_07_A_DiagnApp" uuid="f28f81ed-6526-42be-bb09-c9513bbd0ed3">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="ddee88ee-7b14-45ee-b282-1b171bbe48ac" file="REGUL_SMC306_07_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="15887e9b-fe25-4033-b20e-1a60d9624d7c" tag-map="REGUL_SMC306_07_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="9ae0e662-f459-4071-8839-41782b71b156" network="Network1" address="192.168.0.43" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="a94b963b-da74-44c1-8250-74fec9cc1332" network="Network2" address="192.168.1.43" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_02_A" uuid="6c617684-5cc1-4dd8-b97b-912c7fb88c49">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_SMC306_02" />
+      <dp:external-runtime name="Runtime" uuid="ee3c5f40-0b39-43c2-afee-c9a6e7db7030">
+        <dp:application-object name="REGUL_SMC306_02_App" uuid="e5d0a34d-89ab-405f-9450-88eaefeeb3d8">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="ca9a8265-1502-4685-a1ed-e1a5a8f630c4" file="REGUL_SMC306_02_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="0247dc32-3845-4847-937c-6e4c0d56afe7" tag-map="REGUL_SMC306_02_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="c58584ea-1115-43b5-8f8a-25b1779d8272">
+        <dp:application-object name="REGUL_SMC306_02_A_DiagnApp" uuid="a5715fa3-80f1-4794-b4de-ed7bfb54f5c1">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="9021b162-9caf-40a7-8f72-e489aebd235d" file="REGUL_SMC306_02_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="02e78926-13cb-4a85-b91c-56ff0a5b7574" tag-map="REGUL_SMC306_02_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="57584889-5620-4da6-a6de-915d54d236a2" network="Network1" address="192.168.0.33" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="016d9ff8-80cc-46c2-91de-9ddf93fe8f9c" network="Network2" address="192.168.1.33" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_03_A" uuid="3193ea20-8140-466d-9ec8-e4893b1e276f">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_SMC306_03" />
+      <dp:external-runtime name="Runtime" uuid="aca7b191-26dc-4236-aa01-d84781850c1e">
+        <dp:application-object name="REGUL_SMC306_03_App" uuid="02c1b2ca-c96b-4c8b-b96c-557cabff0d5a">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="6189f977-3577-4d58-96a2-a87b763dc623" file="REGUL_SMC306_03_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="33e4ca83-c731-4424-9473-72f9c65c04ec" tag-map="REGUL_SMC306_03_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="f790cefa-27ec-4865-90d1-c91841aaa81b">
+        <dp:application-object name="REGUL_SMC306_03_A_DiagnApp" uuid="33b9af68-842d-4cfc-a66e-72fec7785082">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="df39685e-7a38-47f7-9968-08b683d1529d" file="REGUL_SMC306_03_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="6459c7a3-84ff-4884-b643-3c73b58335af" tag-map="REGUL_SMC306_03_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="082ceba4-56fa-49c9-b048-000f68e8f40c" network="Network1" address="192.168.0.35" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="dd098cf8-ff7e-46f7-a73b-dd165d9ab91c" network="Network2" address="192.168.1.35" />
+    </dp:computer>
+    <dp:computer name="REGUL_PPG_1_A" uuid="a4c16aa8-1b71-477d-bd7b-893405dddebb">
+      <dp:external-runtime name="Runtime" uuid="102435a9-78a7-4c98-9b09-0a121107084d">
+        <dp:application-object name="REGUL_PPG_1_App" uuid="c0281805-5918-406c-901b-e80a0721e681">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="938ddaeb-e9f1-4b2a-9b24-3dadb61c9d01" file="REGUL_PPG_1_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="c8251a1c-1196-44a4-8853-72e488de6ed3" tag-map="REGUL_PPG_1_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="237c7c4b-869e-46a6-90b3-3060c13c1311">
+        <dp:application-object name="REGUL_PPG_1_A_DiagnApp" uuid="c2f447b5-6ffa-411c-b95f-ec72ecda2d1e">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="9113094e-9467-4103-a1b3-b13f569bc9c1" file="REGUL_PPG_1_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="80012050-115e-4b2e-a290-54e5f54ff419" tag-map="REGUL_PPG_1_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="c5f357db-e7df-4a53-8500-12d5945c70ec" network="Network1" address="192.168.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="59c5d2a7-bbfe-4bb3-90c5-ec47c6afcbc8" network="Network2" address="192.168.1.1" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_04_A" uuid="440e5375-ae29-49e6-9aeb-bf95ab95cf21">
+      <dp:external-runtime name="Runtime" uuid="d4eb7ddd-af26-474e-9008-fab82eea32ba">
+        <dp:application-object name="REGUL_SMC306_04_App" uuid="041641de-eca4-4ebb-bdd5-c80ed9466eb6">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="856508bd-2a0a-4002-98ac-9a6d7a399d6d" file="REGUL_SMC306_04_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="06d7946f-124e-4d24-a237-eeb35618e308" tag-map="REGUL_SMC306_04_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="42ac8033-eab2-4921-8555-07aa709047ca">
+        <dp:application-object name="REGUL_SMC306_04_A_DiagnApp" uuid="ca306237-7693-4df6-ad87-2133d73657c9">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="3528f849-bb66-44ae-a010-ad68bc538332" file="REGUL_SMC306_04_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="9dc01b59-3bd5-47ef-b266-c61d49312c22" tag-map="REGUL_SMC306_04_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="d3b19325-cbf8-42b1-a242-179da79dc03a" network="Network1" address="192.168.0.37" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="c9f7e117-fabe-4c9b-9a40-2226f229e0eb" network="Network2" address="192.168.1.37" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_05_A" uuid="acd1371a-c2c8-4eae-ac87-29675e11a1d0">
+      <dp:external-runtime name="Runtime" uuid="d18ca9f6-cbdb-459c-9acf-8a44dc42c1a9">
+        <dp:application-object name="REGUL_SMC306_05_App" uuid="ecb3be0d-f6c7-486b-8ed6-7fc212fcafd0">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="13d563db-757e-48bb-b637-fe05b755d2fc" file="REGUL_SMC306_05_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="828d4ed6-b7f5-4c46-ac3b-08563f29f89a" tag-map="REGUL_SMC306_05_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="2fe1d5fb-3d80-4022-8883-79539bf5a3b5">
+        <dp:application-object name="REGUL_SMC306_05_A_DiagnApp" uuid="4913dbea-d83d-4751-b153-32bcffb71c88">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="1aa0086c-dfe5-432e-a211-ddb30311e70e" file="REGUL_SMC306_05_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="248243cc-56e4-4c3f-b157-24f291a92feb" tag-map="REGUL_SMC306_05_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="fea528e1-6033-42c8-affc-d274ddd711c9" network="Network1" address="192.168.0.39" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="692e415f-cc0c-486a-a9d2-35063aac2f36" network="Network2" address="192.168.1.39" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_06_A" uuid="99ba5191-6d46-4f2d-81cd-d688ddc2021d">
+      <dp:external-runtime name="Runtime" uuid="b96bdaa5-30e1-43b6-9245-1e72727d25fe">
+        <dp:application-object name="REGUL_SMC306_06_App" uuid="935793ee-ca7b-48dc-b8be-18ed636f1fcd">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="4a0166da-3c8f-4e59-b70f-816cc6358b2f" file="REGUL_SMC306_06_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="53052390-eed4-4ec4-9091-46fd0528d099" tag-map="REGUL_SMC306_06_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="8a7e2919-bf56-4ab1-85e4-be3b9ad61bc3">
+        <dp:application-object name="REGUL_SMC306_06_A_DiagnApp" uuid="efbefb9e-f16c-4395-ac09-34e33d6b58c6">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="15e7edf2-299e-4769-a06d-9ab6296121a1" file="REGUL_SMC306_06_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="dd90a657-eb8d-4c25-b93e-1240e31115ce" tag-map="REGUL_SMC306_06_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="7dd7b06a-3992-4723-9c0d-2a09a94ad8ac" network="Network1" address="192.168.0.41" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="0f3f7242-4490-4900-b1ca-6a5ab5195c20" network="Network2" address="192.168.1.41" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_01_A" uuid="944d073c-6311-47fe-b3d5-6bcacca3f9a6">
+      <dp:external-runtime name="Runtime" uuid="ea897fd6-22e2-4c4c-8edb-1d7b289c90b1">
+        <dp:application-object name="REGUL_SMC306_01_App" uuid="f0ecbe2a-0be3-4de8-a10f-35b63198d5f2">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="6077e8af-2da0-404e-b7b4-7bc931ac9d71" file="REGUL_SMC306_01_Map.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="84043fc6-e343-46c7-8629-9ccb6d752c71" tag-map="REGUL_SMC306_01_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <dp:external-runtime name="Diagnostics" uuid="b7f4c982-75c1-4e03-85cd-03a5783e7157">
+        <dp:application-object name="REGUL_SMC306_01_A_DiagnApp" uuid="44ef6ad2-3a10-4f7d-bf18-13181036f8c1">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="a64df6da-5af3-4cc8-902a-17e280ab3859" file="REGUL_SMC306_01_A_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="d2843e70-c236-4696-9fd5-4d774aaa417c" tag-map="REGUL_SMC306_01_A_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="9be83e16-c029-4220-b239-58b6466e33de" network="Network1" address="192.168.0.31" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="74c759e8-4342-429d-b720-18df8113533b" network="Network2" address="192.168.0.31" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_07_B" uuid="4819581e-6519-4efe-b90d-8a4c0d005fd6">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_SMC306_07" />
+      <dp:external-redundant-runtime name="Runtime" uuid="b7999ec9-8f14-4691-aeb4-351b0c2ff784" runtime="REGUL_SMC306_07_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="fb699a6a-975c-4a52-a3bc-d05ed806c91a">
+        <dp:application-object name="REGUL_SMC306_07_B_DiagnApp" uuid="139a40b5-62a9-48dc-8001-f29124970143">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="4112a9f8-bbea-489c-be7f-dae68d75039d" file="REGUL_SMC306_07_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="c84d759b-a972-4b2d-bf33-0db7dd8c1bd9" tag-map="REGUL_SMC306_07_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="a175699d-e551-460e-a637-befd2c8d2478" network="Network1" address="192.168.0.44" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="063a5eeb-85d1-4a5a-9c0d-3f840e5a06b0" network="Network2" address="192.168.1.44" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_02_B" uuid="a8d37f99-0336-4eb9-87d2-ffbb80eb3faf">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_SMC306_02" />
+      <dp:external-redundant-runtime name="Runtime" uuid="b9d1b867-be17-4981-846e-e2fc37395038" runtime="REGUL_SMC306_02_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="0c9686cd-6add-4815-b40c-79d03bfddd7b">
+        <dp:application-object name="REGUL_SMC306_02_B_DiagnApp" uuid="225e2d24-dd4e-4756-a122-ace20fe18aff">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="0f44b266-b828-42f8-b535-873571643db0" file="REGUL_SMC306_02_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="654eaac5-8a68-44c5-bf47-a2d2abcb57cb" tag-map="REGUL_SMC306_02_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="9a51b2a8-d7ff-42d2-92e9-c103a9f12fd5" network="Network1" address="192.168.0.34" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="f97f0d0a-b755-4267-ad22-1e69002fd3a9" network="Network2" address="192.168.1.34" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_03_B" uuid="58a0e6e4-d14b-4bc8-9dee-a4fb513bcc15">
+      <attribute type="unit.System.Attributes.Comment" value="REGUL_SMC306_03" />
+      <dp:external-redundant-runtime name="Runtime" uuid="a533eb40-0d0c-40bf-a8fc-1a3cc870c2b5" runtime="REGUL_SMC306_03_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="a9e37624-ac25-4ec4-8a56-1e20491b716d">
+        <dp:application-object name="REGUL_SMC306_03_B_DiagnApp" uuid="78814158-50f8-4bac-9f35-ba0bce3d0e5f">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="140745d9-b64c-4e4d-b7a0-09f8e2fc18d6" file="REGUL_SMC306_03_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="460dd870-85b1-4f79-a800-f642572e5196" tag-map="REGUL_SMC306_03_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="c182970a-7d25-4378-b5b0-5b99faa552fd" network="Network1" address="192.168.0.36" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="c4e3b6ed-4335-4545-9596-b66e6a6d3efc" network="Network2" address="192.168.1.36" />
+    </dp:computer>
+    <dp:computer name="REGUL_PPG_1_B" uuid="7946c75a-9989-4d54-a2a1-b882d6188b95">
+      <dp:external-redundant-runtime name="Runtime" uuid="6a1a7b47-d9f8-447b-b2e6-8197c39e450c" runtime="REGUL_PPG_1_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="64cf3d0e-6e71-4080-aa49-6140d8fa43e5">
+        <dp:application-object name="REGUL_PPG_1_B_DiagnApp" uuid="41af365c-cd9e-4368-8e47-c3265c2add35">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="aed2a39d-da31-4146-ab00-c9af6ab8b5be" file="REGUL_PPG_1_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="9cbe45ec-fabb-4ec1-b414-081f9e31f1cb" tag-map="REGUL_PPG_1_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="dc1a1a57-be49-458a-a0f1-42c9eb073b4d" network="Network1" address="192.168.0.2" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="e76140e0-7d7f-4589-ba52-458833d40ab2" network="Network2" address="192.168.1.2" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_04_B" uuid="bcdac05d-04d5-4f5a-9420-4b4129fcb88f">
+      <dp:external-redundant-runtime name="Runtime" uuid="e0291754-9f60-419b-9298-a119a237d4cc" runtime="REGUL_SMC306_04_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="c44aaf1f-9c8d-4d3c-bb18-e6a25a4cc41b">
+        <dp:application-object name="REGUL_SMC306_04_B_DiagnApp" uuid="04a6ce90-3d8d-4f84-aa5f-772ceb8616c5">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="a9ce4c45-6a59-46ff-8488-6ecc71fbd370" file="REGUL_SMC306_04_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="a0c9ae16-d1fd-49e1-a9d5-fc316fd29bb4" tag-map="REGUL_SMC306_04_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="317b5a64-93d0-4e58-9a04-47d9e2c85483" network="Network1" address="192.168.0.38" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="352bc785-3d1e-4eee-9f45-a4c22a3ed4df" network="Network2" address="192.168.0.38" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_05_B" uuid="706d8061-0343-411c-8716-8b92f188d456">
+      <dp:external-redundant-runtime name="Runtime" uuid="bebb4a8a-e760-4206-b11a-3887248d10e6" runtime="REGUL_SMC306_05_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="93dd7366-c2fa-4b7a-ac48-1ca3390e3a11">
+        <dp:application-object name="REGUL_SMC306_05_B_DiagnApp" uuid="91708023-f8e3-4866-af20-c4bd8e7bcdcd">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="0a759c62-a989-45b6-b148-8472eaa6351f" file="REGUL_SMC306_05_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="1b0184f0-8c50-4711-9c63-9698d235585d" tag-map="REGUL_SMC306_05_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="5094d143-d773-40cb-8838-f97d3c1802b8" network="Network1" address="192.168.0.40" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="acf0c485-fbde-4886-9d00-caf3cf2aa52a" network="Network2" address="192.168.1.40" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_06_B" uuid="d244327b-0eb7-4a7a-8e23-d2fd291da386">
+      <dp:external-redundant-runtime name="Runtime" uuid="e57715aa-11a0-4314-8cfd-51d77d30bdfa" runtime="REGUL_SMC306_06_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="3a03c582-5b86-497a-b4c8-a59b8a734efa">
+        <dp:application-object name="REGUL_SMC306_06_B_DiagnApp" uuid="936e03ab-55eb-48c8-919d-c9ab27a47299">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="a9d7e987-dca0-4ab7-bd23-0bd65ccf1354" file="REGUL_SMC306_06_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="2c1606bb-d54c-40f9-912b-9bdcd6142db8" tag-map="REGUL_SMC306_06_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="5f5acf9d-97ca-4303-825f-0c31623de0c8" network="Network1" address="192.168.0.42" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="581163df-5dd0-44e2-8f5d-86a49a0aabdd" network="Network2" address="192.168.1.42" />
+    </dp:computer>
+    <dp:computer name="REGUL_SMC306_01_B" uuid="a1a7a1ad-50df-43d7-8f0d-bc48147625ae">
+      <dp:external-redundant-runtime name="Runtime" uuid="5bccb954-2e7f-4b94-a338-2fff7c98a1bb" runtime="REGUL_SMC306_01_A.Runtime" />
+      <dp:external-runtime name="Diagnostics" uuid="0178621c-f961-449e-80aa-b389e7e46d06">
+        <dp:application-object name="REGUL_SMC306_01_B_DiagnApp" uuid="c42b530c-6103-4f32-a2fa-7d5bedb7515c">
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="be440612-f012-434b-9cf6-213575d94bfc" file="REGUL_SMC306_01_B_DiagnMap.xml" />
+        </dp:application-object>
+        <opc:opcua-server name="OpcUaServer" uuid="80324b7a-71e0-4674-a8df-3f903ff4fc0c" tag-map="REGUL_SMC306_01_B_DiagnApp.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48013" />
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="99593c2f-a2ac-47ff-a808-48a8bca72d08" network="Network1" address="192.168.0.32" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="487f16d8-3491-4e58-b82c-488e21478419" network="Network2" address="192.168.0.32" />
+    </dp:computer>
+    <eth:ethernet-net name="LocalNetwork">
+      <attribute type="unit.System.Attributes.Comment" value="Локальная сеть" />
+    </eth:ethernet-net>
+    <eth:ethernet-net name="Network1">
+      <attribute type="unit.System.Attributes.Comment" value="Основная сеть" />
+    </eth:ethernet-net>
+    <eth:ethernet-net name="Network2">
+      <attribute type="unit.System.Attributes.Comment" value="Резервная сеть" />
+    </eth:ethernet-net>
+    <dp:computer name="SRVNTP" uuid="2153fa9e-18cd-4f7a-aa27-7e5855b86040">
+      <attribute type="unit.System.Attributes.Comment" value="Сервер реального времени NTP" />
+      <dp:external-runtime name="SNMP" uuid="7188dcf1-dbf6-4a16-8437-ede6a24f0bb8">
+        <dp:application-object name="SRVNTP_SnmpApp" uuid="a1a0eccb-c19f-4f17-8631-40ca6f9e06d3">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="7e6cff7d-e001-4c3e-b7bb-d257a6edaebd" file="SRVNTP_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="d0c9b27d-b683-4e06-aecb-458fdcdefd3a" address-map="SRVNTP_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="5e1cde46-53b5-415a-a2c1-8156f5280449" network="Network1" address="192.168.0.206" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="4a0ac447-0a99-4f25-955d-22b6f992b2c2" network="Network2" address="192.168.1.206" />
+    </dp:computer>
+    <dp:computer name="SWITCH1" uuid="02428545-88c1-4826-b35a-913586142576">
+      <attribute type="unit.System.Attributes.Comment" value="Коммутатор основной" />
+      <dp:external-runtime name="SNMP" uuid="f9e404f8-6c1c-44ac-8c29-be9c6f05048e">
+        <dp:application-object name="SWITCH1_SnmpApp" uuid="d54c61c7-2cda-4fc1-aedd-15003e170ddd">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="baacc310-c469-424a-b413-f34f6f27e7c7" file="SWITCH1_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="2fb7dfd9-792b-4709-8ed0-5bb9440ac508" address-map="SWITCH1_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="5f78a87e-7ad6-4a76-a286-6ebfc0939808" network="Network1" address="192.168.0.250" />
+    </dp:computer>
+    <dp:computer name="SWITCH2" uuid="6ead4527-9ced-4e4f-9c46-a844ce921fec">
+      <attribute type="unit.System.Attributes.Comment" value="Коммутатор резервный" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="571f8667-77d2-49b9-98cb-ca97a253598c" network="Network2" address="192.168.1.250" />
+    </dp:computer>
+    <dp:domain-node name="SRVH" uuid="3a60d397-7149-4915-a2d0-df53e41ca50b" address="SRVH">
+      <attribute type="unit.System.Attributes.Comment" value="Сервер исторических данных" />
+      <srv:historian name="Historian" uuid="3933f973-4add-40da-bc23-d7fb3c08fd0b" instance="tcp:4949">
+        <srv:historian-database name="DB_HISTORY" uuid="1fa5ad5b-a6f9-49d4-9d0d-133c82067b94" usage="values" alias="DB_HISTORY" />
+        <srv:historian-database name="DB_EVENTS" uuid="55aabbec-32d7-49ec-93a5-acd6978cbb96" usage="events" alias="DB_EVENTS" />
+        <srv:historian-database name="DB_IMIT" uuid="b20ef041-9adb-472c-92bd-5f370c51f3e5" usage="imitation" alias="DB_IMIT" />
+      </srv:historian>
+      <dp:external-runtime name="SNMP" uuid="114fa2e9-da12-4a33-ae08-20dc01ecac3a">
+        <dp:application-object name="SRVH_SnmpApp" uuid="bc88cf33-b77d-4787-8831-0c7768f4cc4d">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="d24830af-e774-4460-af75-14936dd977aa" file="SRVH_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="b2e5f573-8600-4f5f-a21e-a7f0d994c196" address-map="SRVH_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="b5b158a0-1715-4716-b597-f2c560e78a32" network="Network1" address="192.168.0.203" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="00a2757a-df0b-4655-b003-ad4e2d593ceb" network="Network2" address="192.168.1.203" />
+    </dp:domain-node>
+    <dp:domain-node name="SRVP" uuid="933dd534-559c-4d79-a0c3-008dba3958fa" address="SRVP">
+      <attribute type="unit.System.Attributes.Comment" value="Сервер РСУ основной" />
+      <srv:io-server name="AstraServer" uuid="268d0967-6fa3-4327-bb4b-a3cb4887487d">
+        <srv:tcp-server name="TcpServer" uuid="5ba74a2a-755e-47ca-b539-375ec49316ae" history-port="4950" />
+        <srv:opcaeserver-module name="AeServer" uuid="ec1c4ea9-2964-4df0-9218-774d5d0582e1" />
+        <srv:opcua-module name="UaServer" uuid="01451f23-0c53-4222-94b4-9e952f188f42" />
+        <srv:snmp-manager name="SNMP Manager" uuid="8d3ca5ad-8ee8-412b-9e9f-0bdd60590e9b">
+          <srv:agent-config agent="STATION.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SRVNTP.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SWITCH1.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SNMP.SnmpAgent" />
+          <srv:agent-config agent="SRVR.SNMP.SnmpAgent" />
+          <srv:agent-config agent="SRVH.SNMP.SnmpAgent" />
+        </srv:snmp-manager>
+        <dp:host module="IOS_App" />
+        <srv:opcua-client name="OpcUaClient" uuid="6c6eb7dc-dff9-4057-a6d9-3d12b75e5091" application-name="REGLABOpcUaClient">
+          <srv:opcua-server-link server="REGUL_SMC306_07_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="K0Wq/4RY6xZW09X9xdUVQ4+fjBS9AjYdqCKw9ha8Qh5qLIxzqIZxQ3BJR6YCqg7Kxw+D5v4LqjnK2SssomcEx4hMItvfjevBDqkFNQPhehKmS35f/vlNLiJOEVYoSKJpi01QAni+p1ng/ZE+FCYW1fmVSLaxiIAaVbH189NYYOw" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_07_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="ahsA7Zcc2nf1s1OQU22qMrT9nhCg/9tFr9RkHiEfjt/oW0nybevhpcaGUVxVWla6O+A8+nUJFKrf/UvVk9qaLCkEF3Pth5gI9XK1svbEp5aL+iqs+6mQCUNTs/ReDYQuuEfM3AbF8ENlYjOrpx0cdz+y7EWzJnvjGoVYDckno3s" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_07_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="cuYRirx5jsYamw+KKTsvfoIXrp8voHVzfnlp3eyDbcHDTL6VJZkPWWzyY+a5Dlb9yDZxO9v1MASMSfEtDNyV0Dah6Y0zhATCU3utZzAAk7tMDbvDxqhUpJ/7TtoAFg2WJsopaoSNzxzoKwJFej1kcdXOBKLb4/C1PNASp5GEHjQ" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_02_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="P/520L153wZN6soZZaAcpVRCCdohKWMkSW+1ThPrET/XG6TWwO+vhatlBqv3O2Kl41k2m+RSg567QF3zsK+E2LcVl9qOrpk+qSuzrZVyfvG/8UUyISgQwuUtHIw+GwzgUYnrdsBgvml3l6tGDnjNJN/yZj3qOO3hFBdafX7NRqs" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_02_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="D/kKtZ0VzGE0/pDQEj5/EGtKIyuunT2eLSW57Jy4pKORD0LIZmbPB47MVTf7HKmYAfB3fMlY03ZZPOFqnw1wbv3KVzGILy8izOPjRbw/DgcZbU3NegwaNdv5f7fFsAqqyINSXmhQGYAg3KRa9qOW33mLic/tiDiQsHMbaHtq9kw" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_02_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="qC2I4cUjkMZLUG3TE/IE58VIVZfs8iOsI0XkHtA1hZYcM6vEt6QvSUqrUfsjqD/cRpluQFgFDIx/63mBnVgZ1NuTtb3X4Nk8uJm5VmHTht7fpozSAdbUNkdrsQbrihVTFnc1D++KRbBTiO1AldeStIiC80BmLqM/QcAo1KDvEI8" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_03_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="MRWaG4dNUVwX5D3ljq+8eG+7YZp0tjlhRGhLI3aYyb3qbsldkDY27nMdPZw/rneAdZhHIS9H+Y9Ob1SVdQrjCOT9hu9bVvYSOlcwCiwGx6uJg6f+/Sg6T9UaLpuBKj7OpKpIQsSqRLnm0wssnx4J7mud19vg+nKh4k6p23Vu2Fs" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_03_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="EwjZRWBUfN18ORUSr7y5eVex6s84zCMtK2VICz93UEREzKwYlVVODAgMtVuBuQNXNGbJnQazViQvZx2bHQoujQgYt2PwoIOuPilz+CMk//hD2BrPS8OrhuE+QLzYQIc5fc9bEpu3nDIzqS97ZwNUyZXvOy4Y9rBLcvhFHMIJ+dw" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_03_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" login="astraregul" password="qEB5iFpWo77Z6cr+RzEA9ewoCiXOstFfvNtWT4Nyv+TfVRjAye8KMIgR3YLslucAWjSOIQRF4+jPUAnGXmivSYKvUljcxBFFw8Tx6QCWWtEj0dR0CLKh0J5X8L3ITEFv+m72YX4/pGrpq39302jYsaDnjw/t78lqt94yiNpgUw0" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_PPG_1_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_PPG_1_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_PPG_1_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_04_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_ACTIVE" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_04_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_A" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_04_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id="Application.GVL_DIAGN.IS_CPU_B" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_05_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_05_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_05_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_06_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_06_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_06_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_01_A.Runtime.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_01_A.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+          <srv:opcua-server-link server="REGUL_SMC306_01_B.Diagnostics.OpcUaServer" addressing-method="Ip" protocol="opc.tcp" session-timeout="60000" keepalive-interval="5000" update-rate="1000" sampling-interval="1000" notification-queue-size="0" discard-oldest="true" write-only-to-active-server="true" write-on-connect="false" security-mode="SignAndEncrypt" authorization-mode="LoginPassword" certificate-subject="" active-server-timeout="1000" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-id-type="string" control-signal-value="1" can-suspended-server-be-active="false" standby-mode="close-connections" />
+        </srv:opcua-client>
+      </srv:io-server>
+      <dp:external-runtime name="SNMP" uuid="adfff352-f0db-4d63-babb-79109577b81b">
+        <dp:application-object name="SRVP_SnmpApp" uuid="19995403-4124-4374-a76c-7b4a1135f569">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="9f88803a-7288-4688-802b-fe68acde27d1" file="SRVP_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="1d255c02-6b85-468c-82e2-355e59f9cbea" address-map="SRVP_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="db26edf2-6c4f-4b8f-9aa6-8645fc21a9f0" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="841fabe8-4e83-4c01-ba5f-de76d186d5af" network="Network1" address="192.168.0.201" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="7c400979-b931-4ec5-a152-f544185e1871" network="Network2" address="192.168.1.201" />
+    </dp:domain-node>
+    <dp:domain-node name="SRVR" uuid="2dd9ae37-751b-456a-a752-0ebd15841f30" address="SRVR">
+      <attribute type="unit.System.Attributes.Comment" value="Сервер РСУ резервный" />
+      <srv:redundant-server name="AstraServer" uuid="4693a4a2-bd1d-4046-97fa-bc7d166d2c4e" server="SRVP.AstraServer" primary-adapter="EthernetAdapter1" reserve-adapter="EthernetAdapter2" server-primary-adapter="SRVP.EthernetAdapter1" server-reserve-adapter="SRVP.EthernetAdapter2" />
+      <dp:external-runtime name="SNMP" uuid="a6ed69d1-42e8-4d5e-bfd3-95d83761c0a7">
+        <dp:application-object name="SRVR_SnmpApp" uuid="50c9190d-7d7b-49b5-8cbe-adc9d396e62f">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="c5989286-22c1-47a1-ae9a-5143bec77d09" file="SRVR_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="aa538175-4db0-4edc-989a-354a0c9382d3" address-map="SRVR_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="ef3d7ddf-77c5-4c9b-ae06-f77c1ff30e96" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="17b02400-743e-431b-9e3d-ebdb9716564f" network="Network1" address="192.168.0.202" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="de5bb303-3d13-466f-9d44-6682a754c1fd" network="Network2" address="192.168.1.202" />
+    </dp:domain-node>
+    <dp:computer name="OWS2" uuid="fa1571de-0e06-4c39-93ac-0df342341d74">
+      <attribute type="unit.System.Attributes.Comment" value="Рабочая станция оператора №2" />
+      <dp:external-runtime name="SNMP" uuid="76d2ce52-99fa-47f1-b9ca-7d7a16139ead">
+        <dp:application-object name="OWS2_SnmpApp" uuid="1a2670b0-5964-4e69-acee-9a590fa5a54b">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="a0e86cc1-ff38-4e24-b360-3ab1d17f75ce" file="OWS2_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="58c75731-11ad-423c-8877-621530fa3c57" address-map="OWS2_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="24bbaddb-f416-42e6-a18f-da99ab509ffa" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="80fb5a24-8af4-43d1-8074-1ddc2777274b" network="Network1" address="192.168.0.112" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="e28ceac0-2c72-49d3-929b-0d2f6307613e" network="Network2" address="192.168.1.112" />
+    </dp:computer>
+    <dp:computer name="OWS3" uuid="aba9d465-e13b-4176-ba78-729b2ef2943e">
+      <attribute type="unit.System.Attributes.Comment" value="Рабочая станция оператора №3" />
+      <dp:external-runtime name="SNMP" uuid="d637276d-20d2-4de1-86fc-74ef0fbe3c0b">
+        <dp:application-object name="OWS3_SnmpApp" uuid="aa0c137a-c2fb-4711-b363-b8181be1c938">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="80e481dd-6001-4a68-9a55-79dd0303caa3" file="OWS3_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="e5de3e18-834f-49d2-92d8-cd0b54f1ba6a" address-map="OWS3_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="56679669-55bc-467a-941e-933227c4842d" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="de3f7853-94db-4946-ab45-9036b1ba126e" network="Network1" address="192.168.0.113" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="45456fb9-9083-43ea-b81a-b777fd7f7400" network="Network2" address="192.168.1.113" />
+    </dp:computer>
+    <dp:computer name="OWS1" uuid="e10a5ae8-7d7b-478a-a2d2-e2c1b28b73bc">
+      <attribute type="unit.System.Attributes.Comment" value="Рабочая станция оператора №1" />
+      <dp:external-runtime name="SNMP" uuid="c49fb0a2-6d13-4095-9f3a-5bdc11db586b">
+        <dp:application-object name="OWS1_SnmpApp" uuid="75518bda-f579-4830-b1c0-8ad3d1e7d2b5">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="1f00f7c7-c1f2-446e-beab-dc782c937c29" file="OWS1_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="85022ea9-c44e-45e2-8cac-9137a6008d5e" address-map="OWS1_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="b3a7c229-9a20-4609-badb-1cf94500540d" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="1cb8d218-0f68-408e-9f28-aebcb479506b" network="Network1" address="192.168.0.111" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="dde2cde9-abe8-4db4-a782-e751ab88abe4" network="Network2" address="192.168.1.111" />
+    </dp:computer>
+    <dp:computer name="OWS4" uuid="add2d92a-457e-4db1-b05e-a3508a493d97">
+      <attribute type="unit.System.Attributes.Comment" value="Рабочая станция оператора №4" />
+      <dp:external-runtime name="SNMP" uuid="60831281-08ba-4fa4-b15f-b71736a8fb52">
+        <dp:application-object name="OWS4_SnmpApp" uuid="25073a87-72bf-40f8-b73c-72355480073e">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="99a558a5-e03f-44fa-add3-2656e7020a91" file="OWS4_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="9f68bc1d-38bf-4fdd-bf80-984822ba4b68" address-map="OWS4_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="472c5678-9b32-467f-b594-5f19c342a6a1" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="78c4c3b6-b2fd-49f4-815e-0d9ad58164d8" network="Network1" address="192.168.0.114" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="97f1f803-1cd3-4b6e-bc9a-b831ae46ecec" network="Network2" address="192.168.1.114" />
+    </dp:computer>
+    <dp:computer name="OWS5" uuid="3f3e98bf-05da-4d15-95f3-69538d03b66b">
+      <attribute type="unit.System.Attributes.Comment" value="Рабочая станция начальника смены" />
+      <dp:external-runtime name="SNMP" uuid="d2971991-5c27-4c2e-b60c-2ae4be5ac327">
+        <dp:application-object name="OWS5_SnmpApp" uuid="cd93499d-8477-4799-9a71-bd1853cabe87">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="1e210ad0-e1ab-42e2-a4ae-733e619eba2d" file="OWS5_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="672b6c67-feef-474b-a721-e890631d3157" address-map="OWS5_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="74bdcb8f-8752-4121-8c4e-371881e57e94" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="d487639e-e45a-4c19-a5ec-7c6aaaffd4fc" network="Network1" address="192.168.0.115" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="9659d10a-f296-42f4-97d9-f70b365be2cb" network="Network2" address="192.168.1.115" />
+    </dp:computer>
+    <dp:computer name="OWS6" uuid="1aa23d9f-c90d-475c-8739-c8f3f796f911">
+      <attribute type="unit.System.Attributes.Comment" value="Рабочая станция инженера АСУ ТП" />
+      <dp:external-runtime name="SNMP" uuid="30e8906b-648a-4a9e-bd12-41461e687f39">
+        <dp:application-object name="OWS6_SnmpApp" uuid="3afb75dd-93a4-4626-b472-ad186eaff83a">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="76aa5ca8-3eca-4376-9914-de0c3c5aa7b5" file="OWS6_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="e033ab43-8206-4709-9a97-013a8efec78a" address-map="OWS6_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="c2091678-dc53-437e-bf12-cf0f2383d99a" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="d6f7f18b-6fe2-4b96-b8cc-096f8c902da1" network="Network1" address="192.168.0.116" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="3ac05c95-3905-4d88-8e4a-8dd108caeef2" network="Network2" address="192.168.1.116" />
+    </dp:computer>
+    <dp:computer name="OWS7" uuid="942193f6-d335-43e1-a03d-6319e0fc82cc">
+      <attribute type="unit.System.Attributes.Comment" value="Рабочая станция инженера КИП" />
+      <dp:external-runtime name="SNMP" uuid="09fdaf8f-9523-4342-931f-6487598cfc06">
+        <dp:application-object name="OWS7_SnmpApp" uuid="ffc4d022-901a-429e-bed3-31759a3cbf9e">
+          <snmp:snmp-link-map name="SnmpLinkMap" uuid="3018751f-ade2-44b0-aeec-4aae49c1b3e3" file="OWS7_SnmpMap.xml" />
+        </dp:application-object>
+        <snmp:snmp-agent name="SnmpAgent" uuid="dc5a16f4-b493-4677-b0e8-0f3d40470b05" address-map="OWS7_SnmpApp.SnmpLinkMap" protocol-version="Snmp_v2c" poll-port="161" poll-password="public" notification-port="162" notification-password="public" security-level="NoAuthNoPriv" auth-protocol="MD5" priv-protocol="AES" poll-username="" trap-appid="" trap-username="">
+          <property name="poll-authkey" />
+          <property name="poll-privkey" />
+          <property name="trap-authkey" />
+          <property name="trap-privkey" />
+        </snmp:snmp-agent>
+      </dp:external-runtime>
+      <eth:ethernet-adapter name="Localhost" uuid="42530f97-be62-4abe-a6c5-750267afe1d3" network="LocalNetwork" address="127.0.0.1" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="41d29038-abf7-40a3-9a4f-0ce72188ad6c" network="Network1" address="192.168.0.117" />
+      <eth:ethernet-adapter name="EthernetAdapter2" uuid="ab51aeab-3366-44f3-bf1f-8a7254949417" network="Network2" address="192.168.1.117" />
+    </dp:computer>
+  </dp:domain>
+</omx>
