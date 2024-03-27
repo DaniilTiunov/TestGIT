@@ -452,6 +452,8 @@
 		<object access-modifier="private" name="Diag" display-name="Diag" uuid="4c732f94-059b-4cbf-b737-32d1400db910" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
 			<designed target="X" value="594" ver="5"/>
 			<designed target="Y" value="624.5" ver="5"/>
+			<designed target="X" value="289" ver="5"/>
+			<designed target="Y" value="201" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="250" ver="5"/>
 			<designed target="Height" value="35" ver="5"/>
@@ -905,6 +907,8 @@
 		<object access-modifier="private" name="Boiler_room_1" display-name="Boiler_room_1" uuid="c2ab814d-8ba9-4b85-8d52-e95102311119" base-type="btnMenuNavigation" base-type-id="60215e50-03b0-4268-8390-908b9073347a" ver="5" description="" cardinal="1">
 			<designed target="X" value="19" ver="5"/>
 			<designed target="Y" value="40" ver="5"/>
+			<designed target="X" value="30" ver="5"/>
+			<designed target="Y" value="357" ver="5"/>
 			<designed target="Rotation" value="0" ver="5"/>
 			<designed target="Width" value="250" ver="5"/>
 			<designed target="Height" value="35" ver="5"/>

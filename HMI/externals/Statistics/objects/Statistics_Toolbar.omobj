@@ -19,6 +19,8 @@
 	<object access-modifier="private" name="pStatistics" display-name="pStatistics" uuid="da95701e-6d11-4191-a900-8b213411244e" base-type="Statistics" base-type-id="C11CEEB3-7A14-4701-AF6E-735749D45402" base-const="true" base-ref="true" ver="5" description=""/>
 	<object access-modifier="private" name="private" display-name="private" uuid="b50c2b89-2814-4bcc-8701-c06679cd202b" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5">
 		<object access-modifier="private" name="pTheme" display-name="pTheme" uuid="eaeed59f-a83e-492a-ac92-ad201a5331c1" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" ver="5" base-ref="true"/>
+		<object access-modifier="private" name="pTheme" display-name="pTheme" uuid="eaeed59f-a83e-492a-ac92-ad201a5331c1" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" ver="5" base-ref="true">
+		</object>
 		<init target="pTheme" ver="5" ref="init_Theme"/>
 	</object>
 	<do-trace access-modifier="private" target="BrushColor" ver="5">
