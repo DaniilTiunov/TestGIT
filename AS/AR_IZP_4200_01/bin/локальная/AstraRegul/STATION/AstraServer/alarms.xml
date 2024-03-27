@@ -3120,7 +3120,6 @@
     <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_1.P_002_1" Name="P_002_1" Description="PUMP" Type="PsTechOG:Types.TECH.PMP_SE_AUT.IOS_View" />
     <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_2.P_PID_002_2" Name="P_PID_002_2" Description="4200" Type="PsTechOG:Types.TECH.PID.IOS_View" />
     <Object Tag="REGUL_PPG_1.04_PUMP.PUMP_002_2.P_002_2" Name="P_002_2" Description="PUMP" Type="PsTechOG:Types.TECH.PMP_SE_AUT.IOS_View" />
-    <Object Tag="REGUL_PPG_1.05_PID.TV_0001" Name="TV_0001" Description="PID" Type="PsTechOG:Types.TECH.PID_IL.IOS_View" />
     <Object Tag="REGUL_PPG_1.03_EUV.EUV_001" Name="EUV_001" Description="EUV" Type="PsTechOG:Types.TECH.MOV_TYP.IOS_View" />
     <Object Tag="REGUL_PPG_1.03_EUV.EUV_002" Name="EUV_002" Description="EUV" Type="PsTechOG:Types.TECH.MOV_TYP.IOS_View" />
     <Object Tag="REGUL_PPG_1.03_EUV.EUV_003" Name="EUV_003" Description="EUV" Type="PsTechOG:Types.TECH.MOV_TYP.IOS_View" />

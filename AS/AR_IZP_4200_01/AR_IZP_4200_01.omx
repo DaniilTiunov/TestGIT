@@ -4251,20 +4251,6 @@
             </ct:object>
           </ct:object>
         </ct:object>
-        <ct:object name="05_PID" uuid="690cd40c-209a-4859-b66c-f9e0dbab58b7" original="REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_PPG_1.05_PID" aspect="unit.PsBase.Aspects.IOS_Aspect">
-          <ct:object name="TV_0001" uuid="bbae6205-6d94-4a61-b07f-b82f6c25c358" base-type="unit.PsTechOG.Types.TECH.PID_IL.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
-            <property name="original">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_PPG_1.05_PID.TV_0001</property>
-            <r:init-ref ref="_PLC_View_2">
-              <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_PPG_1.05_PID.TV_0001</property>
-            </r:init-ref>
-            <r:init-ref ref="_PLC_View">
-              <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_PPG_1.05_PID.TV_0001</property>
-            </r:init-ref>
-            <r:init-ref ref="_PLC_BaseView">
-              <property name="target">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_PPG_1.05_PID.TV_0001</property>
-            </r:init-ref>
-          </ct:object>
-        </ct:object>
         <ct:object name="03_EUV" uuid="f4655ac3-f50b-4c64-8312-a59b21dc4697" original="REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_PPG_1.03_EUV" aspect="unit.PsBase.Aspects.IOS_Aspect">
           <ct:object name="EUV_001" uuid="981c2d31-819f-402b-9431-df41a884a7a5" base-type="unit.PsTechOG.Types.TECH.MOV_TYP.IOS_View" aspect="unit.PsBase.Aspects.IOS_Aspect">
             <property name="original">REGUL_SMC306_07_A.Runtime.REGUL_SMC306_07_App.REGUL_PPG_1.03_EUV.EUV_001_4150</property>
@@ -22414,14 +22400,6 @@
                   <attribute type="unit.PsTechOG.Attributes.TAGCOMMENT" value="Комментарий к тегу" />
                   <attribute type="unit.System.Attributes.Description" value="PUMP" />
                 </ct:object>
-              </ct:object>
-            </ct:object>
-            <ct:object name="05_PID" uuid="d38cb1e6-65b0-4b27-a6ea-38f888f7ba51">
-              <ct:object name="TV_0001" base-type="unit.PsTechOG.Types.TECH.PID_IL.PLC_View" aspect="unit.PsBase.Aspects.PLC_Aspect" uuid="88130f89-50a2-4be7-920d-5e8a5554320c">
-                <attribute type="unit.PsTechOG.Attributes.TAGNAME" value="TV-0001" />
-                <attribute type="unit.PsTechOG.Attributes.ALIAS" value="4200" />
-                <attribute type="unit.PsTechOG.Attributes.TAGCOMMENT" value="Комментарий к тегу" />
-                <attribute type="unit.System.Attributes.Description" value="PID" />
               </ct:object>
             </ct:object>
             <ct:object name="03_EUV" uuid="86c7003a-1c8c-45b9-a2bc-985113fe02a0">
