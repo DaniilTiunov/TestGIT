@@ -1,4 +1,0 @@
-<type access-modifier="private" name="MessageDialog_3" display-name="MessageDialog_3" uuid="9fee9949-66a7-4db1-82fa-295e170fdf1b" base-type="MessageDialog" base-type-id="a468f863-f603-4768-ad4b-e16bc34ea78e" ver="5" description="">
-	<designed target="WindowCaption" value="MessageDialog_3" ver="5"/>
-</type>
-
